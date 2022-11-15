@@ -1,0 +1,7 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{4}{}%
+\contentsline {chapter}{\numberline {2}Einführung in die Blockchain}{5}{}%
+\contentsline {section}{\numberline {2.1}Blockchain Definition}{5}{}%
+\contentsline {section}{\numberline {2.2}Konstruktion des Blocks}{5}{}%
+\contentsline {section}{\numberline {2.3}Blockchaining-Mechanismus}{7}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
