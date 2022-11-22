@@ -4,4 +4,7 @@
 \contentsline {section}{\numberline {2.1}Blockchain Definition}{5}{}%
 \contentsline {section}{\numberline {2.2}Konstruktion des Blocks}{5}{}%
 \contentsline {section}{\numberline {2.3}Blockchaining-Mechanismus}{7}{}%
+\contentsline {chapter}{\numberline {3}Proof-Of-Work}{9}{}%
+\contentsline {section}{\numberline {3.1}Was ist Proof-Of-Work ?}{9}{}%
+\contentsline {section}{\numberline {3.2}Wie funktioniert Proof of Work bei einer Blockchain ?}{9}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

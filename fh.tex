@@ -1,0 +1,199 @@
+% LaTeX-Layout for report or thesis at FH Aachen
+% Author: Jennifer Eisele
+% structure adopted from Sven Hinz (FH Aachen)  (https://github.com/SvenHinz)
+
+
+% This document is optimized for a onesided layout. 
+% It is possible to change the layout to a twosided document by changing the class to \documentclass[twoside,openright,12pt,a4paper]{scrreprt} and adjusting the geometry \usepackage[left=2.5cm,right=1.5cm,top=2.5cm,bottom=2.5cm]{geometry} 
+% But there might be problems with footer and header.
+% ihead needs to be changed from \ihead[\sffamily \bfseries \upshape \headmark]{\sffamily \bfseries \upshape \headmark} to \ihead[]{}
+
+\documentclass[oneside,openright,12pt,a4paper]{scrreprt}
+
+% Paket für Umlaute (für Deutsch):
+\usepackage[utf8]{inputenc}       % Cross Platform
+\usepackage{hyperref}   %links in TOC
+\hypersetup{
+    colorlinks=false, %set true if you want colored links of references and crossreferences
+    linktoc=all,     %set to all if you want both sections and subsections linked
+}
+
+\usepackage[german,english]{babel}       % language: germena nad english, english is main language, german is used in the german abstract and the acknowledgements 
+\usepackage[ddmmyyyy]{datetime} 
+\renewcommand{\dateseparator}{.} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{kpfonts}
+\usepackage{blindtext}
+\usepackage[left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm]{geometry} 
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\author{Jennifer Eisele} % --> insert your name
+
+\usepackage[automark,plainheadsepline,headsepline]{scrpage2}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage[numbers,sort&compress,square]{natbib} %this bibstyle uses numbers, which are sorted (increasing) and summarized eg. 104,105,106 --> 104-106 
+\usepackage{longtable} 
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{subcaption}
+\parindent 0pt
+\usepackage{booktabs}
+\usepackage[export]{adjustbox}
+\usepackage{svg}
+
+
+% fonts
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\setkomafont{chapter}{\sffamily \large}
+\setkomafont{section}{\sffamily \normalsize}
+\setkomafont{subsection}{\sffamily \normalsize}
+\setkomafont{subsubsection}{\sffamily \normalsize}
+\addtokomafont{caption}{\sffamily \small \itshape}
+\usepackage{courier}
+\usepackage{textgreek}
+\usepackage{gensymb}
+\setlength{\parindent}{0cm} %change indent of new paragraphs (if 0cm --> no indent)
+
+% gap between header and headlines
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-0.75\baselineskip}}
+
+% header and footer
+\pagestyle{scrheadings}
+\ohead[\sffamily \bfseries \upshape \headmark]{\sffamily \bfseries \upshape \headmark}
+\chead[]{}
+\ihead[]{}
+\ofoot[\sffamily \pagemark]{\sffamily \pagemark}
+\ifoot[]{}
+\cfoot[]{}
+\automark[]{chapter}
+\renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
+
+% formulas
+\usepackage{fleqn} % left
+\setlength{\mathindent}{1.5cm} % indent
+
+% package for SI-units
+\usepackage{siunitx}
+
+%numbering of tables and figures (if you delete these, the figures and tables will be numbered according the chapter numbers)
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+% tables
+\usepackage{multirow} % multilines in one column
+\renewcommand{\arraystretch}{1.5} % increase (or decrease) line spacing in tables
+\setlength{\doublerulesep}{0.2mm} % spacing between doubled lines 
+\usepackage{tabu}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+
+% command line
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\ttfamily,
+   frame=tb,
+  columns=fullflexible,
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+% Renaming "table of contents" in "Contents"
+\renewcaptionname{english}{\contentsname}{\textbf{Contents}}
+
+% Renaming "Sources" in "References"
+\renewcaptionname{english}{\bibname}{\textbf{References}} 
+
+\usepackage[
+  tocindentmanual,
+  tocflat,
+  tocbreaksstrict,
+  toctextentriesleft,
+]{tocstyle}
+
+\usepackage[]{acronym}
+
+%start of the document
+
+\begin{document}
+    \setstretch{1.5}
+    \addtocontents{toc}{\linespread{1}}
+    
+    % Here the individual chapters are included in the main document by '\include{....}' . The files are in the folder 'doc'
+    \include{./doc/001titlepage}
+    \pagenumbering{gobble} %no page numbering
+    \include{./doc/002erklaerung}
+    \setcounter{page}{1} %counter for page numbering is set to 1
+    \pagenumbering{Roman} % page numbering is done with capital roman signs (I, II, III...)
+    \include{./doc/003abstract}
+    
+    % Table of contents is generated:
+    \makeatletter
+    \renewcommand*{\@dotsep}{1} % set gap between dots
+    \makeatother
+    \tableofcontents
+   
+    % First chapter starts on uneven number 
+    \cleardoublepage
+    \setstretch{1.25}
+    \pagenumbering{arabic} %page numbering is done with arabic numbers
+    % chapters which are not used can be commented out
+    % additional chapters require a new file in folder 'doc'
+    \include{./doc/101intro} % Introduction 
+    \include{./doc/102stateoftheart} % State of the art
+    \include{./doc/103methods} % Methods
+    \include{./doc/104results} % Results
+    \include{./doc/105discussion} % Discussion
+    \include{./doc/106outlook} % Outlook
+    %\include{./doc/107chapter7}
+    %\include{./doc/108chapter8}
+
+    % References
+    \clearpage
+    \bibliographystyle{unsrtdineng} % modified unsrtdin needs to be included as file in the main path (same level as the main document 000report.tex 
+    \bibliography{./bib/quellen}
+    \addcontentsline{toc}{chapter}{\textbf{References}}
+     % add to TOC
+    \clearpage
+    
+    %List of abbreviations
+    \markright{\textbf{List of Abbreviations}}
+    \markleft{\textbf{List of Abbreviations}}
+    \include{./doc/201abbreviations}
+    \clearpage
+    
+    %List of figures
+    \markright{\textbf{List of Figures}}
+    \markleft{\textbf{List of Figures}}
+    \listoffigures 
+    \addcontentsline{toc}{chapter}{\textbf{List of Figures}}
+    
+    %List of tables
+    \clearpage
+    \markright{List of Tables}
+    \markleft{List of Tables}
+    \listoftables
+    \addcontentsline{toc}{chapter}{\textbf{List of Tables}}
+    \clearpage
+    
+    %acknowledgments 
+    \clearpage
+    \markright{Acknowledgments}
+    \markleft{Acknowledgments}
+    \include{./doc/303acknowl}
+    
+    
+    %Appendix
+    \include{./doc/401appendix}
+\end{document}

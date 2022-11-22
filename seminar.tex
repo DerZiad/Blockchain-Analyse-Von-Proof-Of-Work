@@ -5,7 +5,11 @@
 \usepackage{graphicx}
 \graphicspath{ {./pictures/} }
 \usepackage{xcolor}
-
+\usepackage{eso-pic,lipsum}
+\usepackage{biblatex}
+\addbibresource{meinequellen.bib}
+\AddToShipoutPictureBG{%
+ \AtPageLowerLeft{\hspace{0.5cm} FH Aachen: \rule{2cm}{3cm}}}
 
 \title{Blockchain- Technologie : \texttt{Analyse von Proof of Work (Bitcoin) }}
 \begin{document}
@@ -92,6 +96,34 @@ ist dieser Mechanismus gesichert ?\\ \\
 \normalsize
  	
 Die Verwendung von Hashes reicht nicht aus, um Manipulationen zu verhindern. Computer sind heutzutage sehr schnell und können Tausende von Hashes berechnen. Technisch gesehen können wir einen Block manipulieren und alle nächsten Hashes der nächsten Blöcke neu berechnen, um das Blockchain-Netzwerk wieder gültig zu machen. Aus diesem Grund verwendet Blockchain Proof of Work
-in diesen Fällen. Es gibt eine Möglichkeit, dieses Problem zu verhindern. Es ist der berühmte „Proof of Work (POW)“.		
+in diesen Fällen. Es gibt eine Möglichkeit, dieses Problem zu verhindern. Es ist der berühmte „Proof of Work (POW)“.	
+
+\chapter[Proof-Of-Work]{Einführung in die „Proof-Of-Work“-Methode}	
+
+\section{Was ist Proof-Of-Work ?}
+Proof-Of-Work kam mit einem Grundprinzip, wenn ein Miner versucht, einen Block zur Kette von Blöcken im Blockchain-Netzwerk hinzuzufügen, macht es diese Methode schwierig. Der Miner sollte sich viel Mühe geben, um den Block zu erstellen. Diese Methode basiert auf vielen Grundlagen der Kryptowährung wie folgt:
+
+\begin{itemize}
+	\item{Die Schwierigkeit, einen gültigen Hash zu finden, um den Block dem Blockchain-Netzwerk hinzuzufügen, ist so gewählt, dass alle zehn Minuten ein neuer Block mit einer bestimmten Anzahl von BTC in unsere Kette kommt.
+		Dies sichert das algorithmische Geldmengenwachstum.}
+	\item{Mit Hilfe von PoW ist es für Nodes sehr einfach zu erkennen, welche Blockchain die richtige ist: vor allem diejenige, der er die meiste Arbeit in Form von Rechenkapazität leistet.}
+	\item{Proof of Work sichert das Blockchain-Netzwerk vor allen Angreifern, denn diese müssten mehr Energie in das Netzwerk einspeisen als alle anderen insgesamt verfügbaren Miner – und das über einen langen Zeitraum. Das ist beim Bitcoin unmöglich.}
+	\item{Proof of Work ist ferner der fairste Mechanismus der Neuverteilung von Geld, den wir kennen. Denn im Gegensatz zu Fiatgeld können frische Coins nicht mit einem Federstrich erzeugt werden, sondern erfordern einen realen Aufwand an Ressourcen.}
+\end{itemize}
+
+\section{Wie funktioniert Proof of Work bei einer Blockchain ?}
+Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce mit bestimmten Eigenschaften zu erraten, indem Milliarden von Berechnungen durchgeführt werden. Wenn Sie ein solches Ergebnis erzielt haben, erhalten Sie eine Belohnung mit der sogenannten Blocksubvention.\\ \\ \\ \\
+\textbf{Diese beschreiben den Vorgang einer Transaktion im Blockchain-Netzwerk \\ }
+\begin{itemize}
+	\item{Das Blockchain-Netzwerk erstellt einen Block, der alle Transaktionen enthält}
+	\item{Der Miner wird überprüfen, ob die Transaktionen legitim sind}
+	\item{Alle Bergleute beginnen zu versuchen, die Lösung zu finden (was bedeutet, erraten Sie die Nonce), und der erste, der sie findet, erhält eine Belohnung und auch die Transaktionsgebühren}
+	\item{Der Block wird der Blockchain hinzugefügt}
+	\item{Der Prozess wird wiederholt \\}
+	
+\end{itemize}
+\textbf{Dies ist ein sequentielles Diagramm, das erklärt, wie es funktioniert \\}
+\includegraphics[width=\linewidth]{ProofOfWork1.png}
+\includegraphics[width=\linewidth]{ProofOfWork2.png}
 
 \end{document}
