@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  22 NOV 2022 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  22 NOV 2022 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,30 +790,97 @@ File: ./pictures//ProofOfWork2.png Graphic file (type png)
 <use ./pictures//ProofOfWork2.png>
 Package pdftex.def Info: ./pictures//ProofOfWork2.png  used on input line 127.
 (pdftex.def)             Requested size: 418.25555pt x 346.60768pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
 [10 <./pictures//ProofOfWork1.png>] [11 <./pictures//ProofOfWork2.png>]
-(seminar.aux)
+Overfull \hbox (10.61993pt too wide) in paragraph at lines 133--134
+[]\OT1/cmr/m/n/10.95 Wenn der Block ab-ge-baut wird, []uberpr[]ufen al-le Teil-
+neh-mer des Blockchain-Netzwerks
+ []
+
+
+! LaTeX Error: \begin{itemize} on input line 136 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[12] (seminar.aux)
 Package logreq Info: Writing requests to 'seminar.run.xml'.
 \openout1 = `seminar.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 136 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 14399 strings out of 475380
- 290127 string characters out of 2786586
+ 14406 strings out of 475380
+ 290220 string characters out of 2786586
  1307279 words of memory out of 3000000
- 35638 multiletter control sequences out of 15000+600000
+ 35645 multiletter control sequences out of 15000+600000
  476742 words of font info for 53 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\rachi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmtt12.pfb>
-Output written on seminar.pdf (11 pages, 237515 bytes).
+ <C:\Users\rachi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
+ec/dpi600\tcrm1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb>
+Output written on seminar.pdf (12 pages, 240787 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

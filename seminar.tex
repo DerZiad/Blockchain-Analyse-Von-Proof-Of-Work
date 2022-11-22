@@ -123,7 +123,18 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 	
 \end{itemize}
 \textbf{Dies ist ein sequentielles Diagramm, das erklärt, wie es funktioniert \\}
-\includegraphics[width=\linewidth]{ProofOfWork1.png}
-\includegraphics[width=\linewidth]{ProofOfWork2.png}
+\includegraphics[width=\linewidth]{ProofOfWork1.png} \\ \\
+\includegraphics[width=\linewidth]{ProofOfWork2.png} \\ \\ \\ \\ \\ \\ \\ \\
+\section{Wie genau funktionieren die Proof-of-Work-Berechnungen?}
+\begin{itemize}
+	\item {Die Miner verwenden Hash-Funktionen. Sie sind injektive mathematische Funktionen, die nicht rückgängig gemacht werden können. Sie erzeugen aus einer beliebig langen Zeichenfolge eine eindeutige Zeichenfolge fester Länge.Die Schwierigkeit liegt darin, ein Ergebnis mit bestimmten Eigenschaften zu finden, die sich aus der Hash-Funktion ergeben. Bitcoin verwendet beispielsweise die SHA-256-Hash-Funktion für das Mining.}
+	\item{Die Hash-Funktion liefert ein unvorhersehbares Ergebnis, deshalb sollten wir die Frage stellen: "Welche Zeichenfolgen müssen der Hash-Funktion übergeben werden, um einen genauen Wert zu erzeugen?". Da die bekannteste Eigenschaft der Hash-Funktion ist, dass niemand die Operation einfach umkehren kann, kann der Miner auf andere Weise die erhaltene Zeichenfolge nicht einfach umkehren und die Eingabe der Hash-Funktion erhalten.}
+	\item{Aus diesem Grund gibt es das Konzept des Mining, die Miner versuchen, die Nonce und die Reihenfolge jedes Parameters zu erraten, die die Hash-Funktion als eine Zeichenfolge nimmt und ein Ergebnis liefert. Es gibt eine Billard von Operationen, die vom Bergmann durchgeführt werden, um den Wert der Eingabe zu erreichen.}
+	\item{Wenn der Block abgebaut wird, überprüfen alle Teilnehmer des Blockchain-Netzwerks die präsentierte Lösung, um eine gültige Blockchain zu haben}
+\end{itemize}
+\section{Was hat es mit der Difficulty auf sich ?}
+\begin{itemize}
+\item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden.}
+\item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. (check it)}
 
 \end{document}
