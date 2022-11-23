@@ -2,11 +2,17 @@
 \documentclass[ngerman]{scrreprt}  
 
 \input{twp-ziad-cfg}
+
+%import package
 \usepackage{graphicx}
 \graphicspath{ {./pictures/} }
 \usepackage{xcolor}
 \usepackage{eso-pic,lipsum}
 \usepackage{biblatex}
+\usepackage{lmodern}
+\usepackage{algpseudocode}
+\usepackage{tabularx}
+
 \addbibresource{meinequellen.bib}
 \AddToShipoutPictureBG{%
  \AtPageLowerLeft{\hspace{0.5cm} FH Aachen: \rule{2cm}{3cm}}}
@@ -30,6 +36,10 @@ Das ist der Hauptgrund, warum Blockchain-Technologie erfunden worden. Indem es i
 
 
 \chapter{Einführung in die Blockchain}
+
+%##############################
+%#           Section 1        #
+%##############################
 \section{Blockchain Definition}
 \textbf{Blockchain} ist eine kontinuierlich erweiterbare Liste von Datensätzen in einzelnen Blöcken, es ist ein offenes Hauptbuch für Personen, die Datensätze sehen und erstellen können. Jeder Block besteht aus Daten, Hash, vorherigem Hash und Zeitstempel. Entscheidend ist, dass wir spätere Transaktionen auf früheren Transaktionen aufbauen können und diese als richtig bestätigen können, indem wir die Kenntnis der früheren Transaktionen beweisen können. Damit wird es unmöglich gemacht, Existenz oder Inhalt der früheren und späteren Transaktionen zu manipulieren. Andere Teilnehmer der dezentralen Buchführung erkennen eine Manipulation der Blockchain dann an der Inkonsistenz der Blöcke.\\
 \\
@@ -124,7 +134,7 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 \end{itemize}
 \textbf{Dies ist ein sequentielles Diagramm, das erklärt, wie es funktioniert \\}
 \includegraphics[width=\linewidth]{ProofOfWork1.png} \\ \\
-\includegraphics[width=\linewidth]{ProofOfWork2.png} \\ \\ \\ \\ \\ \\ \\ \\
+\includegraphics[width=\linewidth]{ProofOfWork2.png}
 \section{Wie genau funktionieren die Proof-of-Work-Berechnungen?}
 \begin{itemize}
 	\item {Die Miner verwenden Hash-Funktionen. Sie sind injektive mathematische Funktionen, die nicht rückgängig gemacht werden können. Sie erzeugen aus einer beliebig langen Zeichenfolge eine eindeutige Zeichenfolge fester Länge.Die Schwierigkeit liegt darin, ein Ergebnis mit bestimmten Eigenschaften zu finden, die sich aus der Hash-Funktion ergeben. Bitcoin verwendet beispielsweise die SHA-256-Hash-Funktion für das Mining.}
@@ -136,5 +146,58 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 \begin{itemize}
 \item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden.}
 \item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. (check it)}
+\end{itemize}
+
+\section{This is the algorithm side}
+\begin{itemize}
+	\item[--] Jetzt möchte ich darüber sprechen, wie der Arbeitsnachweis technisch funktioniert, sehen wir uns zuerst eine echte Blockstruktur von der offiziellen Website „blockchain.com“ an. \\
+	\includegraphics[width=\linewidth]{realblock.png} \\
+	\item[--] Und dies ist eine echte Einzeltransaktionsstruktur \\
+	\includegraphics[width=\linewidth]{realtransaction.png} \\ \\
+	\item[--] Das nächste Klassendiagramm zeigt die gesamten Daten aus dem realen Blockchain-Netzwerk. Es ist gut, es in Form eines Klassendiagramms zu sehen, um zu erkennen, wie Daten für die Implementierung miteinander in Beziehung stehen \\
+	\includegraphics[width=\linewidth]{classOfStructures.png} \\ \\
+	\item[--] {Und jetzt erklären wir unseren Algorithmus mit dem Aktivitätsdiagramm, zuerst sollten wir Daten initialisieren, die Initialisierung von Max\textunderscore Nonce \textunderscore Limit, Anzahl der Nullen, für dieses Beispiel werden wir berücksichtigen, dass der Hash mit 4 Nullen beginnen sollte (nur für Informationen, Anzahl von Nullen sind wichtig, es zeigt die Komplexität des Algorithmus, wenn die Zahl hoch ist wie 7 oder 6 Nullen, wird es ein Jahr dauern, die Nonce mit wenig Hardware-Material zu finden.Wir sollten auch unsere i-Inkrement-Variable für die for-Schleife initialisieren } \\ \\
+		\includegraphics[width=\linewidth]{activity.png} \\ \\
+		
+
+	
+\end{itemize}
+\begin{LARGE}
+	\textbf{Dies ist der Algorithmus \textcommabelow der für dieses Beispiel zum Schürfen von Bitcoin geschrieben wurde} \\
+\end{LARGE}
+\begin{algorithmic}
+	\State $i \gets 1$
+	\State $MaxNonceLimit \gets 100000000$
+	\State $zeros \gets 4$
+	\For{$i \ensuremath{<} MaxNonceLimit$}
+		\State $data \gets blockNumber + transactions + prvHash + i$
+		\State $hashVariable \gets  SHA256(data)$
+		\If {$hashVariable.startWith(\textquotesingle 0 \textquotesingle \textasteriskcentered 4)$}
+			\Return $i$
+		\EndIf
+	\EndFor
+	
+\end{algorithmic}
+
+\section{Sicherheit des Proof-Of-Work}
+
+\section{Vor- und Nachteile von Proof-Of-Work}
+
+	\begin{tabular}{ |l|l| } 
+		\hline
+		Nachteile & Vochteile \\
+		\hline
+		Hohes Sicherheitsniveau.  & Ineffizient mit langsamen Transaktionsgeschwindigkeiten und teuren Gebühren.  \\
+		\hline
+		Bietet eine dezentrale Methode zur Überprüfung von Transaktionen. &  Hoher Energieverbrauch. \\
+		\hline
+		 Ermöglicht Bergleuten, Krypto-Belohnungen zu verdienen. &  „Mining of Bitcoin“ erfordert oft teures Equipment. \\
+		 \hline
+	\end{tabular} \\
+
+
+\chapter{Proof-of-Work-Münzen}
+Hier sind die meisten Münzen, die sie Proof-Of-Work verwenden
+
 
 \end{document}

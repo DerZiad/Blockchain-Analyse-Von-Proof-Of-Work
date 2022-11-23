@@ -1,0 +1,5 @@
+import hashlib
+
+
+
+def mine()

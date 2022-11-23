@@ -9,4 +9,8 @@
 \contentsline {section}{\numberline {3.2}Wie funktioniert Proof of Work bei einer Blockchain ?}{9}{}%
 \contentsline {section}{\numberline {3.3}Wie genau funktionieren die Proof-of-Work-Berechnungen?}{11}{}%
 \contentsline {section}{\numberline {3.4}Was hat es mit der Difficulty auf sich ?}{12}{}%
+\contentsline {section}{\numberline {3.5}This is the algorithm side}{12}{}%
+\contentsline {section}{\numberline {3.6}Sicherheit des Proof-Of-Work}{15}{}%
+\contentsline {section}{\numberline {3.7}Vor- und Nachteile von Proof-Of-Work}{15}{}%
+\contentsline {chapter}{\numberline {4}Proof-of-Work-Münzen}{16}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

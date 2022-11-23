@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  22 NOV 2022 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  23 NOV 2022 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -490,42 +490,121 @@ Package: xparse 2022-06-22 L3 Experimental document command parser
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
 ))
+(C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\rachi\AppData\Roaming\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+(C:\Users\rachi\AppData\Roaming\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count394
+\c@ALG@rem=\count395
+\c@ALG@nested=\count396
+\ALG@tlm=\skip86
+\ALG@thistlm=\skip87
+\c@ALG@Lnr=\count397
+\c@ALG@blocknr=\count398
+\c@ALG@storecount=\count399
+\c@ALG@tmpcounter=\count400
+\ALG@tmplength=\skip88
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen146
+\ar@mcellbox=\box54
+\extrarowheight=\dimen147
+\NC@list=\toks17
+\extratabsurround=\skip89
+\backup@length=\skip90
+\ar@cellbox=\box55
+)
+\TX@col@width=\dimen148
+\TX@old@table=\dimen149
+\TX@old@col=\dimen150
+\TX@target=\dimen151
+\TX@delta=\dimen152
+\TX@cols=\count401
+\TX@ftn=\toks18
+)
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count394
-\@quotereset=\count395
-(seminar.aux)
+\@quotelevel=\count402
+\@quotereset=\count403
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+1.
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (seminar.aux)
 \openout1 = `seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count396
-\scratchdimen=\dimen146
-\scratchbox=\box54
-\nofMPsegments=\count397
-\nofMParguments=\count398
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count399
-\MPscratchDim=\dimen147
-\MPnumerator=\count400
-\makeMPintoPDFobject=\count401
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count404
+\scratchdimen=\dimen153
+\scratchbox=\box56
+\nofMPsegments=\count405
+\nofMParguments=\count406
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count407
+\MPscratchDim=\dimen154
+\MPnumerator=\count408
+\makeMPintoPDFobject=\count409
+\everyMPtoPDFconversion=\toks20
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -559,31 +638,54 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'seminar.bbl' found.
  (seminar.bbl)
-Package biblatex Info: Reference section=0 on input line 15.
-Package biblatex Info: Reference segment=0 on input line 15.
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+23.
 
-[1{C:/Users/rachi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+23.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 23.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+3.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+23.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+23.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 23.
+ [1{C:/Users/rachi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
 
 ] [2
 
 
-]
-(seminar.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
-)
+] (seminar.toc)
 \tf@toc=\write4
 \openout4 = `seminar.toc'.
 
@@ -591,24 +693,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+3.
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
 
-Overfull \hbox (7.48703pt too wide) in paragraph at lines 25--29
-\OT1/cmr/m/n/10.95 die das Pro-blem der dop-pel-ten Aus-ga-ben oh-ne die Not-we
+Overfull \hbox (7.18123pt too wide) in paragraph at lines 31--35
+\OT1/lmr/m/n/10.95 die das Pro-blem der dop-pel-ten Aus-ga-ben oh-ne die Not-we
 n-dig-keit ei-ner ver-trau-ensw[]urdigen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
@@ -617,91 +723,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--29
 ]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--52
 
  []
 
 <./pictures//1.png, id=19, 1204.5pt x 453.695pt>
 File: ./pictures//1.png Graphic file (type png)
 <use ./pictures//1.png>
-Package pdftex.def Info: ./pictures//1.png  used on input line 44.
+Package pdftex.def Info: ./pictures//1.png  used on input line 54.
 (pdftex.def)             Requested size: 418.25555pt x 157.54259pt.
 
-Overfull \hbox (10.95003pt too wide) in paragraph at lines 44--45
+Overfull \hbox (10.95pt too wide) in paragraph at lines 54--55
 [][] 
  []
 
 [5
 
  <./pictures//1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 72.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 82.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 82.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 82.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
@@ -709,178 +819,243 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--75
 <./pictures//2.jpg, id=30, 722.3236pt x 265.74281pt>
 File: ./pictures//2.jpg Graphic file (type jpg)
 <use ./pictures//2.jpg>
-Package pdftex.def Info: ./pictures//2.jpg  used on input line 83.
+Package pdftex.def Info: ./pictures//2.jpg  used on input line 93.
 (pdftex.def)             Requested size: 418.25555pt x 153.87547pt.
 
-Overfull \hbox (10.95003pt too wide) in paragraph at lines 83--84
+Overfull \hbox (10.95pt too wide) in paragraph at lines 93--94
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--107
 
  []
 
 [7 <./pictures//2.jpg>] [8]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 <./pictures//ProofOfWork1.png, id=41, 484.05844pt x 469.00218pt>
 File: ./pictures//ProofOfWork1.png Graphic file (type png)
 <use ./pictures//ProofOfWork1.png>
-Package pdftex.def Info: ./pictures//ProofOfWork1.png  used on input line 126.
+Package pdftex.def Info: ./pictures//ProofOfWork1.png  used on input line 136.
 (pdftex.def)             Requested size: 418.25555pt x 405.26624pt.
 <./pictures//ProofOfWork2.png, id=42, 456.95718pt x 378.66469pt>
 File: ./pictures//ProofOfWork2.png Graphic file (type png)
 <use ./pictures//ProofOfWork2.png>
-Package pdftex.def Info: ./pictures//ProofOfWork2.png  used on input line 127.
+Package pdftex.def Info: ./pictures//ProofOfWork2.png  used on input line 137.
 (pdftex.def)             Requested size: 418.25555pt x 346.60768pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
  []
 
 [10 <./pictures//ProofOfWork1.png>] [11 <./pictures//ProofOfWork2.png>]
-Overfull \hbox (10.61993pt too wide) in paragraph at lines 133--134
-[]\OT1/cmr/m/n/10.95 Wenn der Block ab-ge-baut wird, []uberpr[]ufen al-le Teil-
+Overfull \hbox (10.61801pt too wide) in paragraph at lines 143--144
+[]\OT1/lmr/m/n/10.95 Wenn der Block ab-ge-baut wird, []uberpr[]ufen al-le Teil-
 neh-mer des Blockchain-Netzwerks
  []
 
+<./pictures//realblock.png, id=51, 505.89pt x 285.31593pt>
+File: ./pictures//realblock.png Graphic file (type png)
+<use ./pictures//realblock.png>
+Package pdftex.def Info: ./pictures//realblock.png  used on input line 154.
+(pdftex.def)             Requested size: 390.8805pt x 220.45581pt.
 
-! LaTeX Error: \begin{itemize} on input line 136 ended by \end{document}.
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
-[12] (seminar.aux)
+<./pictures//realtransaction.png, id=52, 532.99126pt x 456.20438pt>
+File: ./pictures//realtransaction.png Graphic file (type png)
+<use ./pictures//realtransaction.png>
+Package pdftex.def Info: ./pictures//realtransaction.png  used on input line 15
+6.
+(pdftex.def)             Requested size: 390.8805pt x 334.57874pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
+[12 <./pictures//realblock.png>]
+<./pictures//classOfStructures.png, id=57, 767.86874pt x 620.3175pt>
+File: ./pictures//classOfStructures.png Graphic file (type png)
+<use ./pictures//classOfStructures.png>
+Package pdftex.def Info: ./pictures//classOfStructures.png  used on input line 
+158.
+(pdftex.def)             Requested size: 390.8805pt x 315.77089pt.
+
+Overfull \hbox (1.76732pt too wide) in paragraph at lines 157--159
+[]\OT1/lmr/m/n/10.95 Das n[]achste Klas-sen-dia-gramm zeigt die ge-sam-ten Da-t
+en aus dem rea-len Blockchain-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+[13 <./pictures//realtransaction.png>]
+<./pictures//activity.png, id=63, 1049.42062pt x 592.46344pt>
+File: ./pictures//activity.png Graphic file (type png)
+<use ./pictures//activity.png>
+Package pdftex.def Info: ./pictures//activity.png  used on input line 160.
+(pdftex.def)             Requested size: 390.8805pt x 220.67256pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+[14 <./pictures//classOfStructures.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 166.
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 169.
+
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 175.
+
+
+
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 175.
+
+
+
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 175.
+
+
+
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 175.
+
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 175.
+
+
+LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
+ 175.
+
+
+Overfull \hbox (316.12233pt too wide) in paragraph at lines 186--197
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--197
+
+ []
+
+[15 <./pictures//activity.png>]
+chapter 4.
+[16
+
+] (seminar.aux)
 Package logreq Info: Writing requests to 'seminar.run.xml'.
 \openout1 = `seminar.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 136 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 14406 strings out of 475380
- 290220 string characters out of 2786586
- 1307279 words of memory out of 3000000
- 35645 multiletter control sequences out of 15000+600000
- 476742 words of font info for 53 fonts, out of 8000000 for 9000
+ 15285 strings out of 475380
+ 306059 string characters out of 2786586
+ 1316294 words of memory out of 3000000
+ 36475 multiletter control sequences out of 15000+600000
+ 527860 words of font info for 66 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\rachi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\tcrm1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmtt12.pfb>
-Output written on seminar.pdf (12 pages, 240787 bytes).
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/M
+iKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips
+/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Progra
+m Files/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}<C:/Program Files/MiKTeX/fonts/ty
+pe1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
+/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><
+C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+lm/lmtk10.pfb>
+Output written on seminar.pdf (16 pages, 497200 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
