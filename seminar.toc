@@ -16,9 +16,8 @@
 \contentsline {section}{\numberline {4.1}Münzen}{18}{}%
 \contentsline {section}{\numberline {4.2}Wie kann ich mit Kryptowährung Geld verdienen ?}{23}{}%
 \contentsline {subsection}{\numberline {4.2.1}Krypto-Mining}{23}{}%
-\contentsline {subsubsection}{\nonumberline Hardware}{23}{}%
 \contentsline {subsubsection}{\nonumberline Konzept}{23}{}%
-\contentsline {subsection}{\numberline {4.2.2}Investing}{23}{}%
-\contentsline {chapter}{\numberline {5}Schluss}{24}{}%
-\contentsline {chapter}{\numberline {6}Literatur}{25}{}%
+\contentsline {subsubsection}{\nonumberline Hardware}{24}{}%
+\contentsline {chapter}{\numberline {5}Schluss}{28}{}%
+\contentsline {chapter}{\numberline {6}Literatur}{29}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  27 NOV 2022 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  27 NOV 2022 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1305,14 +1305,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
 [22 <./pictures//siacoin.png> <./pictures//horizen.png> <./pictures//digibyte.p
 ng>] [23]
+<./pictures//motherboard.jpg, id=127, 1606.0pt x 1072.005pt>
+File: ./pictures//motherboard.jpg Graphic file (type jpg)
+<use ./pictures//motherboard.jpg>
+Package pdftex.def Info: ./pictures//motherboard.jpg  used on input line 254.
+(pdftex.def)             Requested size: 426.78876pt x 426.78244pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
+
+ []
+
+
+Overfull \hbox (8.5332pt too wide) in paragraph at lines 253--257
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
+
+ []
+
+[24 <./pictures//motherboard.jpg>]
+<./pictures//cpu.jpg, id=131, 1606.0pt x 1072.005pt>
+File: ./pictures//cpu.jpg Graphic file (type jpg)
+<use ./pictures//cpu.jpg>
+Package pdftex.def Info: ./pictures//cpu.jpg  used on input line 262.
+(pdftex.def)             Requested size: 284.50949pt x 227.61403pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+<./pictures//ram.jpg, id=132, 1606.0pt x 1072.005pt>
+File: ./pictures//ram.jpg Graphic file (type jpg)
+<use ./pictures//ram.jpg>
+Package pdftex.def Info: ./pictures//ram.jpg  used on input line 268.
+(pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
+
+ []
+
+[25 <./pictures//cpu.jpg> <./pictures//ram.jpg>]
+<./pictures//storage.jpg, id=137, 1606.0pt x 1072.005pt>
+File: ./pictures//storage.jpg Graphic file (type jpg)
+<use ./pictures//storage.jpg>
+Package pdftex.def Info: ./pictures//storage.jpg  used on input line 277.
+(pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
+<./pictures//psu.jpg, id=138, 1606.0pt x 1073.00874pt>
+File: ./pictures//psu.jpg Graphic file (type jpg)
+<use ./pictures//psu.jpg>
+Package pdftex.def Info: ./pictures//psu.jpg  used on input line 282.
+(pdftex.def)             Requested size: 418.26082pt x 142.26303pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--285
+
+ []
+
+[26 <./pictures//storage.jpg> <./pictures//psu.jpg>]
+<./pictures//pci.jpg, id=143, 1606.0pt x 1072.005pt>
+File: ./pictures//pci.jpg Graphic file (type jpg)
+<use ./pictures//pci.jpg>
+Package pdftex.def Info: ./pictures//pci.jpg  used on input line 288.
+(pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+<./pictures//graphic.jpg, id=144, 1606.0pt x 1068.99374pt>
+File: ./pictures//graphic.jpg Graphic file (type jpg)
+<use ./pictures//graphic.jpg>
+Package pdftex.def Info: ./pictures//graphic.jpg  used on input line 298.
+(pdftex.def)             Requested size: 418.26082pt x 142.25267pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
+
+ []
+
+[27 <./pictures//pci.jpg> <./pictures//graphic.jpg>]
 chapter 5.
-[24
+[28
 
 ]
 chapter 6.
-[25
+[29
 
 ] (seminar.aux)
 Package logreq Info: Writing requests to 'seminar.run.xml'.
@@ -1320,16 +1444,16 @@ Package logreq Info: Writing requests to 'seminar.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15452 strings out of 475380
- 310522 string characters out of 2786586
- 1316345 words of memory out of 3000000
- 36635 multiletter control sequences out of 15000+600000
- 530575 words of font info for 67 fonts, out of 8000000 for 9000
+ 15546 strings out of 475380
+ 312427 string characters out of 2786586
+ 1316357 words of memory out of 3000000
+ 36728 multiletter control sequences out of 15000+600000
+ 530950 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,8n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/M
-iKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips
-/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Progra
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKT
+eX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm
+/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Progra
 m Files/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}<C:/Program Files/MiKTeX/fonts/ty
 pe1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
@@ -1338,9 +1462,9 @@ blic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><
 C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
 lm/lmtk10.pfb>
-Output written on seminar.pdf (25 pages, 1408433 bytes).
+Output written on seminar.pdf (29 pages, 2487197 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
