@@ -1,16 +1,24 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Einleitung}{4}{}%
-\contentsline {chapter}{\numberline {2}Einführung in die Blockchain}{5}{}%
-\contentsline {section}{\numberline {2.1}Blockchain Definition}{5}{}%
-\contentsline {section}{\numberline {2.2}Konstruktion des Blocks}{5}{}%
-\contentsline {section}{\numberline {2.3}Blockchaining-Mechanismus}{7}{}%
-\contentsline {chapter}{\numberline {3}Proof-Of-Work}{9}{}%
-\contentsline {section}{\numberline {3.1}Was ist Proof-Of-Work ?}{9}{}%
-\contentsline {section}{\numberline {3.2}Wie funktioniert Proof of Work bei einer Blockchain ?}{9}{}%
-\contentsline {section}{\numberline {3.3}Wie genau funktionieren die Proof-of-Work-Berechnungen?}{11}{}%
-\contentsline {section}{\numberline {3.4}Was hat es mit der Difficulty auf sich ?}{12}{}%
-\contentsline {section}{\numberline {3.5}This is the algorithm side}{12}{}%
-\contentsline {section}{\numberline {3.6}Sicherheit des Proof-Of-Work}{15}{}%
-\contentsline {section}{\numberline {3.7}Vor- und Nachteile von Proof-Of-Work}{15}{}%
-\contentsline {chapter}{\numberline {4}Proof-of-Work-Münzen}{16}{}%
+\contentsline {chapter}{\numberline {1}Einleitung}{5}{}%
+\contentsline {chapter}{\numberline {2}Einführung in die Blockchain}{6}{}%
+\contentsline {section}{\numberline {2.1}Blockchain Definition}{6}{}%
+\contentsline {section}{\numberline {2.2}Konstruktion des Blocks}{6}{}%
+\contentsline {section}{\numberline {2.3}Blockchaining-Mechanismus}{8}{}%
+\contentsline {chapter}{\numberline {3}Theoretische Seite der Proof-Of-Work-Methode}{10}{}%
+\contentsline {section}{\numberline {3.1}Was ist Proof-Of-Work ?}{10}{}%
+\contentsline {section}{\numberline {3.2}Wie funktioniert Proof of Work bei einer Blockchain ?}{10}{}%
+\contentsline {section}{\numberline {3.3}Wie genau funktionieren die Proof-of-Work-Berechnungen?}{12}{}%
+\contentsline {section}{\numberline {3.4}Was hat es mit der Difficulty auf sich ?}{13}{}%
+\contentsline {section}{\numberline {3.5}This is the algorithm side}{13}{}%
+\contentsline {section}{\numberline {3.6}Sicherheit des Proof-Of-Work}{17}{}%
+\contentsline {section}{\numberline {3.7}Vor- und Nachteile von Proof-Of-Work}{17}{}%
+\contentsline {chapter}{\numberline {4}Der Bitcoin-Markt und die Verwendung von Proof of Work}{18}{}%
+\contentsline {section}{\numberline {4.1}Münzen}{18}{}%
+\contentsline {section}{\numberline {4.2}Wie kann ich mit Kryptowährung Geld verdienen ?}{23}{}%
+\contentsline {subsection}{\numberline {4.2.1}Krypto-Mining}{23}{}%
+\contentsline {subsubsection}{\nonumberline Hardware}{23}{}%
+\contentsline {subsubsection}{\nonumberline Konzept}{23}{}%
+\contentsline {subsection}{\numberline {4.2.2}Investing}{23}{}%
+\contentsline {chapter}{\numberline {5}Schluss}{24}{}%
+\contentsline {chapter}{\numberline {6}Literatur}{25}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
