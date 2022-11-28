@@ -3,29 +3,50 @@
 
 \input{twp-ziad-cfg}
 
-%import package
-\usepackage{graphicx}
-\graphicspath{ {./pictures/} }
-\usepackage{xcolor}
-\usepackage{eso-pic,lipsum}
-\usepackage{biblatex}
-\usepackage{lmodern}
-\usepackage{algpseudocode}
-\usepackage{tabularx}
-
-\addbibresource{meinequellen.bib}
-\AddToShipoutPictureBG{%
- \AtPageLowerLeft{\hspace{0.5cm} FH Aachen: \rule{2cm}{3cm}}}
-
 \title{Blockchain- Technologie : \texttt{Analyse von Proof of Work (Bitcoin) }}
 \begin{document}
+	\pretitle{%
+		\begin{center}
+			\LARGE
+			\includegraphics[width=15cm,height=5cm]{logo}\\[\bigskipamount]
+		}
+
+
+	
   \maketitle  
+  
   \begin{abstract}
-    Hier steht eine kurze Zusammenfassung des Inhaltes, es geht hier um den Aufbau eines Artikels, insbesondere um die geeignete Gliederung.
+  	Diese Arbeit ist von mir selbständig angefertigt und verfasst. Es sind keine anderen
+  	als die angegebenen Quellen und Hilfsmittel benutzt worden. \\ \\ \\
+  	Ziad Bougrine ...........................................
+  	\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+  	Diese Arbeit wurde betreut von:\\
+  	\begin{enumerate}
+  		\item Prüfer : \textbf{Volker, Sander}
+  		\item Prüfer : \textbf{Walk, Lukas}
+  	\end{enumerate}
+  	
   \end{abstract}
 
-   \begin{abstract}
-   	Hier steht eine kurze Zusammenfassung des Inhaltes, es geht hier um den Aufbau eines Artikels, insbesondere um die geeignete Gliederung.
+
+
+  \begin{abstract}
+  	\begin{center}
+  		 \begin{LARGE}
+  		\textbf{Zusammenfassung auf Deutsch }
+  		\end{LARGE}
+  	\end{center} 
+    Dieser Bericht ist eine Seminararbeit für mein 5. Semester, ich möchte mich wirklich bei den Professoren bedanken, dass sie mir diese Arbeit gegeben haben. Es war wirklich mein erster Schritt, um mit der Blockchain-Entwicklung zu beginnen, in dem ich viele Informationen über Kryptowährungen und Blockchain-Netzwerke recherchiert habe, außerdem habe ich die Funktionsweise von Kryptowährungen basierend auf Proof-Of-Work verstanden. Dieser Bericht enthält eine Zusammenfassung aller Informationen über Blockchain, in technischer und theoretischer Hinsicht. Er beinhaltet auch die Investitionsmethode und das Gewinnen von Geld aus Bitcoin und anderen Kryptowährungen auf Basis von Proof-Of-Work.
+  \end{abstract}
+
+	\begin{abstract}
+   	\begin{LARGE}
+   	\begin{center}
+   		\textbf{Abstract in Englisch}
+   	\end{center}
+	\end{LARGE}
+   	This report is a seminar work for my 5th semester, I really want to thank the professors for giving me this work. It was really my first step to start with blockchain development, in which I researched a lot of information about cryptocurrencies and blockchain networks, also I understood the working of cryptocurrencies based on Proof-Of-Work. This report contains a summary of all the information about Blockchain, in technical and theoretical aspects. It also includes the investment method and making money from Bitcoin and other cryptocurrencies based on Proof-Of-Work.
+
    \end{abstract}
 
   \tableofcontents
@@ -191,10 +212,27 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 \end{algorithmic}
 
 \section{Sicherheit des Proof-Of-Work}
-
+\newpage
 \section{Vor- und Nachteile von Proof-Of-Work}
+\textbf{Ich habe diese Tabelle erstellt, um die Vor- und Nachteile dieser Methode genau zu erklären : } \\ \\
 \includegraphics[width=\linewidth]{vornach.png} \\ \\
-
+\textbf{\underline{Eklärung :}}
+\begin{itemize}
+	\item Für ein hohes Sicherheitsniveau müsste eine spekulative Person, die die Kontrolle über das auf Proof-of-Work basierende Blockchain-Netzwerk übernehmen möchte, 50 \% des
+	Blockchain-Netzwerks in Besitz nehmen, was unmöglich ist, und sie benötigt eine Menge Material.
+	\item Proof-Of-Work bietet eine dezentralisierte Methode, weil wir keine dritte Partei brauchen, der wir vertrauen, um unsere Transaktionen und Daten zu speichern, was bedeutet, dass alle Transaktionen im öffentlichen Register verfügbar sind und alle Teilnehmer des Blockchain-Netzwerks darauf zugreifen können.
+	\item Viele Leute mögen Bitcoin wegen der Mining-Operation, weil alle Miner einige spezielle Hardware "Rig Mining" einrichten können und mit dem Mining von Bitcoin beginnen können und für jede erfolgreiche Mining-Operation eine Belohnung erhalten. \\  \\
+\end{itemize}
+\textbf{Wo immer es Vorteile gibt, gibt es auch Nachteile. Bei der Proof-Of-Work-Methode gibt es einige Nachteile dieser Methode: }
+\begin{itemize}
+	\item Transaktionen sind so langsam, weil sie eine Menge von Mining-Operationen benötigen, um einen Block zu überprüfen, der Bitcoin-Transaktionen enthält, auch Blockchain Durchschnitt der Suche nach einem Block nonce ist 1 Nonce pro 10 Minuten, die es so langsam für einen großen Market ist.
+	
+	\item Um das auf Proof-Of-Work basierende Blockchain-Netzwerk weiterzuführen, ist es eine große Energieverschwendung, weil mindestens 10 Grafikkarten arbeiten und auf extreme Leistung gebracht werden, sie brauchen viel Energie, um rund um die Uhr zu arbeiten, und vergessen Sie nicht die Kühlsysteme, die die Grafikkarten vor hohen Temperaturen schützen. Eine neue Mining-Anlage sollte aber auch erneuerbare Energie erzeugen. Das kostet zwar mehr Material, ist aber mietbar, weil die Mining-Firma keinen externen Strom verbraucht, und der Besitzer kann auch Stromrechnungen sparen. Deshalb können erneuerbare Energien im Bergbau eine gute Rolle spielen. Ich empfehle wirklich die Nutzung von Wind- und Solarenergie, um die benötigte Energie für das Unternehmen bereitzustellen, und das ist auch gut für die Natur, denn man sollte nicht vergessen, dass die externe Energie aus Kernkraftwerken und erneuerbaren Energien stammt. Atomkraft zerstört den Himmel wegen des Gases und stellen Sie sich vor, wenn 30\% der Menschen in Deutschland anfangen würden, Bitcoin ohne erneuerbare Energien zu minen, würden die Energiepreise steigen und auch die Produktion würde steigen. 
+	
+	\item Das Mining von Bitcoin braucht ein teures Material, weil die Bitcoin-Schwierigkeit heute astronomisch ist, was einige teure Nvidia's Grafikkarten und ein teures Motherboard erfordert, das die Grafik verarbeiten kann, um einen Wettbewerb zu starten. Für meine Meinung auch die teuren Preise, aber es ist rentabel Betrieb, weil Sie das ausgegebene Geld sehr leicht zurück, wenn Sie eine gute Mining-Unternehmen haben. Später werde ich sprechen, wie man eine gute Mining-Unternehmen erstellen kann. \\ \\
+	
+	\includegraphics[width=7cm,height=7cm]{difficulty}
+\end{itemize}
 
 
 \chapter{Der Bitcoin-Markt und die Verwendung von Proof of Work}
@@ -204,16 +242,16 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 	\item[--] Bevor ich anfange, mit Ihnen darüber zu sprechen, wie Sie mit Bitcoin Geld verdienen können, möchte ich Ihnen zunächst einige Münzen vorstellen, die die Proof-Of-Work-Methode verwenden
 	\begin{itemize}
 		\item [--] {Bitcoin Cash} \\ \\ 
-		\includegraphics[width=5cm,height=5cm]{bitcoincash.png}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoincash.png}\\ \\
 		
 		\item [--] {Bitcoin SV} \\ \\
-		\includegraphics[width=5cm,height=5cm]{bitcoinsv.png}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoinsv.png}\\ \\
 		\item [--] {Litecoin} \\ \\ 
-		\includegraphics[width=5cm,height=5cm]{litecoin.jpg} \\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{litecoin.jpg} \\ \\
 		\item [--] {Dogecoin} \\ \\
-		\includegraphics[width=5cm,height=5cm]{dogecoin.png}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{dogecoin.png}\\ \\
 		\item [--] {Bitcoin Gold}\\ \\
-		\includegraphics[width=5cm,height=5cm]{bitcoingold.png}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoingold.png}\\ \\
 
 
 
@@ -221,22 +259,14 @@ Dieser Mechanismus von PoW wird als Mining bezeichnet, was bedeutet, die Nonce m
 	
 	\item[--] Es gibt auch viele andere Kryptowährungen, die nicht auf Bitcoin basieren, aber die Proof-of-Work-Methode verwenden :
 	\begin{itemize}
-		\item{Ethereum Classic}\\ \\
-		\includegraphics[width=5cm,height=5cm]{ethereumclassic.png}\\ \\
+		\item{Ethereum Classic} \\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{ethereumclassic.png}\\ \\
 		\item{Monero}\\ \\
-		\includegraphics[width=5cm,height=5cm]{monero}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{monero}\\ \\
 		\item{Zcash}\\ \\
-		\includegraphics[width=5cm,height=5cm]{zcash}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{zcash}\\ \\
 		\item{Kadena}\\ \\
-		\includegraphics[width=5cm,height=5cm]{kadena}\\ \\
-		\item{Ravencoin}\\ \\
-		\includegraphics[width=5cm,height=5cm]{Ravencoin}\\ \\
-		\item{Siacoin}\\ \\
-		\includegraphics[width=5cm,height=5cm]{siacoin}\\ \\
-		\item{Horizen}\\ \\
-		\includegraphics[width=5cm,height=5cm]{horizen}\\ \\
-		\item{DigiByte}\\ \\
-		\includegraphics[width=5cm,height=5cm]{digibyte}\\ \\
+		\includegraphics[width=1.5cm,height=1.5cm]{kadena}\\ \\
 	\end{itemize}
 \end{itemize}
 
@@ -277,6 +307,7 @@ Also, Rig Computer enthält eine extrem leistungsstarke Materialien, die es eine
 	\includegraphics[width=\linewidth,height=5cm]{storage}  \\
 	I ll prefer to install 4 of his ssd storage. They are fast and under 100\$	\\
 \end{large}
+\\ \\
 \begin{large}
 	\textbf{PSU :} Segotep 850W Full-Modular PSU \\ 
 	\includegraphics[width=\linewidth,height=5cm]{psu}  \\
@@ -288,10 +319,11 @@ Also, Rig Computer enthält eine extrem leistungsstarke Materialien, die es eine
 	\includegraphics[width=\linewidth,height=5cm]{pci}  \\
 	Dies ist der eigentliche Unterschied zwischen Rig und normalem Computer, denn man kann nicht alle Grafikkarten direkt an das Motherboard anschließen, aber mit diesem Modul kann man sie indirekt anschließen.\\ \\
 	
-	Ich empfehle die Verwendung von powered risers für jede Grafikkarte, da sie eine großartige und stabile Stromversorgung für die Grafikkarten bieten \\ 
+	Ich empfehle die Verwendung von powered risers für jede Grafikkarte, da sie eine großartige und stabile Stromversorgung für die Grafikkarten bieten \\ \\ \\
 	
 	
 \end{large}
+
 \begin{large}
 	\textbf{Nvidia graphics card :} MSI Ventus 3X GeForce RTX 3090
 	 \\ 
@@ -306,11 +338,12 @@ Also, Rig Computer enthält eine extrem leistungsstarke Materialien, die es eine
 Proof of work is a consensus mechanism used to confirm that network participants, called miners, calculate valid alphanumeric codes — called hashes — to verify bitcoin transactions and add the next block to the blockchain. It does so by having other participants in the network verify that the required amount of computing power was used by the miner that is credited with calculating the valid hash. The more miners working to verify transactions (and the faster they can generate hashes), the higher a network's hash rate.
 
 
-\chapter{Literatur}
-\begin{itemize}
-	\item Section 1
-
-	\item 
+\begin{thebibliography}{9}
+	\bibitem{texbook}
+	Donald E. Knuth (1986) \emph{The \TeX{} Book}, Addison-Wesley Professional.
 	
-\end{itemize}
+	\bibitem{lamport94}
+	Leslie Lamport (1994) \emph{\LaTeX: a document preparation system}, Addison
+	Wesley, Massachusetts, 2nd ed.
+\end{thebibliography}
 \end{document}

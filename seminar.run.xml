@@ -79,8 +79,5 @@
     <requires type="dynamic">
       <file>seminar.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>meinequellen.bib</file>
-    </requires>
   </external>
 </requests>

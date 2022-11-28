@@ -24,10 +24,3 @@ def get_crypto_prices(symbol, start, end):
 actuelTime = int(time.time() * 1000)
 raw = requests.get(f"https://blockchain.info/blocks/{actuelTime}?format=json")
 print(raw.json())
-time.sleep(10)
-#bch = get_crypto_prices('BCH', '2020-01-01', '2021-04-26')
-#print(bch)
-
-uname = platform.uname()
-print(uname.processor)
-print(uname.)

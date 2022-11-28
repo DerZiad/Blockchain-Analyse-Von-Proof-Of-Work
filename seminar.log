@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  27 NOV 2022 18:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  28 NOV 2022 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -159,7 +159,13 @@ Package babel Info: Making " an active character on input line 122.
 (C:\Program Files\MiKTeX\tex/generic/babel/locale/de\babel-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
-))
+)
+(C:\Users\rachi\AppData\Roaming\MiKTeX\tex/latex/titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip64
+\thanksmargin=\skip65
+\droptitle=\skip66
+)
 (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -311,14 +317,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorderinternal@0=\count309
 \blx@entrysetcounter=\count310
 \blx@biblioinstance=\count311
-\labelnumberwidth=\skip64
-\labelalphawidth=\skip65
-\biblabelsep=\skip66
-\bibitemsep=\skip67
-\bibnamesep=\skip68
-\bibinitsep=\skip69
-\bibparsep=\skip70
-\bibhang=\skip71
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\biblabelsep=\skip69
+\bibitemsep=\skip70
+\bibnamesep=\skip71
+\bibinitsep=\skip72
+\bibparsep=\skip73
+\bibhang=\skip74
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
@@ -401,20 +407,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count380
 \c@pageref=\count381
 \c@savedpageref=\count382
-\shorthandwidth=\skip72
-\shortjournalwidth=\skip73
-\shortserieswidth=\skip74
-\shorttitlewidth=\skip75
-\shortauthorwidth=\skip76
-\shorteditorwidth=\skip77
-\locallabelnumberwidth=\skip78
-\locallabelalphawidth=\skip79
-\localshorthandwidth=\skip80
-\localshortjournalwidth=\skip81
-\localshortserieswidth=\skip82
-\localshorttitlewidth=\skip83
-\localshortauthorwidth=\skip84
-\localshorteditorwidth=\skip85
+\shorthandwidth=\skip75
+\shortjournalwidth=\skip76
+\shortserieswidth=\skip77
+\shorttitlewidth=\skip78
+\shortauthorwidth=\skip79
+\shorteditorwidth=\skip80
+\locallabelnumberwidth=\skip81
+\locallabelalphawidth=\skip82
+\localshorthandwidth=\skip83
+\localshortjournalwidth=\skip84
+\localshortserieswidth=\skip85
+\localshorttitlewidth=\skip86
+\localshortauthorwidth=\skip87
+\localshorteditorwidth=\skip88
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -534,13 +540,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count394
 \c@ALG@rem=\count395
 \c@ALG@nested=\count396
-\ALG@tlm=\skip86
-\ALG@thistlm=\skip87
+\ALG@tlm=\skip89
+\ALG@thistlm=\skip90
 \c@ALG@Lnr=\count397
 \c@ALG@blocknr=\count398
 \c@ALG@storecount=\count399
 \c@ALG@tmpcounter=\count400
-\ALG@tmplength=\skip88
+\ALG@tmplength=\skip91
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
@@ -552,8 +558,8 @@ Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box54
 \extrarowheight=\dimen147
 \NC@list=\toks17
-\extratabsurround=\skip89
-\backup@length=\skip90
+\extratabsurround=\skip92
+\backup@length=\skip93
 \ar@cellbox=\box55
 )
 \TX@col@width=\dimen148
@@ -563,34 +569,34 @@ Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \TX@delta=\dimen152
 \TX@cols=\count401
 \TX@ftn=\toks18
-)
+))
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
 \@quotelevel=\count402
 \@quotereset=\count403
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-1.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
+.
 (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (seminar.aux)
 \openout1 = `seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -638,795 +644,940 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'seminar.bbl' found.
  (seminar.bbl)
-Package biblatex Info: Reference section=0 on input line 21.
-Package biblatex Info: Reference segment=0 on input line 21.
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-23.
+Package biblatex Info: Reference section=0 on input line 7.
+Package biblatex Info: Reference segment=0 on input line 7.
+<./pictures//logo.jpg, id=1, 843.15pt x 331.2375pt>
+File: ./pictures//logo.jpg Graphic file (type jpg)
+<use ./pictures//logo.jpg>
+Package pdftex.def Info: ./pictures//logo.jpg  used on input line 16.
+(pdftex.def)             Requested size: 426.79732pt x 142.26254pt.
 
-(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+Overfull \hbox (8.54176pt too wide) in paragraph at lines 16--16
+ [] 
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-23.
-
+16.
 (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 23.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+6.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+16.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
+16.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 23.
+(Font)              <12> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
- [1{C:/Users/rachi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+(Font)              <6> on input line 16.
+ [1
 
 
 
-] [2
+{C:/Users/rachi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./pictures//
+logo.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+[2
 
 
 ] [3
 
 
-] (seminar.toc
+] [4
+
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+52.
+ (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (seminar.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
 )
 \tf@toc=\write4
 \openout4 = `seminar.toc'.
 
- [4
+
+[5
 
 ]
 chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-7.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+8.
 (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
 
-Overfull \hbox (7.18123pt too wide) in paragraph at lines 35--39
+Overfull \hbox (7.18123pt too wide) in paragraph at lines 56--60
 \OT1/lmr/m/n/10.95 die das Pro-blem der dop-pel-ten Aus-ga-ben oh-ne die Not-we
 n-dig-keit ei-ner ver-trau-ensw[]urdigen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
- []
-
-[5
-
-]
-chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--56
-
- []
-
-<./pictures//1.png, id=22, 1204.5pt x 453.695pt>
-File: ./pictures//1.png Graphic file (type png)
-<use ./pictures//1.png>
-Package pdftex.def Info: ./pictures//1.png  used on input line 58.
-(pdftex.def)             Requested size: 418.25555pt x 157.54259pt.
-
-Overfull \hbox (10.95pt too wide) in paragraph at lines 58--59
-[][] 
  []
 
 [6
 
+]
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--77
+
+ []
+
+<./pictures//1.png, id=29, 1204.5pt x 453.695pt>
+File: ./pictures//1.png Graphic file (type png)
+<use ./pictures//1.png>
+Package pdftex.def Info: ./pictures//1.png  used on input line 79.
+(pdftex.def)             Requested size: 418.25555pt x 157.54259pt.
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 79--80
+[][] 
+ []
+
+[7
+
  <./pictures//1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 86.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
-[7]
-<./pictures//2.jpg, id=34, 722.3236pt x 265.74281pt>
+[8]
+<./pictures//2.jpg, id=39, 722.3236pt x 265.74281pt>
 File: ./pictures//2.jpg Graphic file (type jpg)
 <use ./pictures//2.jpg>
-Package pdftex.def Info: ./pictures//2.jpg  used on input line 97.
+Package pdftex.def Info: ./pictures//2.jpg  used on input line 118.
 (pdftex.def)             Requested size: 418.25555pt x 153.87547pt.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 97--98
+Overfull \hbox (10.95pt too wide) in paragraph at lines 118--119
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 124--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 124--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 124--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 124--132
 
  []
 
-[8 <./pictures//2.jpg>] [9]
+[9 <./pictures//2.jpg>] [10]
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
-[10
+[11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-<./pictures//ProofOfWork1.png, id=44, 484.05844pt x 469.00218pt>
+<./pictures//ProofOfWork1.png, id=49, 484.05844pt x 469.00218pt>
 File: ./pictures//ProofOfWork1.png Graphic file (type png)
 <use ./pictures//ProofOfWork1.png>
-Package pdftex.def Info: ./pictures//ProofOfWork1.png  used on input line 147.
+Package pdftex.def Info: ./pictures//ProofOfWork1.png  used on input line 168.
 (pdftex.def)             Requested size: 418.25555pt x 405.26624pt.
-<./pictures//ProofOfWork2.png, id=45, 456.95718pt x 378.66469pt>
+<./pictures//ProofOfWork2.png, id=50, 456.95718pt x 378.66469pt>
 File: ./pictures//ProofOfWork2.png Graphic file (type png)
 <use ./pictures//ProofOfWork2.png>
-Package pdftex.def Info: ./pictures//ProofOfWork2.png  used on input line 148.
+Package pdftex.def Info: ./pictures//ProofOfWork2.png  used on input line 169.
 (pdftex.def)             Requested size: 418.25555pt x 346.60768pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
 
  []
 
-[11 <./pictures//ProofOfWork1.png>] [12 <./pictures//ProofOfWork2.png>]
-Overfull \hbox (10.61801pt too wide) in paragraph at lines 154--155
+[12 <./pictures//ProofOfWork1.png>] [13 <./pictures//ProofOfWork2.png>]
+Overfull \hbox (10.61801pt too wide) in paragraph at lines 175--176
 []\OT1/lmr/m/n/10.95 Wenn der Block ab-ge-baut wird, []uberpr[]ufen al-le Teil-
 neh-mer des Blockchain-Netzwerks
  []
 
-<./pictures//realblock.png, id=54, 505.89pt x 285.31593pt>
+<./pictures//realblock.png, id=60, 505.89pt x 285.31593pt>
 File: ./pictures//realblock.png Graphic file (type png)
 <use ./pictures//realblock.png>
-Package pdftex.def Info: ./pictures//realblock.png  used on input line 165.
+Package pdftex.def Info: ./pictures//realblock.png  used on input line 186.
 (pdftex.def)             Requested size: 390.8805pt x 220.45581pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<./pictures//realtransaction.png, id=55, 532.99126pt x 456.20438pt>
+<./pictures//realtransaction.png, id=61, 532.99126pt x 456.20438pt>
 File: ./pictures//realtransaction.png Graphic file (type png)
 <use ./pictures//realtransaction.png>
-Package pdftex.def Info: ./pictures//realtransaction.png  used on input line 16
-7.
+Package pdftex.def Info: ./pictures//realtransaction.png  used on input line 18
+8.
 (pdftex.def)             Requested size: 390.8805pt x 334.57874pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
-[13 <./pictures//realblock.png>]
-<./pictures//classOfStructures.png, id=61, 767.86874pt x 620.3175pt>
+[14 <./pictures//realblock.png>]
+<./pictures//classOfStructures.png, id=66, 767.86874pt x 620.3175pt>
 File: ./pictures//classOfStructures.png Graphic file (type png)
 <use ./pictures//classOfStructures.png>
 Package pdftex.def Info: ./pictures//classOfStructures.png  used on input line 
-169.
+190.
 (pdftex.def)             Requested size: 390.8805pt x 315.77089pt.
 
-Overfull \hbox (1.76732pt too wide) in paragraph at lines 168--170
+Overfull \hbox (1.76732pt too wide) in paragraph at lines 189--191
 []\OT1/lmr/m/n/10.95 Das n[]achste Klas-sen-dia-gramm zeigt die ge-sam-ten Da-t
 en aus dem rea-len Blockchain-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
 
-[14 <./pictures//realtransaction.png>]
-<./pictures//activity.png, id=66, 1049.42062pt x 592.46344pt>
+[15 <./pictures//realtransaction.png>]
+<./pictures//activity.png, id=71, 1049.42062pt x 592.46344pt>
 File: ./pictures//activity.png Graphic file (type png)
 <use ./pictures//activity.png>
-Package pdftex.def Info: ./pictures//activity.png  used on input line 171.
+Package pdftex.def Info: ./pictures//activity.png  used on input line 192.
 (pdftex.def)             Requested size: 390.8805pt x 220.67256pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-[15 <./pictures//classOfStructures.png>]
+[16 <./pictures//classOfStructures.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 177.
+(Font)              <17.28> on input line 198.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 198.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
 
-LaTeX Warning: Command \textquotesingle invalid in math mode on input line 186.
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 207.
 
 
 
-LaTeX Warning: Command \textquotesingle invalid in math mode on input line 186.
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 207.
 
 
 
-LaTeX Warning: Command \textquotesingle invalid in math mode on input line 186.
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 207.
 
 
 
-LaTeX Warning: Command \textquotesingle invalid in math mode on input line 186.
+LaTeX Warning: Command \textquotesingle invalid in math mode on input line 207.
 
 
 
 LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 186.
+ 207.
 
 
 LaTeX Warning: Command \textasteriskcentered invalid in math mode on input line
- 186.
+ 207.
 
-<./pictures//vornach.png, id=71, 1079.53313pt x 653.44125pt>
+[17 <./pictures//activity.png>]
+<./pictures//vornach.png, id=83, 1079.53313pt x 653.44125pt>
 File: ./pictures//vornach.png Graphic file (type png)
 <use ./pictures//vornach.png>
-Package pdftex.def Info: ./pictures//vornach.png  used on input line 196.
+Package pdftex.def Info: ./pictures//vornach.png  used on input line 218.
 (pdftex.def)             Requested size: 418.25555pt x 253.17595pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
 
  []
 
-[16 <./pictures//activity.png>] [17 <./pictures//vornach.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Overfull \hbox (17.37193pt too wide) in paragraph at lines 228--229
+[]\OT1/lmr/m/n/10.95 Transaktionen sind so lang-sam, weil sie ei-ne Men-ge von 
+Mining-Operationen ben[]otigen,
+ []
+
+[18 <./pictures//vornach.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+<./pictures//difficulty.png, id=88, 325.96782pt x 318.43968pt>
+File: ./pictures//difficulty.png Graphic file (type png)
+<use ./pictures//difficulty.png>
+Package pdftex.def Info: ./pictures//difficulty.png  used on input line 234.
+(pdftex.def)             Requested size: 199.17331pt x 199.17007pt.
+[19] [20 <./pictures//difficulty.png>]
 chapter 4.
-<./pictures//bitcoincash.png, id=83, 790.955pt x 790.955pt>
+<./pictures//bitcoincash.png, id=97, 790.955pt x 790.955pt>
 File: ./pictures//bitcoincash.png Graphic file (type png)
 <use ./pictures//bitcoincash.png>
-Package pdftex.def Info: ./pictures//bitcoincash.png  used on input line 207.
-(pdftex.def)             Requested size: 142.25713pt x 142.25713pt.
+Package pdftex.def Info: ./pictures//bitcoincash.png  used on input line 245.
+(pdftex.def)             Requested size: 42.67593pt x 42.67593pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
-<./pictures//bitcoinsv.png, id=84, 401.5pt x 401.5pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+<./pictures//bitcoinsv.png, id=98, 401.5pt x 401.5pt>
 File: ./pictures//bitcoinsv.png Graphic file (type png)
 <use ./pictures//bitcoinsv.png>
-Package pdftex.def Info: ./pictures//bitcoinsv.png  used on input line 210.
-(pdftex.def)             Requested size: 142.26698pt x 142.26698pt.
+Package pdftex.def Info: ./pictures//bitcoinsv.png  used on input line 248.
+(pdftex.def)             Requested size: 42.67642pt x 42.67642pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
-<./pictures//litecoin.jpg, id=85, 3212.0pt x 2409.0pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
+
+ []
+
+<./pictures//litecoin.jpg, id=99, 3212.0pt x 2409.0pt>
 File: ./pictures//litecoin.jpg Graphic file (type jpg)
 <use ./pictures//litecoin.jpg>
-Package pdftex.def Info: ./pictures//litecoin.jpg  used on input line 212.
-(pdftex.def)             Requested size: 142.23024pt x 142.25475pt.
+Package pdftex.def Info: ./pictures//litecoin.jpg  used on input line 250.
+(pdftex.def)             Requested size: 42.63966pt x 42.67642pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
-[18
 
- <./pictures//bitcoincash.png> <./pictures//bitcoinsv.png>]
-<./pictures//dogecoin.png, id=91, 1027.84pt x 1027.84pt>
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+<./pictures//dogecoin.png, id=100, 1027.84pt x 1027.84pt>
 File: ./pictures//dogecoin.png Graphic file (type png)
 <use ./pictures//dogecoin.png>
-Package pdftex.def Info: ./pictures//dogecoin.png  used on input line 214.
-(pdftex.def)             Requested size: 142.24985pt x 142.24985pt.
+Package pdftex.def Info: ./pictures//dogecoin.png  used on input line 252.
+(pdftex.def)             Requested size: 42.67494pt x 42.67494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
-<./pictures//bitcoingold.png, id=92, 200.75pt x 200.75pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+ []
+
+<./pictures//bitcoingold.png, id=101, 200.75pt x 200.75pt>
 File: ./pictures//bitcoingold.png Graphic file (type png)
 <use ./pictures//bitcoingold.png>
-Package pdftex.def Info: ./pictures//bitcoingold.png  used on input line 216.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
+Package pdftex.def Info: ./pictures//bitcoingold.png  used on input line 254.
+(pdftex.def)             Requested size: 42.67947pt x 42.67947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
-[19 <./pictures//litecoin.jpg> <./pictures//dogecoin.png> <./pictures//bitcoing
-old.png>]
-<./pictures//ethereumclassic.png, id=99, 200.75pt x 200.75pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
+
+ []
+
+[21
+
+ <./pictures//bitcoincash.png> <./pictures//bitcoinsv.png> <./pictures//litecoi
+n.jpg> <./pictures//dogecoin.png>]
+<./pictures//ethereumclassic.png, id=108, 200.75pt x 200.75pt>
 File: ./pictures//ethereumclassic.png Graphic file (type png)
 <use ./pictures//ethereumclassic.png>
-Package pdftex.def Info: ./pictures//ethereumclassic.png  used on input line 22
-5.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
+Package pdftex.def Info: ./pictures//ethereumclassic.png  used on input line 26
+3.
+(pdftex.def)             Requested size: 42.67947pt x 42.67947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
 
-<./pictures//monero.png, id=100, 200.75pt x 200.75pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
+
+ []
+
+<./pictures//monero.png, id=109, 200.75pt x 200.75pt>
 File: ./pictures//monero.png Graphic file (type png)
 <use ./pictures//monero.png>
-Package pdftex.def Info: ./pictures//monero.png  used on input line 227.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
+Package pdftex.def Info: ./pictures//monero.png  used on input line 265.
+(pdftex.def)             Requested size: 42.67947pt x 42.67947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-<./pictures//zcash.png, id=101, 513.92pt x 513.92pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
+
+ []
+
+<./pictures//zcash.png, id=110, 513.92pt x 513.92pt>
 File: ./pictures//zcash.png Graphic file (type png)
 <use ./pictures//zcash.png>
-Package pdftex.def Info: ./pictures//zcash.png  used on input line 229.
-(pdftex.def)             Requested size: 142.26552pt x 142.26552pt.
+Package pdftex.def Info: ./pictures//zcash.png  used on input line 267.
+(pdftex.def)             Requested size: 42.67494pt x 42.67494pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
-[20 <./pictures//ethereumclassic.png> <./pictures//monero.png>]
-<./pictures//kadena.png, id=107, 200.75pt x 200.75pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+<./pictures//kadena.png, id=111, 200.75pt x 200.75pt>
 File: ./pictures//kadena.png Graphic file (type png)
 <use ./pictures//kadena.png>
-Package pdftex.def Info: ./pictures//kadena.png  used on input line 231.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
+Package pdftex.def Info: ./pictures//kadena.png  used on input line 269.
+(pdftex.def)             Requested size: 42.67947pt x 42.67947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-
- []
-
-<./pictures//Ravencoin.png, id=108, 200.75pt x 200.75pt>
-File: ./pictures//Ravencoin.png Graphic file (type png)
-<use ./pictures//Ravencoin.png>
-Package pdftex.def Info: ./pictures//Ravencoin.png  used on input line 233.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
-
- []
-
-<./pictures//siacoin.png, id=109, 200.75pt x 200.75pt>
-File: ./pictures//siacoin.png Graphic file (type png)
-<use ./pictures//siacoin.png>
-Package pdftex.def Info: ./pictures//siacoin.png  used on input line 235.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
-
- []
-
-[21 <./pictures//zcash.png> <./pictures//kadena.png> <./pictures//Ravencoin.png
->]
-<./pictures//horizen.png, id=116, 1003.75pt x 1003.75pt>
-File: ./pictures//horizen.png Graphic file (type png)
-<use ./pictures//horizen.png>
-Package pdftex.def Info: ./pictures//horizen.png  used on input line 237.
-(pdftex.def)             Requested size: 142.25475pt x 142.25475pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
-
- []
-
-<./pictures//digibyte.png, id=117, 200.75pt x 200.75pt>
-File: ./pictures//digibyte.png Graphic file (type png)
-<use ./pictures//digibyte.png>
-Package pdftex.def Info: ./pictures//digibyte.png  used on input line 239.
-(pdftex.def)             Requested size: 142.27312pt x 142.27312pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-[22 <./pictures//siacoin.png> <./pictures//horizen.png> <./pictures//digibyte.p
-ng>] [23]
-<./pictures//motherboard.jpg, id=127, 1606.0pt x 1072.005pt>
+[22 <./pictures//bitcoingold.png> <./pictures//ethereumclassic.png> <./pictures
+//monero.png> <./pictures//zcash.png> <./pictures//kadena.png>] [23]
+<./pictures//motherboard.jpg, id=123, 1606.0pt x 1072.005pt>
 File: ./pictures//motherboard.jpg Graphic file (type jpg)
 <use ./pictures//motherboard.jpg>
-Package pdftex.def Info: ./pictures//motherboard.jpg  used on input line 254.
+Package pdftex.def Info: ./pictures//motherboard.jpg  used on input line 284.
 (pdftex.def)             Requested size: 426.78876pt x 426.78244pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--257
+Underfull \hbox (badness 10000) in paragraph at lines 283--287
 
  []
 
 
-Overfull \hbox (8.5332pt too wide) in paragraph at lines 253--257
+Overfull \hbox (8.5332pt too wide) in paragraph at lines 283--287
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--257
+Underfull \hbox (badness 10000) in paragraph at lines 283--287
 
  []
 
 [24 <./pictures//motherboard.jpg>]
-<./pictures//cpu.jpg, id=131, 1606.0pt x 1072.005pt>
+<./pictures//cpu.jpg, id=127, 1606.0pt x 1072.005pt>
 File: ./pictures//cpu.jpg Graphic file (type jpg)
 <use ./pictures//cpu.jpg>
-Package pdftex.def Info: ./pictures//cpu.jpg  used on input line 262.
+Package pdftex.def Info: ./pictures//cpu.jpg  used on input line 292.
 (pdftex.def)             Requested size: 284.50949pt x 227.61403pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
-<./pictures//ram.jpg, id=132, 1606.0pt x 1072.005pt>
+<./pictures//ram.jpg, id=128, 1606.0pt x 1072.005pt>
 File: ./pictures//ram.jpg Graphic file (type jpg)
 <use ./pictures//ram.jpg>
-Package pdftex.def Info: ./pictures//ram.jpg  used on input line 268.
+Package pdftex.def Info: ./pictures//ram.jpg  used on input line 298.
 (pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
 [25 <./pictures//cpu.jpg> <./pictures//ram.jpg>]
-<./pictures//storage.jpg, id=137, 1606.0pt x 1072.005pt>
+<./pictures//storage.jpg, id=133, 1606.0pt x 1072.005pt>
 File: ./pictures//storage.jpg Graphic file (type jpg)
 <use ./pictures//storage.jpg>
-Package pdftex.def Info: ./pictures//storage.jpg  used on input line 277.
+Package pdftex.def Info: ./pictures//storage.jpg  used on input line 307.
 (pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
-<./pictures//psu.jpg, id=138, 1606.0pt x 1073.00874pt>
+<./pictures//psu.jpg, id=134, 1606.0pt x 1073.00874pt>
 File: ./pictures//psu.jpg Graphic file (type jpg)
 <use ./pictures//psu.jpg>
-Package pdftex.def Info: ./pictures//psu.jpg  used on input line 282.
+Package pdftex.def Info: ./pictures//psu.jpg  used on input line 313.
 (pdftex.def)             Requested size: 418.26082pt x 142.26303pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--285
+Underfull \hbox (badness 10000) in paragraph at lines 306--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--316
 
  []
 
 [26 <./pictures//storage.jpg> <./pictures//psu.jpg>]
-<./pictures//pci.jpg, id=143, 1606.0pt x 1072.005pt>
+<./pictures//pci.jpg, id=139, 1606.0pt x 1072.005pt>
 File: ./pictures//pci.jpg Graphic file (type jpg)
 <use ./pictures//pci.jpg>
-Package pdftex.def Info: ./pictures//pci.jpg  used on input line 288.
+Package pdftex.def Info: ./pictures//pci.jpg  used on input line 319.
 (pdftex.def)             Requested size: 418.26082pt x 142.2608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
-<./pictures//graphic.jpg, id=144, 1606.0pt x 1068.99374pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+<./pictures//graphic.jpg, id=140, 1606.0pt x 1068.99374pt>
 File: ./pictures//graphic.jpg Graphic file (type jpg)
 <use ./pictures//graphic.jpg>
-Package pdftex.def Info: ./pictures//graphic.jpg  used on input line 298.
+Package pdftex.def Info: ./pictures//graphic.jpg  used on input line 330.
 (pdftex.def)             Requested size: 418.26082pt x 142.25267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--300
+Underfull \hbox (badness 10000) in paragraph at lines 328--332
 
  []
 
@@ -1434,9 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--300
 chapter 5.
 [28
 
-]
-chapter 6.
-[29
+] [29
 
 ] (seminar.aux)
 Package logreq Info: Writing requests to 'seminar.run.xml'.
@@ -1444,27 +1593,29 @@ Package logreq Info: Writing requests to 'seminar.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15546 strings out of 475380
- 312427 string characters out of 2786586
- 1316357 words of memory out of 3000000
- 36728 multiletter control sequences out of 15000+600000
- 530950 words of font info for 68 fonts, out of 8000000 for 9000
+ 15592 strings out of 475380
+ 313046 string characters out of 2786586
+ 1316957 words of memory out of 3000000
+ 36771 multiletter control sequences out of 15000+600000
+ 532179 words of font info for 64 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,8n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKT
-eX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm
-/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Progra
+ 108i,7n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTe
+X/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-
+mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Progra
 m Files/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}<C:/Program Files/MiKTeX/fonts/ty
 pe1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
-blic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-lm/lmtk10.pfb>
-Output written on seminar.pdf (29 pages, 2487197 bytes).
+blic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/lm/lmtt12.pfb>
+Output written on seminar.pdf (29 pages, 2531768 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 211 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
