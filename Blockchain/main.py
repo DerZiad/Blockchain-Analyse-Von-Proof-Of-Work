@@ -3,7 +3,7 @@ import hashlib
 from numba import cuda
 
 from SystemScanner import *
-
+from Mining import *
 
 API_KEY = "QZvQvCGoiO_ln4v29ZSqTMLcSYw8bsoG"
 
