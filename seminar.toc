@@ -18,5 +18,6 @@
 \contentsline {subsection}{\numberline {4.2.1}Krypto-Mining}{23}{}%
 \contentsline {subsubsection}{\nonumberline Konzept}{23}{}%
 \contentsline {subsubsection}{\nonumberline Hardware}{24}{}%
+\contentsline {section}{\numberline {4.3}Wie wähle ich meine nächste Investition in Kryptowährungen aus?}{27}{}%
 \contentsline {chapter}{\numberline {5}Schluss}{28}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

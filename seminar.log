@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  30 NOV 2022 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  3 DEC 2022 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1584,17 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--334
 [27 <./pictures//pci.jpg> <./pictures//graphic.jpg>]
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
@@ -1603,9 +1593,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-[28
 
-] [29
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
+LaTeX Info: File `seminar.bib' already exists on the system.
+            Not generating it from this source.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 \addbibresource
+                     {\jobname.bib}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[28
 
 ] (seminar.aux)
 Package logreq Info: Writing requests to 'seminar.run.xml'.
@@ -1613,29 +1628,27 @@ Package logreq Info: Writing requests to 'seminar.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15593 strings out of 475380
- 313061 string characters out of 2786586
- 1316957 words of memory out of 3000000
- 36772 multiletter control sequences out of 15000+600000
- 532179 words of font info for 64 fonts, out of 8000000 for 9000
+ 15590 strings out of 475380
+ 313030 string characters out of 2786586
+ 1316949 words of memory out of 3000000
+ 36770 multiletter control sequences out of 15000+600000
+ 523741 words of font info for 62 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,7n,106p,10604b,2367s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTe
-X/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-
-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Progra
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKT
+eX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm
+/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Progra
 m Files/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}<C:/Program Files/MiKTeX/fonts/ty
 pe1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/
-fonts/type1/public/lm/lmri8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
-lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts
-/type1/public/lm/lmtt12.pfb>
-Output written on seminar.pdf (29 pages, 2532463 bytes).
+Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on seminar.pdf (28 pages, 2505679 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
+ 198 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

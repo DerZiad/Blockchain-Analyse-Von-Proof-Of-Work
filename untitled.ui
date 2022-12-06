@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>IWantBTC</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">backgorund-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
@@ -20,7 +23,11 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QListView" name="listView_2"/>
+         <widget class="QListView" name="listView_2">
+          <property name="styleSheet">
+           <string notr="true">backgorund-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout">
@@ -59,13 +66,57 @@
          </layout>
         </item>
         <item>
-         <widget class="QListView" name="listView"/>
+         <widget class="QListView" name="listView">
+          <property name="styleSheet">
+           <string notr="true">backgorund-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
      </layout>
     </item>
     <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Max Nonce :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTextEdit" name="textEdit">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:80px; margin-bottom:80px; margin-left:80px; margin-right:80px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Difficulty</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit_2"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
      <layout class="QGridLayout" name="gridLayout">
       <item row="4" column="0">
        <widget class="QLabel" name="label_3">
@@ -121,12 +172,12 @@
       </item>
      </layout>
     </item>
-    <item row="2" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <widget class="QListView" name="listView_3"/>
-      </item>
-     </layout>
+    <item row="3" column="0">
+     <widget class="QListView" name="listView_3">
+      <property name="styleSheet">
+       <string notr="true">background-color:black</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
