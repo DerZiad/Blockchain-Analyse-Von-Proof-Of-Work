@@ -9,7 +9,7 @@ https://www.businessinsider.com/personal-finance/proof-of-work
 https://smartasset.com/investing/how-to-invest-in-cryptocurrency#:~:text=The%20most%20popular%20place%20to,Ethereum%20with%20a%20debit%20card.
 https://www.zdnet.com/article/how-to-build-a-cryptomining-rig/
 
-
+https://www.investopedia.com/news/how-identify-next-big-cryptocurrency/
 \begin{itemize}
 	\item[--] Bitcoin is the first cryptocurrency since it launched in 2009. It introduced the concept of proof of work in cryptocurrency, which would later be adopted by many future coins.
 	\includegraphics[width=200,height=200]{bitcoin.png}\\
