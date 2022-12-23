@@ -2,31 +2,75 @@
 \documentclass[ngerman]{scrreprt}  
 
 \input{twp-ziad-cfg}
-
-\title{Blockchain- Technologie : \texttt{Analyse von Proof of Work (Bitcoin) }}
 \begin{document}
-	\pretitle{%
-		\begin{center}
-			\LARGE
-			\includegraphics[width=15cm,height=5cm]{logo}\\[\bigskipamount]
-		}
-
-
+	\begin{titlepage}
+		%----------------------------------------------------------------------------------------
+		%	LOGO SECTION
+		%----------------------------------------------------------------------------------------
+		\begin{tikzpicture}[remember picture , overlay]
+			\node [xshift=1cm, yshift=-5cm](a) at (current page.north west){
+				\includegraphics{fh_logo_links}};
+		\end{tikzpicture}
+		
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+		
+		\center 
+		
+		%----------------------------------------------------------------------------------------
+		%	HEADING SECTIONS
+		%----------------------------------------------------------------------------------------
+		
+		\textsc{\LARGE University of Applied Sciences}\\[1.5cm] 
+		\textsc{\Large Seminararbeit}\\[0.5cm] 
+		\textsc{FACHBEREICH09} \\
+		\textsc{Angewandte Mathematik und Informatik}\\
+		\vspace{4cm}
+		
+		%----------------------------------------------------------------------------------------
+		%	TITLE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Blockchain- Technologie : \texttt{Analyse von Proof of Work (Bitcoin)}}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		%----------------------------------------------------------------------------------------
+		%	AUTHOR SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Author:}\\
+				Ziad \textsc{Bougrine} \textit{(3560356)} \\
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\emph{Lecturer:} \\
+				prof. dr. Volker \textsc{Sander} \\
+				prof. dr. Walk \textsc{Lukas} \\
+			\end{flushright}
+		\end{minipage}\\[2cm]
+		
+		{\large \today}\\[2cm]
+		
+		\vfill 
+		
+	\end{titlepage}
 	
-  \maketitle  
-  
-  \begin{abstract}
-  	Diese Arbeit ist von mir selbständig angefertigt und verfasst. Es sind keine anderen
-  	als die angegebenen Quellen und Hilfsmittel benutzt worden. \\ \\ \\
-  	Ziad Bougrine ...........................................
-  	\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
-  	Diese Arbeit wurde betreut von:\\
-  	\begin{enumerate}
-  		\item Prüfer : \textbf{Volker, Sander}
-  		\item Prüfer : \textbf{Walk, Lukas}
-  	\end{enumerate}
-  	
-  \end{abstract}
+	\newpage
+	Diese Arbeit ist von mir selbständig angefertigt und verfasst. Es sind keine anderen als die angegebenen Quellen und Hilfsmittel benutzt worden. \\ \\
+	Ziad Bougrine ........................................... \\
+	\vspace{16cm}
+	
+	\begin{normalsize}
+		Diese Arbeit wurde betreut von:
+	\end{normalsize}
+	\begin{enumerate}
+		\item Prüfer : \textbf{Volker, Sander}
+		\item Prüfer : \textbf{Walk, Lukas}
+	\end{enumerate}	
 
 
 
