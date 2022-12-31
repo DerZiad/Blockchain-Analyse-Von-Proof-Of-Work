@@ -217,47 +217,6 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 \item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden. \cite{btc-echo-proof-of-work}}
 \item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. \cite{btc-echo-proof-of-work}}
 \end{itemize}
-
-\section{Algorithmus zum Finden einer Nonce}
-	
-	\begin{figure}[H]
-		\includegraphics[width=\linewidth,height=8cm]{realblock.png}
-		\caption{Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website.}
-	\end{figure}
-	\begin{figure}[H]
-		\includegraphics[width=\linewidth,height=8cm]{realtransaction.png}
-		\caption{Die echten Blockchain-Block-Transaktionen.}
-
-	\end{figure}
-	\newpage
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\linewidth]{classOfStructures.png}
-		\caption{Das nächste Diagramm, das als Klassendiagramm bezeichnet wird, gibt eine visuelle Darstellung aller Daten, die im realen Blockchain-Netzwerk enthalten sind. Dieses Diagramm ist hilfreich, um die Implementierung des Blockchain-Netzwerks besser zu verstehen und zu analysieren. Es zeigt die Beziehungen und Abhängigkeiten zwischen den verschiedenen Elementen des Netzwerks und hilft, die Struktur und Funktionsweise des Systems zu verdeutlichen. Die Verwendung eines Klassendiagramms ermöglicht es, die komplexen Zusammenhänge einfacher darzustellen und die Implementierung des Blockchain-Netzwerks besser zu verstehen.}
-	\end{figure}
-	\newpage
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=\linewidth]{activity.png}
-		\caption{Der Algorithmus zur Bestimmung der Nonce wird mit dem Aktivitätsdiagramm erklärt. Zunächst müssen wir die initialen Daten initialisieren, einschließlich des MaxNonceLimit, der Anzahl der Nullen, die der Hash haben sollte. In diesem Beispiel betrachten wir die Anforderung, dass der Hash mit 4 Nullen beginnen sollte. Es ist wichtig zu beachten, dass die Anzahl der Nullen eine wichtige Rolle bei der Bestimmung der Komplexität des Algorithmus spielt. Je höher die Anzahl der Nullen, desto länger wird es dauern, die Nonce mit begrenzter Hardware zu finden. Wir sollten auch unsere Inkrementierungsvariable für die for-Schleife initialisieren.}
-	\end{figure}
-
-\textbf{Dies ist der Algorithmus \textcommabelow der für dieses Beispiel zum Schürfen von Bitcoin geschrieben wurde} \\
-\begin{algorithm}
-	\caption{Nonce für gültigen Hash finden}
-	\label{alg:nonce_find}
-	
-	\begin{algorithmic}[1]
-		\State nonce $\gets$ 0
-		\Repeat
-		\State hash $\gets$ Hash(block\_data, nonce)
-		\If{hash meets difficulty level}
-		\State \textbf{return} nonce
-		\EndIf
-		\State nonce $\gets$ nonce + 1
-		\Until{hash meets difficulty level}
-	\end{algorithmic}
-\end{algorithm}
 \section{Sicherheit des Proof-Of-Work}
 
 \begin{itemize}
@@ -301,8 +260,6 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 \textbf{Obwohl der Proof-of-Work ein wichtiger Konsensmechanismus in vielen Kryptowährungen ist, gibt es auch einige Nachteile, die berücksichtigt werden sollten.}
 \begin{itemize}
 	\item Transaktionen sind so langsam, weil sie eine Menge von Mining-Operationen benötigen, um einen Block zu überprüfen, der Bitcoin-Transaktionen enthält, auch Blockchain Durchschnitt der Suche nach einem Block nonce ist 1 Nonce pro 10 Minuten, die es so langsam für einen großen Market ist.
-	
-	\newpage
 	\item \textbf{Hohe Energiekosten :}
 	\begin{itemize}
 		\item Der Betrieb eines auf Proof-of-Work basierenden Blockchain-Netzwerks kann mit hohem Energiebedarf verbunden sein, da Miner Rechenleistung bereitstellen müssen, um neue Blöcke zu erstellen und Transaktionen zu validieren. Dies erfordert häufig die Verwendung von spezialisierten Mining-Geräten, die viel Strom verbrauchen und möglicherweise auch Kühlsysteme benötigen, um hohe Temperaturen zu vermeiden.
@@ -328,7 +285,6 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 		\small URL : \url{https://www.blockchain.com/explorer/api/blockchain_api}
 	\end{figure} 
 	
-	\newpage
 	\item \textbf{Hardware-Anforderungen :}
 	\begin{itemize}
 		\item Das Abbauen von Bitcoin kann hohe Investitionskosten erfordern, da es oft notwendig ist, spezielle Mining-Hardware wie leistungsstarke Grafikkarten und entsprechende Motherboards zu beschaffen, um erfolgreich neue Blöcke zu erstellen. Die hohen Preise für diese Ausrüstung können es schwierig machen, in das Bitcoin-Mining einzusteigen, insbesondere für Einzelpersonen oder kleine Unternehmen.
@@ -341,6 +297,45 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 	
 \end{itemize}
 
+\chapter[Praktische Anwendung der Proof-Of-Work-Methode]{Algorithmus zur Bestimmung der Nonce in Kryptowährungen}
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm]{realblock.png}
+	\caption{Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website.}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm]{realtransaction.png}
+	\caption{Die echten Blockchain-Block-Transaktionen.}
+	
+\end{figure}
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{classOfStructures.png}
+	\caption{Das nächste Diagramm, das als Klassendiagramm bezeichnet wird, gibt eine visuelle Darstellung aller Daten, die im realen Blockchain-Netzwerk enthalten sind. Dieses Diagramm ist hilfreich, um die Implementierung des Blockchain-Netzwerks besser zu verstehen und zu analysieren. Es zeigt die Beziehungen und Abhängigkeiten zwischen den verschiedenen Elementen des Netzwerks und hilft, die Struktur und Funktionsweise des Systems zu verdeutlichen. Die Verwendung eines Klassendiagramms ermöglicht es, die komplexen Zusammenhänge einfacher darzustellen und die Implementierung des Blockchain-Netzwerks besser zu verstehen.}
+\end{figure}
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{activity.png}
+	\caption{Der Algorithmus zur Bestimmung der Nonce wird mit dem Aktivitätsdiagramm erklärt. Zunächst müssen wir die initialen Daten initialisieren, einschließlich des MaxNonceLimit, der Anzahl der Nullen, die der Hash haben sollte. In diesem Beispiel betrachten wir die Anforderung, dass der Hash mit 4 Nullen beginnen sollte. Es ist wichtig zu beachten, dass die Anzahl der Nullen eine wichtige Rolle bei der Bestimmung der Komplexität des Algorithmus spielt. Je höher die Anzahl der Nullen, desto länger wird es dauern, die Nonce mit begrenzter Hardware zu finden. Wir sollten auch unsere Inkrementierungsvariable für die for-Schleife initialisieren.}
+\end{figure}
+
+\textbf{Dies ist der Algorithmus \textcommabelow der für dieses Beispiel zum Schürfen von Bitcoin geschrieben wurde} \\
+\begin{algorithm}
+	\caption{Nonce für gültigen Hash finden}
+	\label{alg:nonce_find}
+	
+	\begin{algorithmic}[1]
+		\State nonce $\gets$ 0
+		\Repeat
+		\State hash $\gets$ Hash(block\_data, nonce)
+		\If{hash meets difficulty level}
+		\State \textbf{return} nonce
+		\EndIf
+		\State nonce $\gets$ nonce + 1
+		\Until{hash meets difficulty level}
+	\end{algorithmic}
+\end{algorithm}
 
 \chapter{Der Bitcoin-Markt und die Verwendung von Proof of Work}
 \section{Kryptowährungen, auf die Proof-Of-Work basieren}
