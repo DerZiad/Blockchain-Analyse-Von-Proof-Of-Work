@@ -1,6 +1,7 @@
 
 \documentclass[ngerman]{scrreprt}  
 
+\bibliography{references1.bib}
 \input{twp-ziad-cfg}
 \begin{document}
 	\begin{titlepage}
@@ -80,7 +81,7 @@
   		\textbf{Zusammenfassung auf Deutsch }
   		\end{LARGE}
   	\end{center} 
-    Dieser Bericht ist eine Seminararbeit für mein 5. Semester, ich möchte mich wirklich bei den Professoren bedanken, dass sie mir diese Arbeit gegeben haben. Es war wirklich mein erster Schritt, um mit der Blockchain-Entwicklung zu beginnen, in dem ich viele Informationen über Kryptowährungen und Blockchain-Netzwerke recherchiert habe, außerdem habe ich die Funktionsweise von Kryptowährungen basierend auf Proof-Of-Work verstanden. Dieser Bericht enthält eine Zusammenfassung aller Informationen über Blockchain, in technischer und theoretischer Hinsicht. Er beinhaltet auch die Investitionsmethode und das Gewinnen von Geld aus Bitcoin und anderen Kryptowährungen auf Basis von Proof-Of-Work.
+    In diesem Bericht wurde eine umfassende Analyse der Technologie der Blockchain-Netzwerke und der Kryptowährungen auf der Basis von Proof-Of-Work durchgeführt. Die Funktionsweise von Kryptowährungen wurde detailliert untersucht und die Investitionsmöglichkeiten in diese Währungen wurden erläutert. Zudem wurden die Vor- und Nachteile von Proof-Of-Work und anderen Konsensmechanismen aufgezeigt und die Zukunftsaussichten für diese Technologien wurden diskutiert. Der Bericht bietet somit eine wertvolle Ressource für diejenigen, die sich für die Blockchain-Technologie und das Investieren in Kryptowährungen interessieren.
   \end{abstract}
 
 	\begin{abstract}
@@ -89,7 +90,7 @@
    		\textbf{Abstract in Englisch}
    	\end{center}
 	\end{LARGE}
-   	This report is a seminar work for my 5th semester, I really want to thank the professors for giving me this work. It was really my first step to start with blockchain development, in which I researched a lot of information about cryptocurrencies and blockchain networks, also I understood the working of cryptocurrencies based on Proof-Of-Work. This report contains a summary of all the information about Blockchain, in technical and theoretical aspects. It also includes the investment method and making money from Bitcoin and other cryptocurrencies based on Proof-Of-Work.
+   	This report presents a comprehensive analysis of the technology of blockchain networks and cryptocurrency based on Proof-Of-Work. The functioning of cryptocurrency was thoroughly studied, and the investment opportunities in these currencies were explained. The pros and cons of Proof-Of-Work and other consensus mechanisms were also highlighted, and the future prospects for these technologies were discussed. This report therefore provides a valuable resource for those interested in blockchain technology and investing in cryptocurrency.
 
    \end{abstract}
 
@@ -100,8 +101,7 @@
 Blockchain ist seit den späten 2000er Jahren eine der wichtigsten Technologien im Bereich digitaler Transaktionen. Im Jahr 2008 veröffentlichte eine Person oder Gruppe von Personen unter dem Namen Satoshi Nakamoto ein Whitepaper mit dem Titel "Bitcoin: A Peer-to-Peer Electronic Cash System". Vier Monate später, am 3. Januar 2009, wurde der Genesis-Block erstellt, der den Beginn und Tag 0 des Bitcoin- und Blockchain-Netzwerks markierte. Die Blockchain wurde entwickelt, um als öffentliches Hauptbuch für Bitcoin-Transaktionen zu dienen und basiert auf der "Proof-of-Work"-Methode, um die Schaffung und den Handel von Bitcoin und anderen Kryptowährungen während der Finanzkrise 2007/08 zu unterstützen. Heutzutage gibt es viele Kryptowährungen wie Litecoin (2011), Ethereum (2015) und Dogecoin (2013).\\ \\
 Die Implementierung der Blockchain in Bitcoin machte es zur ersten digitalen Währung, die das Problem der doppelten Ausgaben ohne die Notwendigkeit einer vertrauenswürdigen zentralen Behörde löst. Einer der Hauptvorteile von Blockchain ist, dass jeder erstellte Block, der einen Datensatz enthält, unveränderlich ist und seine Authentizität von der gesamten Gemeinschaft autorisierter Benutzer und nicht von einer einzigen zentralen Behörde überprüft werden kann. Das System ist daher darauf ausgelegt, die Transparenz und Rechenschaftspflicht von digitalisierten Transaktionen zu verbessern.\\ \\
 Ein Beispiel: Stellen Sie sich ein Transaktionsbanksystem vor, das von einem Server oder Systemadministrator verwaltet wird. Dies könnte die Wartung des Systems, das Verwalten, Löschen und Hinzufügen von Benutzer- oder Transaktionsinformationen zur Datenbank umfassen. Es könnte auch bedeuten, dass der Administrator behauptet, dass Sie ihm 10.000 € schulden, was gefährlich ist.
-Das ist der Grund, warum die Blockchain-Technologie erfunden wurde. Indem es immer für alle sichtbar im Hauptbuch aufgezeichnet wird, wenn Geld von einem Konto auf ein anderes überwiesen wird, kann jeder Benutzer die Transaktion überprüfen und sicherstellen, dass sie korrekt ist.\\ \\
-
+Das ist der Grund, warum die Blockchain-Technologie erfunden wurde. Indem es immer für alle sichtbar im Hauptbuch aufgezeichnet wird, wenn Geld von einem Konto auf ein anderes überwiesen wird, kann jeder Benutzer die Transaktion überprüfen und sicherstellen, dass sie korrekt ist. \cite{Blockchain} \cite{blockchain_wikipedia}\\ \\
 
 
 \chapter{Einführung in die Blockchain}
@@ -110,14 +110,19 @@ Das ist der Grund, warum die Blockchain-Technologie erfunden wurde. Indem es imm
 %#           Section 1        #
 %##############################
 \section{Blockchain Definition}
-Die \textbf{Blockchain} ist eine ständig wachsende Liste von Datensätzen, die in einzelnen Blöcken organisiert sind. Sie dient als öffentliches Hauptbuch, in dem Personen Datensätze einsehen und erstellen können. Jeder Block besteht aus Daten, einem Hash, dem Hash des vorherigen Blocks und einem Zeitstempel. Das Wesentliche an der Blockchain ist, dass wir spätere Transaktionen auf früheren Transaktionen aufbauen und deren Richtigkeit bestätigen können, indem wir die Kenntnis der früheren Transaktionen nachweisen. Auf diese Weise wird es unmöglich gemacht, die Existenz oder den Inhalt früherer und späterer Transaktionen zu manipulieren. Andere Teilnehmer der dezentralen Buchhaltung erkennen eine Manipulation der Blockchain an der Inkonsistenz der Blöcke..\\
+Die \textbf{Blockchain} ist eine ständig wachsende Liste von Datensätzen, die in einzelnen Blöcken organisiert sind. Sie dient als öffentliches Hauptbuch, in dem Personen Datensätze einsehen und erstellen können. Jeder Block besteht aus Daten, einem Hash, dem Hash des vorherigen Blocks und einem Zeitstempel. Das Wesentliche an der Blockchain ist, dass wir spätere Transaktionen auf früheren Transaktionen aufbauen und deren Richtigkeit bestätigen können, indem wir die Kenntnis der früheren Transaktionen nachweisen. Auf diese Weise wird es unmöglich gemacht, die Existenz oder den Inhalt früherer und späterer Transaktionen zu manipulieren. Andere Teilnehmer der dezentralen Buchhaltung erkennen eine Manipulation der Blockchain an der Inkonsistenz der Blöcke. \cite{businessinsider}\\ 
 \\
 \\
 \\
-Die \textbf{Blockchain} ist ein verteiltes Hauptbuch, das sich selbst reguliert, das heißt, dass es keine Person gibt, die Kontrolle oder Veränderungen vornehmen kann. Stattdessen tragen Tausende von Benutzern, die am Blockchain-Netzwerk teilnehmen, dazu bei, es funktionsfähig zu halten. Wenn eine Person versucht, das System zu betrügen, wird sie schnell als Betrugserkennung markiert, da das gesamte Netzwerk sie überprüft.
+Die \textbf{Blockchain} ist ein verteiltes Hauptbuch, das sich selbst reguliert, das heißt, dass es keine Person gibt, die Kontrolle oder Veränderungen vornehmen kann. Stattdessen tragen Tausende von Benutzern, die am Blockchain-Netzwerk teilnehmen, dazu bei, es funktionsfähig zu halten. Wenn eine Person versucht, das System zu betrügen, wird sie schnell als Betrugserkennung markiert, da das gesamte Netzwerk sie überprüft. \cite{iotforall_2022}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{1.png}
+	\caption{Ein Beispiel für eine Blockchain-Kette}
+	\small URL : \url{https://de.wikipedia.org/wiki/Blockchain}
+\end{figure} 
 
-\includegraphics[width=\linewidth]{1.png}
 
 \section{Konstruktion des Blocks}
 Ein Block speichert Informationen über Transaktionen, Zeitstempel, vorherigen Hash, Block-Hash.
@@ -145,6 +150,7 @@ Was ist die Hauptinformationen, die ein Block (Transaktionen) enthält?
 Die Miner setzen ihre Rechenleistung ein, um mithilfe von Zufallszahlen (Bruteforce) die Nonce im Hash zu erraten. Sobald die Nonce erfolgreich bestimmt wurde, wird der Hash verifiziert und der Block geschlossen. Anschließend wird ein neuer Block mit einem Header erstellt und der Prozess wiederholt sich. Die Nonce ist von Interesse für Miner, da sie einen wichtigen Bestandteil des Mining-Prozesses darstellt, bei dem versucht wird, den Hash zu lösen. \\ \\ \\
 
 \large
+\newpage
 \underline{\textbf{Was sind Merkle-Bäume?}} \\ \\
 \normalsize
 Es handelt sich um eine Datenstruktur in Form eines Binärbaums, die in Bitcoin und Kryptowährung weit verbreitet ist und zur effizienten und sicheren Kodierung von Daten verwendet wird.
@@ -153,19 +159,19 @@ Es handelt sich um eine Datenstruktur in Form eines Binärbaums, die in Bitcoin 
 
 
 \section{Blockchaining-Mechanismus}
-\textbf{Die Funktionsweise der Blockchain} ähnelt der einer verketteten Liste, da sie aus einer Reihe von Blöcken besteht, die jeweils durch einen Hash des aktuellen Blocks und einen Hash des vorherigen Blocks verbunden sind. Dieser Mechanismus ermöglicht es, über die Kette zu iterieren, ähnlich wie bei einer verketteten Liste, in der jeder Knoten einen Zeiger auf den vorherigen Knoten enthält.
+\textbf{Die Funktionsweise der Blockchain} ähnelt der einer verketteten Liste, da sie aus einer Reihe von Blöcken besteht, die jeweils durch einen Hash des aktuellen Blocks und einen Hash des vorherigen Blocks verbunden sind. Dieser Mechanismus ermöglicht es, über die Kette zu iterieren, ähnlich wie bei einer verketteten Liste, in der jeder Knoten einen Zeiger auf den vorherigen Knoten enthält. \cite{fool}
 
-\includegraphics[width=\linewidth]{2}
-
-
-\textbf{Der erste Block der Kette wird als Genius-Block bezeichnet.} \\ \\ \\
-
-
-In solchen Fällen sollte man immer bedenken, welche Handlungen von verdächtigen Personen ausgehen könnten, beispielsweise das Modifizieren oder Manipulieren der Daten im Block (i). Dies führt zu einer Änderung des tatsächlichen Blocks i und macht den vorherigen Hash im Block (i+1) ungültig. Dies bedeutet, dass das Ändern eines Blocks alle darauf folgenden Blöcke in der Blockchain ungültig macht, was die Integrität der Kette beweist.\\ \\ \\ 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{2.jpg}
+	\caption{Der erste Block der Kette wird als Genius-Block bezeichnet.}
+	\small URL : \url{https://muenchen.digital/wp-content/uploads/Blockchain-1.jpg}
+\end{figure} 
+In solchen Fällen sollte man immer bedenken, welche Handlungen von verdächtigen Personen ausgehen könnten, beispielsweise das Modifizieren oder Manipulieren der Daten im Block (i). Dies führt zu einer Änderung des tatsächlichen Blocks i und macht den vorherigen Hash im Block (i+1) ungültig. Dies bedeutet, dass das Ändern eines Blocks alle darauf folgenden Blöcke in der Blockchain ungültig macht, was die Integrität der Kette beweist.\\ \\
 \color{red}
 \Large{\textbf{Achtung :}}
 \color{black}
-\textbf{Ist dieser Mechanismus gesichert?}\\ \\
+\textbf{Ist dieser Mechanismus gesichert?}\\
 \normalsize
  	
 Der Einsatz von Hashes allein reicht nicht aus, um Manipulationen zu verhindern. Da Computer heutzutage sehr schnell sind und Tausende von Hashes berechnen können, besteht technisch gesehen die Möglichkeit, einen Block zu manipulieren und alle nachfolgenden Hashes der nachfolgenden Blöcke erneut zu berechnen, um das Blockchain-Netzwerk wieder gültig zu machen. Aus diesem Grund verwendet die Blockchain den sogenannten "Proof of Work (POW)", um dieses Problem zu vermeiden.	
@@ -175,13 +181,13 @@ Der Einsatz von Hashes allein reicht nicht aus, um Manipulationen zu verhindern.
 \chapter[Theoretische Seite der Proof-Of-Work-Methode]{Einführung in die „Proof-Of-Work“-Methode}	
 
 \section{Was ist Proof-Of-Work ?}
-Proof-Of-Work (POW) wurde entwickelt, um zu verhindern, dass Nutzer Blocks in der Blockchain leicht manipulieren. Es verlangt von Minern, eine signifikante Menge an Mühe aufzuwenden, um einen Block zu erstellen. Diese Methode basiert auf verschiedenen Grundprinzipien in der Kryptowährung, wie folgt:
+Proof-Of-Work (POW) wurde entwickelt, um zu verhindern, dass Nutzer Blocks in der Blockchain leicht manipulieren. Es verlangt von Minern, eine signifikante Menge an Mühe aufzuwenden, um einen Block zu erstellen. Diese Methode basiert auf verschiedenen Grundprinzipien in der Kryptowährung \cite{proof_of_work_wikipedia}, wie folgt:
 
 \begin{itemize}
-	\item{Der Proof-of-Work-Mechanismus sorgt dafür, dass das Hinzufügen von Blöcken zur Blockchain-Kette mit einer gewissen Schwierigkeit verbunden ist, indem es Miner dazu zwingt, einen gültigen Hash zu finden. Diese Methode wurde so konzipiert, dass etwa alle zehn Minuten ein neuer Block mit einer festgelegten Menge an BTC in die Kette aufgenommen wird. Dies gewährleistet das algorithmische Wachstum der Geldmenge.}
+	\item{Der Proof-of-Work-Mechanismus sorgt dafür, dass das Hinzufügen von Blöcken zur Blockchain-Kette mit einer gewissen Schwierigkeit verbunden ist, indem es Miner dazu zwingt, einen gültigen Hash zu finden. Diese Methode wurde so konzipiert, dass etwa alle zehn Minuten ein neuer Block mit einer festgelegten Menge an BTC in die Kette aufgenommen wird. Dies gewährleistet das algorithmische Wachstum der Geldmenge. \cite{btc-echo-proof-of-work}}
 	\item{Die Verwendung von Proof-of-Work ermöglicht es den Nodes, die Integrität der Blockchain zu überprüfen, indem sie diejenige wählen, die den größten Aufwand in Form von Rechenleistung darstellt. Auf diese Weise ist es einfach zu erkennen, welche Blockchain die authentische ist.}
 	\item{Die Verwendung von Proof of Work dient dazu, das Blockchain-Netzwerk vor Angreifern zu schützen, da diese eine größere Energiemenge in das Netzwerk einspeisen müssten als alle anderen verfügbaren Miner insgesamt über einen längeren Zeitraum. Dies ist beim Bitcoin aufgrund der enormen Rechenleistung, die benötigt wird, um einen gültigen Block zu erstellen, praktisch unmöglich.}
-	\item{Proof of Work ist eine bewährte Methode zur Sicherung von Blockchains und zur Neuverteilung von digitalen Währungen. Im Gegensatz zu Fiatgeld, das von Zentralbanken gedruckt werden kann, erfordert die Erschaffung von Coins in einem Proof-of-Work-System einen tatsächlichen Einsatz von Ressourcen. Dadurch wird ein fairer Mechanismus für die Verteilung von Coins gewährleistet.}
+	\item{Proof of Work ist eine bewährte Methode zur Sicherung von Blockchains und zur Neuverteilung von digitalen Währungen. Im Gegensatz zu Fiatgeld, das von Zentralbanken gedruckt werden kann, erfordert die Erschaffung von Coins in einem Proof-of-Work-System einen tatsächlichen Einsatz von Ressourcen. Dadurch wird ein fairer Mechanismus für die Verteilung von Coins gewährleistet. \cite{btc-echo-proof-of-work}}
 \end{itemize}
 
 \section{Wie funktioniert Proof of Work bei einer Blockchain ?}
@@ -189,8 +195,8 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 \textbf{Diese beschreiben den Prozess einer Transaktion im Blockchain-Netzwerk. \\ }
 \begin{itemize}
 	\item{Die Blockchain generiert einen Block, der alle Transaktionen enthält, die in einem bestimmten Zeitraum stattgefunden haben.}
-	\item{Der Verifizierer wird die Integrität der Transaktionen überprüfen, um sicherzustellen, dass sie legitim sind.}
-	\item{Die Miner im Netzwerk überprüfen dann die Legitimität dieser Transaktionen und führen anschließend eine Suche durch, indem sie die Nonce erraten. Der erfolgreiche Miner, der als erstes die Lösung findet, wird mit einer Belohnung und den Transaktionsgebühren belohnt. Dieser Prozess wird als "Mining" bezeichnet. Das Blockchain-Netzwerk wird dann um den Block mit den bestätigten Transaktionen erweitert und wird als Teil der Kette von Blöcken gespeichert.}
+	\item{Der Verifizierer wird die Integrität der Transaktionen überprüfen, um sicherzustellen, dass sie legitim sind. \cite{btc-echo-proof-of-work}}
+	\item{Die Miner im Netzwerk überprüfen dann die Legitimität dieser Transaktionen und führen anschließend eine Suche durch, indem sie die Nonce erraten. Der erfolgreiche Miner, der als erstes die Lösung findet, wird mit einer Belohnung und den Transaktionsgebühren belohnt. Dieser Prozess wird als "Mining" bezeichnet. Das Blockchain-Netzwerk wird dann um den Block mit den bestätigten Transaktionen erweitert und wird als Teil der Kette von Blöcken gespeichert.\cite{btc-echo-proof-of-work}}
 	\item{Die Transaktionsbestätigung im Blockchain-Netzwerk wird wiederholt \\}
 	
 \end{itemize}
@@ -199,41 +205,44 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 \includegraphics[width=\linewidth]{ProofOfWork2.png}
 \section{Wie genau funktionieren die Proof-of-Work-Berechnungen?}
 \begin{itemize}
-	\item {Die Miner im Blockchain-Netzwerk nutzen Hash-Funktionen, die in ihrer Funktionsweise unumkehrbar sind. Sie können eine beliebig lange Zeichenfolge in eine eindeutige Zeichenfolge festgelegter Länge umwandeln. Die Schwierigkeit besteht darin, ein Ergebnis zu erzielen, das bestimmte Eigenschaften aufweist, die sich aus der Verwendung der Hash-Funktion ergeben. Ein bekanntes Beispiel hierfür ist der Einsatz der SHA-256-Hash-Funktion im Bereich des Minings bei Bitcoin.}
-	\item{Die Hash-Funktion ist eine eindeutige, nicht invertierbare mathematische Funktion, die aus einer beliebigen Eingabestring eine feste Länge erzeugt. Sie wird häufig in der Kryptographie und im Blockchain-Bereich verwendet. Im Fall von Kryptowährungen wie Bitcoin wird sie beim Mining verwendet, wobei Miner versuchen, einen Wert mit bestimmten Eigenschaften zu finden, indem sie der Hash-Funktion Zeichenfolgen übergeben. Da die Rückgängigmachung der Hash-Funktion nicht möglich ist, kann der Miner den erhaltenen Wert nicht einfach umkehren und die Eingabe der Hash-Funktion erhalten.}
+	\item {Die Miner im Blockchain-Netzwerk nutzen Hash-Funktionen, die in ihrer Funktionsweise unumkehrbar sind. Sie können eine beliebig lange Zeichenfolge in eine eindeutige Zeichenfolge festgelegter Länge umwandeln. Die Schwierigkeit besteht darin, ein Ergebnis zu erzielen, das bestimmte Eigenschaften aufweist, die sich aus der Verwendung der Hash-Funktion ergeben. Ein bekanntes Beispiel hierfür ist der Einsatz der SHA-256-Hash-Funktion im Bereich des Minings bei Bitcoin. \cite{btc-echo-proof-of-work}}
+	\item{Die Hash-Funktion ist eine eindeutige, nicht invertierbare mathematische Funktion, die aus einer beliebigen Eingabestring eine feste Länge erzeugt. Sie wird häufig in der Kryptographie und im Blockchain-Bereich verwendet. Im Fall von Kryptowährungen wie Bitcoin wird sie beim Mining verwendet, wobei Miner versuchen, einen Wert mit bestimmten Eigenschaften zu finden, indem sie der Hash-Funktion Zeichenfolgen übergeben. Da die Rückgängigmachung der Hash-Funktion nicht möglich ist, kann der Miner den erhaltenen Wert nicht einfach umkehren und die Eingabe der Hash-Funktion erhalten.} \cite{fool}, \cite{btc-echo-proof-of-work}
 	\item{Aus diesem Grund gibt es das Konzept \textbf{"Mining"}, Mining ist ein Prozess, bei dem Miner versuchen, die Nonce und die Reihenfolge der Parameter zu erraten, die von einer Hash-Funktion als Eingabe akzeptiert werden, um ein Ergebnis zu liefern. Da es unmöglich ist, die Hash-Funktion umzukehren, um die ursprüngliche Eingabe zu erhalten, müssen Miner eine Vielzahl von Operationen durchführen, um den Wert der Eingabe für die Hash-Funktion zu ermitteln. Dies geschieht durch das Konzept des Minings, bei dem Miner versuchen, die Nonce und die Reihenfolge jedes Parameters, die von der Hash-Funktion als Eingabe akzeptiert werden, zu erraten.}
-	\item{Wenn der Block abgebaut wird, überprüfen alle Teilnehmer des Blockchain-Netzwerks die präsentierte Lösung, um zu bestätigen, dass die Gültigkeit der Blockchain aufrechterhalten wird.}
+	\item{Wenn der Block abgebaut wird, überprüfen alle Teilnehmer des Blockchain-Netzwerks die präsentierte Lösung, um zu bestätigen, dass die Gültigkeit der Blockchain aufrechterhalten wird.} \cite{btc-echo-proof-of-work} 
 \end{itemize}
 
 
 \section{Was hat es mit der Schwierigkeit auf sich ?}
 \begin{itemize}
-\item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden.}
-\item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. (check it)}
+\item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden. \cite{btc-echo-proof-of-work}}
+\item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. \cite{btc-echo-proof-of-work}}
 \end{itemize}
 
 \section{Algorithmus zum Finden einer Nonce}
-\begin{itemize}
-	\item[--] Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website "\textit{blockchain.com}".\\
-	\includegraphics[width=\linewidth]{realblock.png} \\
 	
-	
-	\item[--] Und dies ist eine echte Einzeltransaktionsstruktur \\
-	\includegraphics[width=\linewidth]{realtransaction.png} \\ \\
-	
-	
-	\item[--] Das nächste Klassendiagramm zeigt die gesamten Daten aus dem realen Blockchain-Netzwerk. Es ist hilfreich, diese Daten in Form eines Klassendiagramms darzustellen,um die Implementierung zu verstehen.\\
-	\includegraphics[width=\linewidth]{classOfStructures.png} \\ \\
-	
-	
-	\item[--] Der Algorithmus zur Bestimmung der Nonce wird mit dem Aktivitätsdiagramm erklärt. Zunächst müssen wir die initialen Daten initialisieren, einschließlich des MaxNonceLimit, der Anzahl der Nullen, die der Hash haben sollte. In diesem Beispiel betrachten wir die Anforderung, dass der Hash mit 4 Nullen beginnen sollte. Es ist wichtig zu beachten, dass die Anzahl der Nullen eine wichtige Rolle bei der Bestimmung der Komplexität des Algorithmus spielt. Je höher die Anzahl der Nullen, desto länger wird es dauern, die Nonce mit begrenzter Hardware zu finden. Wir sollten auch unsere Inkrementierungsvariable für die for-Schleife initialisieren. \\ \\
-	\includegraphics[width=\linewidth]{activity.png} \\ \\
-		
-\end{itemize}
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth,height=8cm]{realblock.png}
+		\caption{Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website.}
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth,height=8cm]{realtransaction.png}
+		\caption{Die echten Blockchain-Block-Transaktionen.}
 
-\begin{Large}
-	\textbf{Dies ist der Algorithmus \textcommabelow der für dieses Beispiel zum Schürfen von Bitcoin geschrieben wurde} \\
-\end{Large}
+	\end{figure}
+	\newpage
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{classOfStructures.png}
+		\caption{Das nächste Diagramm, das als Klassendiagramm bezeichnet wird, gibt eine visuelle Darstellung aller Daten, die im realen Blockchain-Netzwerk enthalten sind. Dieses Diagramm ist hilfreich, um die Implementierung des Blockchain-Netzwerks besser zu verstehen und zu analysieren. Es zeigt die Beziehungen und Abhängigkeiten zwischen den verschiedenen Elementen des Netzwerks und hilft, die Struktur und Funktionsweise des Systems zu verdeutlichen. Die Verwendung eines Klassendiagramms ermöglicht es, die komplexen Zusammenhänge einfacher darzustellen und die Implementierung des Blockchain-Netzwerks besser zu verstehen.}
+	\end{figure}
+	\newpage
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{activity.png}
+		\caption{Der Algorithmus zur Bestimmung der Nonce wird mit dem Aktivitätsdiagramm erklärt. Zunächst müssen wir die initialen Daten initialisieren, einschließlich des MaxNonceLimit, der Anzahl der Nullen, die der Hash haben sollte. In diesem Beispiel betrachten wir die Anforderung, dass der Hash mit 4 Nullen beginnen sollte. Es ist wichtig zu beachten, dass die Anzahl der Nullen eine wichtige Rolle bei der Bestimmung der Komplexität des Algorithmus spielt. Je höher die Anzahl der Nullen, desto länger wird es dauern, die Nonce mit begrenzter Hardware zu finden. Wir sollten auch unsere Inkrementierungsvariable für die for-Schleife initialisieren.}
+	\end{figure}
+
+\textbf{Dies ist der Algorithmus \textcommabelow der für dieses Beispiel zum Schürfen von Bitcoin geschrieben wurde} \\
 \begin{algorithm}
 	\caption{Nonce für gültigen Hash finden}
 	\label{alg:nonce_find}
@@ -249,8 +258,6 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 		\Until{hash meets difficulty level}
 	\end{algorithmic}
 \end{algorithm}
-
-\newpage
 \section{Sicherheit des Proof-Of-Work}
 
 \begin{itemize}
@@ -258,10 +265,8 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 	
 	\item Der Proof-of-Work bietet eine gewisse Sicherheit, da es für Angreifer schwierig ist, die Blockchain zu verändern, ohne die erforderliche Rechenleistung zu erbringen. Allerdings gibt es auch Nachteile, wie hohe Energiekosten und langsamere Transaktionsgeschwindigkeiten im Vergleich zu anderen Konsensmechanismen.
 \end{itemize}
-
-\newpage
 \section{Vor- und Nachteile von Proof-Of-Work}
-\textbf{Ich habe diese Tabelle erstellt, um die Vor- und Nachteile dieser Methode genau zu erklären : } \\ \\
+\textbf{Um die Vor- und Nachteile dieser Methode genau zu erklären, wurde diese Tabelle erstellt: \cite{fool} } \\ \\
 \begin{tabular}{|c|c|}
 	\hline
 	\textbf{Vorteile} & \textbf{Nachteile} \\ \hline
@@ -297,6 +302,7 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 \begin{itemize}
 	\item Transaktionen sind so langsam, weil sie eine Menge von Mining-Operationen benötigen, um einen Block zu überprüfen, der Bitcoin-Transaktionen enthält, auch Blockchain Durchschnitt der Suche nach einem Block nonce ist 1 Nonce pro 10 Minuten, die es so langsam für einen großen Market ist.
 	
+	\newpage
 	\item \textbf{Hohe Energiekosten :}
 	\begin{itemize}
 		\item Der Betrieb eines auf Proof-of-Work basierenden Blockchain-Netzwerks kann mit hohem Energiebedarf verbunden sein, da Miner Rechenleistung bereitstellen müssen, um neue Blöcke zu erstellen und Transaktionen zu validieren. Dies erfordert häufig die Verwendung von spezialisierten Mining-Geräten, die viel Strom verbrauchen und möglicherweise auch Kühlsysteme benötigen, um hohe Temperaturen zu vermeiden.
@@ -313,12 +319,16 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 		\item Die durchschnittliche Zeit, die benötigt wird, um einen neuen Block zu finden, beträgt derzeit etwa 10 Minuten. Dies bedeutet, dass es in der Regel etwa 10 Minuten dauern wird, bis eine Transaktion bestätigt wird und in die Blockchain aufgenommen wird. Für einige Benutzer könnte dies als langsam empfunden werden, insbesondere im Vergleich zu traditionellen Zahlungsmethoden.
 		
 		\item Es gibt jedoch auch Maßnahmen, die getroffen werden können, um die Schnelligkeit von Bitcoin-Transaktionen zu verbessern, wie zum Beispiel die Verwendung von Segregated Witness (SegWit) oder Lightning-Netzwerken. Diese Technologien können die Größe von Transaktionen reduzieren und somit die Geschwindigkeit erhöhen. 
-		
-		\item Die heutige Schwierigkeit ist : \\
-		\includegraphics[width=7cm,height=7cm]{difficulty}
+				
 	\end{itemize}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=7cm,height=7cm]{difficulty}
+		\caption{Die heutige Schwierigkeit ist}
+		\small URL : \url{https://www.blockchain.com/explorer/api/blockchain_api}
+	\end{figure} 
 	
-	
+	\newpage
 	\item \textbf{Hardware-Anforderungen :}
 	\begin{itemize}
 		\item Das Abbauen von Bitcoin kann hohe Investitionskosten erfordern, da es oft notwendig ist, spezielle Mining-Hardware wie leistungsstarke Grafikkarten und entsprechende Motherboards zu beschaffen, um erfolgreich neue Blöcke zu erstellen. Die hohen Preise für diese Ausrüstung können es schwierig machen, in das Bitcoin-Mining einzusteigen, insbesondere für Einzelpersonen oder kleine Unternehmen.
@@ -333,90 +343,117 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 
 
 \chapter{Der Bitcoin-Markt und die Verwendung von Proof of Work}
-\section{Münzen}
+\section{Kryptowährungen, auf die Proof-Of-Work basieren}
 
-\begin{itemize}
-	\item[--] Bevor ich anfange, mit Ihnen darüber zu sprechen, wie Sie mit Bitcoin Geld verdienen können, möchte ich Ihnen zunächst einige Münzen vorstellen, die die Proof-Of-Work-Methode verwenden
-	\begin{itemize}
-		\item [--] {Bitcoin Cash} \\ \\ 
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoincash.png}\\ \\
+	Einige der bekanntesten Kryptowährungen, die den Konsensmechanismus Proof-Of-Work verwenden, sind Bitcoin, Bitcoin Cash, Bitcoin Sv, Litecoin und Dogecoin. \\
 		
-		\item [--] {Bitcoin SV} \\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoinsv.png}\\ \\
-		\item [--] {Litecoin} \\ \\ 
-		\includegraphics[width=1.5cm,height=1.5cm]{litecoin.jpg} \\ \\
-		\item [--] {Dogecoin} \\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{dogecoin.png}\\ \\
-		\item [--] {Bitcoin Gold}\\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoingold.png}\\ \\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoincash.png}
+		\caption{Bitcoin Cash}
+		\small URL : \url{https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoinsv.png}
+		\caption{Bitcoin SV}
+		\small URL : \url{https://upload.wikimedia.org/wikipedia/commons/c/c1/Bsv-icon-small.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{litecoin.jpg}
+		\caption{Litecoin}
+		\small URL : \url{https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{dogecoin.png}
+		\caption{Dogecoin}
+		\small URL : \url{https://block-builders.de/wp-content/uploads/2021/01/ony3qesa3ebx-1024x1024.png}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{bitcoingold.png}
+		\caption{Bitcoin Gold}
+		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/2083.png}
+	\end{figure} 
 
-
-
-	\end{itemize}
+	Es gibt auch viele andere Kryptowährungen, die nicht auf Bitcoin basieren, aber die Proof-of-Work-Methode verwenden :
 	
-	\item[--] Es gibt auch viele andere Kryptowährungen, die nicht auf Bitcoin basieren, aber die Proof-of-Work-Methode verwenden :
-	\begin{itemize}
-		\item{Ethereum Classic} \\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{ethereumclassic.png}\\ \\
-		\item{Monero}\\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{monero}\\ \\
-		\item{Zcash}\\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{zcash}\\ \\
-		\item{Kadena}\\ \\
-		\includegraphics[width=1.5cm,height=1.5cm]{kadena}\\ \\
-	\end{itemize}
-\end{itemize}
-
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{ethereumclassic.png}
+		\caption{Ethereum Classic}
+		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/1321.png}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{monero}
+		\caption{Monero}
+		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/328.png}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{zcash}
+		\caption{Zcash}
+		\small URL : \url{https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png}
+	\end{figure} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1.5cm,height=1.5cm]{kadena}
+		\caption{Kadena}
+		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/5647.png}
+	\end{figure} 
 
 \section{Wie kann ich mit Kryptowährung Geld verdienen ?}
-\subsection{Krypto-Mining}
+\subsection{Kryptowährungen und ihre produktive Seite: Eine Untersuchung des Krypto-Minings}
 \subsubsection{Konzept}
-Im Jahr 2022 können wir die Preise der Währungen sehen, der Bitcoin liegt in diesem Monat bei 15.891 Euro, das ist ein astronomischer Preis für diese Währung. Also, wir sind daran interessiert, und wir wollen unsere Mining-Unternehmen zu starten. \\ \\ \\ 
-Schauen wir uns an, was ein gutes Krypto-Mining-Rig ausmacht und welche Hardware man braucht, wenn man es mit dem Mining ernst meint. Und bevor wir direkt mit den notwendigen Materialien beginnen, möchte ich zuerst über ein sehr wichtiges Wort sprechen, das in dieser Branche verwendet wird. Was ist Krypto-Mining-Rig. \\ \\ \\ 
-Also, Rig Computer enthält eine extrem leistungsstarke Materialien, die es eine Menge von Versorgungsmodulen enthält. Zum Beispiel: wenn jemand Bitcoin minen will, mit der riesigen Konkurrenz auf diese Kryptowährung, und die große Schwierigkeit. Ein normaler oder leistungsfähiger Computer wird für diese Aufgabe nicht ausreichen. Deshalb steht das Rig an erster Stelle, denn es enthält eine Hauptplatine, die eine oder mehrere Grafikkarten gleichzeitig bedienen kann. Wir verwenden GPU in dieser Operation, weil wir für die hohe mögliche Geschwindigkeit suchen, aber wenn es eine Menge von Grafikkarten, wird es auch notwendig sein, eine robuste Stromversorgung zu haben, um diese Operation auf das hohe Niveau zu schieben.
+Der aktuelle Marktwert von Bitcoin im Jahr 2022 liegt bei 15.891 Euro pro Einheit. Dies stellt einen hohen Preis für diese Kryptowährung dar und könnte für manche Personen oder Unternehmen von Interesse sein, die in das Mining von Bitcoin einsteigen möchten. Es ist jedoch wichtig zu beachten, dass das Bitcoin-Mining eine volatilen und riskanten Aktivität sein kann und gründliche Recherche und Planung erfordert, um erfolgreich zu sein.  \\ 
+Ein Krypto-Mining-Rig ist ein spezielles Computersystem, das für das Mining von Kryptowährungen wie Bitcoin entwickelt wurde. Ein solches Rig besteht in der Regel aus einer Vielzahl von Computerkomponenten wie CPUs, GPUs, Motherboards, RAM und Speicher, die zusammengefügt werden, um eine möglichst hohe Rechenleistung zu erreichen. \\ 
+
+Um ein erfolgreiches Krypto-Mining-Rig aufzubauen, ist es wichtig, eine geeignete Hardware auszuwählen, die leistungsfähig genug ist, um die erforderlichen Rechenaufgaben zu lösen, aber auch effizient genug, um die Energiekosten zu minimieren. Dazu gehört auch die Auswahl von Kühlsystemen, um die Hitzeentwicklung zu minimieren und die Lebensdauer der Hardware zu verlängern. \\
+ 
+Ein Krypto-Mining-Rig ist ein spezieller Computer, der für das Mining von Kryptowährungen entwickelt wurde. Die Hardware, die für ein solches Rig benötigt wird, umfasst in der Regel eine leistungsstarke Hauptplatine, die mehrere Grafikkarten unterstützt, sowie eine robuste Stromversorgung, um die benötigte Rechenleistung zu gewährleisten. Es ist wichtig, dass das Rig über ausreichende Kapazitäten verfügt, um die hohen Anforderungen des Krypto-Minings erfüllen zu können, insbesondere bei hoher Konkurrenz und entsprechender Schwierigkeit. \\ 
+Es ist von größter Bedeutung, dass man sich über die aktuellen Marktbedingungen und den Wert der Kryptowährungen informiert, in die investiert wird, um sicherzustellen, dass man das bestmögliche Preis-Leistungs-Verhältnis bei der Hardware-Auswahl erhält und das Rig weiterhin wirtschaftlich rentabel bleibt.
+\cite{zdnet}
 \newpage
 \subsubsection{Hardware}
 \begin{large}
-	\textbf{Motherboard :} Asus B250 Mining Expert \\ \\
-	\includegraphics[width=15cm,height=15cm]{motherboard}  \\ \\
-	Dieses Motherboard ist wirklich ein Biest, es wurde 2017 veröffentlicht und kann 19 angeschlossene Grafikkarten verarbeiten. Das ist wichtig für unser Setup.
-	Das Unternehmen Asus hat empfohlene GPU-Layouts für 19 - 13 und 11 für dieses Board veröffentlicht. Es kann auch mit anderen Layouts umgehen, aber es wird empfohlen, sich an den Asus-Vorschlag zu halten.
+	\textbf{Motherboard :} Asus B250 Mining Expert \\
+	\includegraphics[width=15cm,height=15cm]{motherboard}  \\
+	Das Motherboard, das in der Lage ist, 19 angeschlossene Grafikkarten zu verarbeiten, stellt eine leistungsstarke Hardware dar, die für das Krypto-Mining von Nutzen sein kann. Das Unternehmen Asus hat empfohlene GPU-Layouts für dieses Motherboard veröffentlicht, die für 19, 13 und 11 Grafikkarten vorsehen. Es kann jedoch auch mit anderen Layouts umgehen, obwohl es empfehlenswert ist, sich an den von Asus vorgeschlagenen Layouts zu orientieren, um optimale Leistung zu erzielen. \cite{zdnet}
 	
 \end{large}
 \newpage
 \begin{large}
 	\textbf{CPU :} Intel Core i5-6500 \\ \\
 	\includegraphics[width=10cm,height=8cm]{cpu}  \\ 
-	Alle unsere massiven Operationen werden von der GPU ausgeführt, so dass wir kein Geld für eine leistungsstarke CPU ausgeben müssen, diese CPU hier eignet sich sehr gut für unser Setup und ist auch mit dem Motherboard kompatibel. \\ \\ \\
+	Die Hauptprozessoreinheit, auch als CPU bezeichnet, wird auch für diese Einrichtung in Betracht gezogen, obwohl sie für das Mining an sich weniger von Bedeutung ist. Es ist jedoch wichtig, dass sie kompatibel mit dem Motherboard ist, um einen problemlosen Betrieb des Systems zu gewährleisten. \\ \\ \\
 	
 \end{large}
 \begin{large}
 	\textbf{RAM :} G.SKILL Aegis 16GB (2 x 8GB) \\ 
 	\includegraphics[width=\linewidth,height=5cm]{ram}  \\
-	Es besteht auch keine Notwendigkeit, Geld für 128 GB RAM auszugeben, diese 16 GB (DDR4) reichen für unser Unternehmen aus und sind gut, um die Mission zu erfüllen. \\
-	
-	
+	Für unsere Mining-Operationen ist es nicht notwendig, in einen enormen Vorrat an Arbeitsspeicher (RAM) zu investieren. Stattdessen reichen 16 GB DDR4-RAM aus, um unsere Ziele zu erreichen und den Betrieb unseres Unternehmens reibungslos zu gestalten. Es ist wichtig, sorgfältig abzuwägen, wie viel RAM benötigt wird, um unnötige Kosten zu vermeiden, ohne dabei die Leistungsfähigkeit des Systems zu beeinträchtigen. \\
 	
 \end{large}
-\newpage
+
 \begin{large}
 	\textbf{Storage :} SanDisk SSD Plus 1TB \\ 
 	\includegraphics[width=\linewidth,height=5cm]{storage}  \\
-	Ich werde es vorziehen, 4 seiner ssd-Speicher zu installieren. Sie sind schnell und unter 100\$	\\
+	Die Verwendung von SSDs kann dazu beitragen, die Leistung des Mining-Rigs zu verbessern und den Betrieb zu beschleunigen. Es ist wichtig, sicherzustellen, dass die gewählten SSDs mit dem Motherboard kompatibel sind und genügend Speicherplatz für die Betriebsbedürfnisse des Unternehmens bereitstellen.	\\
 \end{large}
 \\ \\
 \begin{large}
 	\textbf{PSU :} Segotep 850W Full-Modular PSU \\ 
 	\includegraphics[width=\linewidth,height=5cm]{psu}  \\
-	Diese "Segotep PSUs" sind gut, denn sie bieten eine zuverlässige Leistung, die davon abhängt, wie viele Grafikkarten Sie installiert haben, benötigen Sie möglicherweise mehrere PSUs. Aber wenn Sie Ihr Bitcoin-Mining auf extreme Leistung bringen wollen, ist es notwendig, mehr zu bezahlen \\
+	Es kann von Vorteil sein, mehrere "Segotep PSUs" zu verwenden, um sicherzustellen, dass ausreichend Leistung für das Krypto-Mining-Rig bereitgestellt wird, insbesondere wenn es mehrere Grafikkarten enthält. Allerdings ist es wichtig zu beachten, dass der Einsatz von mehreren PSUs auch mit höheren Kosten verbunden sein kann. Eine gründliche Überlegung der Leistungsanforderungen des Mining-Rigs und der dafür benötigten Stromversorgung kann helfen, die richtige Anzahl an PSUs und die damit verbundenen Kosten zu bestimmen. \\
 \end{large}
 \newpage
 \begin{large}
 	\textbf{PCI-e Riser :} FebSmart 16x to 1x Powered Riser 6-pack \\ 
 	\includegraphics[width=\linewidth,height=5cm]{pci}  \\
-	Dies ist der eigentliche Unterschied zwischen Rig und normalem Computer, denn man kann nicht alle Grafikkarten direkt an das Motherboard anschließen, aber mit diesem Modul kann man sie indirekt anschließen.\\ \\
-	
-	Ich empfehle die Verwendung von powered risers für jede Grafikkarte, da sie eine großartige und stabile Stromversorgung für die Grafikkarten bieten \\ \\ \\
+	Das Verwenden von powered risers ist eine wichtige Überlegung bei der Einrichtung eines Krypto-Mining-Rigs, da sie es ermöglichen, die Grafikkarten indirekt an das Motherboard anzuschließen. Sie bieten auch eine stabile Stromversorgung für die Grafikkarten, um eine zuverlässige Leistung zu gewährleisten. Es ist wichtig zu beachten, dass der Bedarf an powered risers abhängig ist von der Anzahl der installierten Grafikkarten und dass es möglicherweise notwendig sein kann, mehrere von ihnen zu verwenden, um eine optimale Leistung zu erzielen. \\ \\ \\
 	
 	
 \end{large}
@@ -425,76 +462,41 @@ Also, Rig Computer enthält eine extrem leistungsstarke Materialien, die es eine
 	\textbf{Nvidia graphics card :} MSI Ventus 3X GeForce RTX 3090
 	 \\ 
 	\includegraphics[width=\linewidth,height=5cm]{graphic}  \\
-	Dies ist eine großartige Karte für ein Mining-Rig, fähig zur Übertaktung, stabil und gut gekühlt. Es ist eine ziemlich effiziente Karte, die niedrigeren Stromverbrauch und reduzierte Bergbaukosten bedeutet. \\ 
+	Die Verwendung einer leistungsstarken Grafikkarte wie der beschriebenen ist für das Krypto-Mining von großer Bedeutung, da sie für die Verarbeitung von Rechenaufgaben und das Mining von Kryptowährungen verantwortlich ist. Diese spezifische Grafikkarte zeichnet sich durch ihre Fähigkeit zur Übertaktung, Stabilität und gute Kühlung aus. Sie ist auch bekannt für ihre Effizienz, was zu niedrigeren Stromkosten und reduzierten Bergbaukosten beitragen kann. Es ist wichtig, sich über die aktuellen Marktbedingungen und die Leistungsfähigkeit verschiedener Grafikkarten zu informieren, um die bestmögliche Wahl für das Krypto-Mining-Rig zu treffen. \\ 
 
-	
 \end{large}
-\newpage
-\section{Wo sollte ich mein Geld in Kryptowährungen investieren?}
-Diejenigen Investoren, die in den ersten Tagen in Bitcoin investiert haben, sind jetzt so reich und extrem wohlhabend geworden.
-Der Blockchain-Markt wird immer größer und mächtiger, vor allem mit dem Web 3. Die Anleger suchen nach der nächsten digitalen Währung, um reich zu werden. Es wird nun die Frage gestellt, wie man die nächste große Kryptowährung finden kann.
+\subsection{Wo sollte ich mein Geld in Kryptowährungen investieren?}
+Es gibt einige Faktoren, die bei der Auswahl der nächsten erfolgreichen Kryptowährung berücksichtigt werden sollten. Dazu gehören die Skalierbarkeit der Blockchain, die Sicherheit der Technologie und die zugrunde liegende Idee, die von der Kryptowährung angegangen wird. Es ist auch wichtig, das Team hinter der Währung und ihre Erfolgsbilanz in der Vergangenheit zu betrachten. Es ist von großer Bedeutung, gründliche Recherchen durchzuführen und die damit verbundenen Risiken sorgfältig abzuwägen, bevor man in eine Kryptowährung investiert.
+\cite{investopedia2} \cite{smartasset}
 \begin{itemize}
-	\item Der Preis ist entscheidend\\
-	Das wichtigste Element, auf das man bei der Suche nach Kryptowährungen achten sollte, ist der Preis des Tokens. Für die Investoren, die nicht über ein großes Budget verfügen, um in die Kryptowährungen zu investieren, sollten einige Kryptos mit einem niedrigen Preis kaufen.
-	\item Aussichten auf Annahme\\
-	Wenn jemand eine Kryptowährung finden kann, die einen Vorteil gegenüber anderen hat (und die mehr angenommen wird). Es wird die beste Kryptowährung sein, in die Sie Ihr Geld investieren sollten.
-	\item Die Versorgung ist ein Faktor\\
-	Die meisten Kryptowährungen haben ein vorher festgelegtes maximales Angebot. Wenn das Maximum durch die Mining-Operationen erreicht wird. Wenn das Interesse aufrechterhalten wird, während das Angebot festgelegt ist, könnte der Preis steigen. Behalten Sie also immer im Hinterkopf, dass das Angebot ein wichtiger Faktor ist, bevor Sie investieren
-	\item Preis und Volumen
-	Im Jahr 2022 gibt es viele Plattformen, die das Investieren so einfach machen, es speichert die wechselnde Geschichte der Kryptowährungen und die Preise über den Blockchain-Markt. Es ist also besser, den Markt sehr sorgfältig zu scannen und eine Entscheidung über die Erhöhung der Währungen zu treffen. Es gibt auch einige künstliche intelligente Modelle, die auf alten Kryptowährungsdaten basieren und die es leicht machen, vorherzusagen, ob der Preis einer Kryptowährung in Zukunft steigen oder fallen wird.
-	Aber Sie sollten bedenken, dass der Preis nicht gehalten werden kann, und es gibt immer eine Chance zu verlieren. 
+	\item \textbf{Der Preis spielt eine wichtige Rolle bei der Entscheidung.}\\
+	\textbf{Erklärung :} Eine wichtige Überlegung bei der Suche nach einer Kryptowährung ist der Preis des Tokens. Investoren, die nicht über ein großes Budget verfügen, können in Betracht ziehen, Kryptowährungen mit einem niedrigeren Preis zu erwerben. Es ist jedoch wichtig, dass Investoren gründliche Recherchen durchführen und Risiken sorgfältig abwägen, bevor sie in eine Kryptowährung investieren.
+	
+	
+	\item \textbf{Es gibt gute Aussichten auf Annahme für die Kryptowährung, wenn sie von vielen Nutzern und Unternehmen akzeptiert wird.}\\
+	\textbf{Erklärung :} Eine Kryptowährung, die einen wettbewerbsfähigen Vorteil gegenüber anderen bietet und von vielen Nutzern und Unternehmen akzeptiert wird, bietet gute Aussichten für eine erfolgreiche Investition. Es ist wichtig, sorgfältig die Eigenschaften und die Akzeptanz der Kryptowährung zu überprüfen, bevor man das eigene Geld investiert.
+	
+	
+	\item \textbf{Die Versorgung ist ein Faktor, den man bei der Auswahl einer Kryptowährung berücksichtigen sollte.}\\
+	\textbf{Erklärung :} Die Menge an Einheiten einer Kryptowährung, die momentan im Umlauf sind, wird als Versorgung bezeichnet. Eine geringere Versorgung könnte den Preis der Kryptowährung erhöhen, während eine höhere Versorgung möglicherweise dazu führt, dass der Preis sinkt. Bevor man in eine Kryptowährung investiert, ist es wichtig, sich über die Versorgung des Tokens zu informieren.
+	
+	
+	
+	\item \textbf{Preis und Volumen sind wichtig} \\
+	\textbf{Erklärung :} In 2022 gibt es viele Plattformen, die das Investieren in Kryptowährungen vereinfachen, indem sie die wechselhafte Geschichte der Kryptowährungen und die Preise über den Blockchain-Markt verfolgen. Es ist daher ratsam, den Markt sorgfältig zu scannen und eine informierte Entscheidung über die Investition in Kryptowährungen zu treffen. Es gibt auch künstliche intelligente Modelle, die auf alten Kryptowährungsdaten basieren und es erleichtern, vorherzusagen, ob der Preis einer Kryptowährung in Zukunft steigen oder fallen wird. Allerdings sollte beachtet werden, dass der Preis von Kryptowährungen volatil ist und es immer das Risiko von Verlusten gibt. 
 \end{itemize}
 
-%\subsection{Wie kann ich mein geld anlegen ?}
+
 \chapter{Schluss}
-Die Methode \textquestiondown Proof-Of-Work\textquotedblright ist ein Konsensmechanismus, der es den Netzwerkteilnehmern ermöglicht zu bestätigen, dass die von ihnen durchgeführten Transaktionen gültig sind. Dies geschieht, indem andere Miner versuchen, eine gültige Nonce zu finden. Der erste, der die Nonce findet, erhält eine Belohnung, und die anderen Teilnehmer überprüfen die Gültigkeit des Hashs. Das Mining erfordert eine starke Hardware-Ausstattung, aber alles wird mietbar sein.\\ \\ \\
+Zusammenfassend lässt sich sagen, dass Bitcoin und andere Kryptowährungen durch den Einsatz des Konsensmechanismus "Proof-of-Work" validierte Transaktionen ermöglichen. Dieser Prozess erfordert starke Hardware-Ressourcen und kann durch das Mining von Belohnungen begleitet sein. Das Blockchain-Netzwerk spielt eine wichtige Rolle bei der Überprüfung der Gültigkeit von Transaktionen und der Aufrechterhaltung der Integrität des Systems. Vor dem Investieren in Bitcoin oder eine andere Kryptowährung ist es wichtig, sich über den Markt und die verschiedenen Optionen gründlich zu informieren und das Risiko sorgfältig abzuwägen.\\ \\
 
-Nach diesem Bericht haben wir viele Informationen über bitcoin und seine Funktionsweise und die grundlegende Funktion des Proof of Work gesehen. Wir verstehen auch die Bedeutung des Blockchain-Netzwerks und alle anderen Definitionen. Lassen Sie uns beginnen, in Bitcoin oder in andere Kryptowährungen zu investieren.\\
+Die Perspektiven für Proof-Of-Work und andere Konsensmechanismen in der Kryptowährungswelt sind derzeit ungewiss. Proof-Of-Work ist derzeit der am weitesten verbreitete Konsensmechanismus und wird von vielen Kryptowährungen wie Bitcoin und Ethereum verwendet, aber es hat auch einige Nachteile, wie hohe Energiekosten und langsame Transaktionsgeschwindigkeiten, die zu einer eingeschränkten Skalierbarkeit führen. \\
 
-\newpage
-\begin{center}
-	\begin{LARGE}
-		\textbf{Literatur}
-	\end{LARGE}
-\end{center}
+Es gibt auch andere Konsensmechanismen, wie Proof-Of-Stake, die derzeit entwickelt werden und möglicherweise eine Alternative zu Proof-Of-Work darstellen könnten. Proof-Of-Stake erfordert von Teilnehmern, eine bestimmte Menge an Kryptowährung zu "staken", um als Miner zu fungieren, was zu reduzierten Energiekosten führen könnte. Es gibt jedoch noch Fragen hinsichtlich der Sicherheit von Proof-Of-Stake und ob es die gleiche Sicherheit wie Proof-Of-Work gewährleisten kann.\\ 
 
-\url{https://de.wikipedia.org/wiki/Blockchain} \\ \\
-\url{https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/06/structure-of-a-singly-linked-list.png} \\ \\
-\url{https://en.wikipedia.org/wiki/Proof\_of\_work} \\ \\
-\url{https://en.wikipedia.org/wiki/Blockchain} \\ \\
-\url{https://www.iotforall.com/blockchain-use-cases-in-2022} \\ \\
+Es ist unmöglich vorherzusagen, welcher Konsensmechanismus in Zukunft dominieren wird. Es ist jedoch wichtig, dass Kryptowährungen kontinuierlich verbessert werden, um Skalierbarkeit und Sicherheit zu verbessern. Es ist auch wahrscheinlich, dass es in der Zukunft weitere neue Konsensmechanismen geben wird, die die Landschaft der Kryptowährung verändern könnten. Eines dieser Konsensmechanismen, das zunehmend in den Fokus gerät, ist Proof-Of-Authority. Dieser Mechanismus basiert auf einem Netzwerk von autorisierten Validatoren, die Transaktionen bestätigen und das Netzwerk sicher halten. Proof-Of-Authority könnte eine günstigere und schnellere Alternative zu Proof-Of-Work darstellen, aber es gibt auch Bedenken bezüglich der Zentralisierung und der möglichen Einflussnahme von Validatoren. Es ist wichtig, dass die Entwickler weiter an neuen und verbesserten Mechanismen arbeiten, um die Effizienz und Sicherheit von Kryptowährungen zu gewährleisten. Investoren sollten sich über die verschiedenen Konsensmechanismen informieren und Risiken sorgfältig abwägen, bevor sie in Kryptowährungen investieren.
 
-\url{https://www.btc-echo.de/academy/bibliothek/proof-of-work/} \\ \\
-\url{https://www.fool.com/investing/stock-market/market-sectors/financials/cryptocurrency-stocks/proof-of-work/} \\ \\
-\url{https://www.blockchain.com/explorer/api/blockchain\_api}\\ \\
-\url{https://bitcoin.org/img/icons/opengraph.png}\\ \\
+\printbibliography
 
-
-\url{https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png} \\ \\
-\url{https://upload.wikimedia.org/wikipedia/commons/c/c1/Bsv-icon-small.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/2083.png} \\ \\ 
-\url{https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg} \\ \\
-\url{https://block-builders.de/wp-content/uploads/2021/01/ony3qesa3ebx-1024x1024.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/1321.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/328.png}\\ \\ 
-\url{https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png}\\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/5647.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/2577.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/1042.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/64x64/1698.png} \\ \\
-\url{https://s2.coinmarketcap.com/static/img/coins/200x200/109.png} \\ \\
-
-
-\url{https://www.fool.com/investing/stock-market/market-sectors/financials/cryptocurrency-stocks/proof-of-work/#:~:text=The%20proof%2Dof%2Dwork%20algorithm,too%20slowly%2C%20they%20get%20easier.} \\ \\
-\url{https://www.blockchain.com/explorer/api/blockchain_api} \\ \\
-\url{https://bitcoin.org/img/icons/opengraph.png?1666775325} \\ \\
-\url{https://block-builders.de/wp-content/uploads/2021/01/ony3qesa3ebx-1024x1024.png} \\ \\
-\url{https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg}\\
-\url{https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg}\\ \\
-\url{https://www.investopedia.com/terms/p/proof-stake-pos.asp#:~:text=What%20Is%20Proof%2Dof%2DStake%20vs.,new%20blocks%20to%20the%20blockchain.}\\ \\
-\url{https://www.businessinsider.com/personal-finance/proof-of-work}\\ \\
-\url{https://smartasset.com/investing/how-to-invest-in-cryptocurrency#:~:text=The%20most%20popular%20place%20to,Ethereum%20with%20a%20debit%20card.}\\ \\
-\url{https://www.zdnet.com/article/how-to-build-a-cryptomining-rig/}\\ \\
-\url{https://www.investopedia.com/news/how-identify-next-big-cryptocurrency/}\\ \\
 
 \end{document}
