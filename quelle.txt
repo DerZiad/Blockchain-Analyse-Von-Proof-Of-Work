@@ -1,1 +1,27 @@
-\item https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/06/structure-of-a-singly-linked-list.png
+@url{https://de.wikipedia.org/wiki/Blockchain}
+@url{https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/06/structure-of-a-singly-linked-list.png}
+@url{https://en.wikipedia.org/wiki/Proof_of_work#:~:text=The%20concept%20was%20invented%20by,processing%20time%20by%20a%20computer.}
+@url{https://en.wikipedia.org/wiki/Blockchain#:~:text=A%20blockchain%20was%20created%20by,Scott%20Stornetta%2C%20and%20Dave%20Bayer.}
+@url{https://www.iotforall.com/blockchain-use-cases-in-2022#:~:text=Blockchain%20technology%20is%20poised%20to,to%20inheritance%2C%20including%20crypto%20assets.}
+
+@url{https://www.btc-echo.de/academy/bibliothek/proof-of-work/}
+@url{https://www.fool.com/investing/stock-market/market-sectors/financials/cryptocurrency-stocks/proof-of-work/#:~:text=The%20proof%2Dof%2Dwork%20algorithm,too%20slowly%2C%20they%20get%20easier.}
+@url{https://www.blockchain.com/explorer/api/blockchain_api}
+@url{https://bitcoin.org/img/icons/opengraph.png?1666775325}
+
+
+
+- 3 
+https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png
+https://upload.wikimedia.org/wikipedia/commons/c/c1/Bsv-icon-small.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/2083.png
+https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg
+https://block-builders.de/wp-content/uploads/2021/01/ony3qesa3ebx-1024x1024.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/1321.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/328.png
+https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/5647.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/2577.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/1042.png
+https://s2.coinmarketcap.com/static/img/coins/64x64/1698.png
+https://s2.coinmarketcap.com/static/img/coins/200x200/109.png
