@@ -1,0 +1,17 @@
+\babel@toc {ngerman}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ein Beispiel für eine Blockchain-Kette\relax }}{9}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Der erste Block der Kette wird als Genius-Block bezeichnet.\relax }}{11}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Die echten Blockchain-Block-Transaktionen.\relax }}{19}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Das nächste Diagramm, das als Klassendiagramm bezeichnet wird, gibt eine visuelle Darstellung aller Daten, die im realen Blockchain-Netzwerk enthalten sind. Dieses Diagramm ist hilfreich, um die Implementierung des Blockchain-Netzwerks besser zu verstehen und zu analysieren. Es zeigt die Beziehungen und Abhängigkeiten zwischen den verschiedenen Elementen des Netzwerks und hilft, die Struktur und Funktionsweise des Systems zu verdeutlichen. Die Verwendung eines Klassendiagramms ermöglicht es, die komplexen Zusammenhänge einfacher darzustellen und die Implementierung des Blockchain-Netzwerks besser zu verstehen.\relax }}{20}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Der Algorithmus zur Bestimmung der Nonce wird mit dem Aktivitätsdiagramm erklärt. Zunächst müssen wir die initialen Daten initialisieren, einschließlich des MaxNonceLimit, der Anzahl der Nullen, die der Hash haben sollte. In diesem Beispiel betrachten wir die Anforderung, dass der Hash mit 4 Nullen beginnen sollte. Es ist wichtig zu beachten, dass die Anzahl der Nullen eine wichtige Rolle bei der Bestimmung der Komplexität des Algorithmus spielt. Je höher die Anzahl der Nullen, desto länger wird es dauern, die Nonce mit begrenzter Hardware zu finden. Wir sollten auch unsere Inkrementierungsvariable für die for-Schleife initialisieren.\relax }}{21}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Die heutige Schwierigkeit ist\relax }}{24}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mechanismus der Sidechain\relax }}{29}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Two way peg\relax }}{30}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Intelligente Verträge\relax }}{31}{}%
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

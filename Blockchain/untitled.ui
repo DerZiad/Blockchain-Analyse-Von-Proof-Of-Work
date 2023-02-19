@@ -56,32 +56,29 @@
          <number>15</number>
         </property>
         <item>
-         <widget class="QGraphicsView" name="graphicCard">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>100</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+         <layout class="QHBoxLayout" name="graphicCardLayout" stretch="0,1">
+          <property name="spacing">
+           <number>25</number>
           </property>
-          <property name="minimumSize">
-           <size>
-            <width>400</width>
-            <height>200</height>
-           </size>
+          <property name="leftMargin">
+           <number>10</number>
           </property>
-          <property name="maximumSize">
-           <size>
-            <width>700</width>
-            <height>200</height>
-           </size>
+          <property name="topMargin">
+           <number>10</number>
           </property>
-          <property name="sizeIncrement">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
+          <property name="rightMargin">
+           <number>10</number>
           </property>
-         </widget>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QGraphicsView" name="gpuView"/>
+          </item>
+          <item>
+           <widget class="QListView" name="gpuList"/>
+          </item>
+         </layout>
         </item>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout">
@@ -89,25 +86,9 @@
            <number>0</number>
           </property>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <layout class="QHBoxLayout" name="changeToGPULayout">
             <item>
-             <widget class="QCheckBox" name="checkBox">
-              <property name="font">
-               <font>
-                <pointsize>10</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>CPU  Benutzen</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <widget class="QCheckBox" name="checkBox_2">
+             <widget class="QCheckBox" name="gpuCheckbox">
               <property name="font">
                <font>
                 <pointsize>10</pointsize>
@@ -184,7 +165,7 @@
        <number>25</number>
       </property>
       <item row="0" column="0">
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="nonceLabel">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
           <horstretch>100</horstretch>
@@ -245,7 +226,7 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="difficultyLabel">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
           <horstretch>100</horstretch>
@@ -306,7 +287,7 @@
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QTextEdit" name="textEdit_3">
+       <widget class="QTextEdit" name="blockInformtionsTextEdit">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
           <horstretch>100</horstretch>
@@ -334,7 +315,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="browseButton">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
           <horstretch>50</horstretch>
@@ -367,7 +348,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="mineButton">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
           <horstretch>50</horstretch>
@@ -400,7 +381,7 @@
        </widget>
       </item>
       <item row="3" column="0">
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="actionLabel">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
           <horstretch>100</horstretch>
@@ -437,7 +418,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="timestampLabel">
         <property name="font">
          <font>
           <family>Calibri</family>

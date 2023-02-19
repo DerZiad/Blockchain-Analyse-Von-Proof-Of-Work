@@ -1,8 +1,10 @@
 
+
 \documentclass[ngerman]{scrreprt}  
 
 \bibliography{references1.bib}
 \input{twp-ziad-cfg}
+
 \begin{document}
 	\begin{titlepage}
 		%----------------------------------------------------------------------------------------
@@ -95,7 +97,8 @@
    \end{abstract}
 
   \tableofcontents
-
+  \listoffigures
+  
 
 \chapter{Einleitung}
 Blockchain ist seit den späten 2000er Jahren eine der wichtigsten Technologien im Bereich digitaler Transaktionen. Im Jahr 2008 veröffentlichte eine Person oder Gruppe von Personen unter dem Namen Satoshi Nakamoto ein Whitepaper mit dem Titel "Bitcoin: A Peer-to-Peer Electronic Cash System". Vier Monate später, am 3. Januar 2009, wurde der Genesis-Block erstellt, der den Beginn und Tag 0 des Bitcoin- und Blockchain-Netzwerks markierte. Die Blockchain wurde entwickelt, um als öffentliches Hauptbuch für Bitcoin-Transaktionen zu dienen und basiert auf der "Proof-of-Work"-Methode, um die Schaffung und den Handel von Bitcoin und anderen Kryptowährungen während der Finanzkrise 2007/08 zu unterstützen. Heutzutage gibt es viele Kryptowährungen wie Litecoin (2011), Ethereum (2015) und Dogecoin (2013).\\ \\
@@ -109,7 +112,7 @@ Das ist der Grund, warum die Blockchain-Technologie erfunden wurde. Indem es imm
 %##############################
 %#           Section 1        #
 %##############################
-\section{Blockchain Definition}
+\section{Blockchain Definition}\label{blockchain:definition}
 Die \textbf{Blockchain} ist eine ständig wachsende Liste von Datensätzen, die in einzelnen Blöcken organisiert sind. Sie dient als öffentliches Hauptbuch, in dem Personen Datensätze einsehen und erstellen können. Jeder Block besteht aus Daten, einem Hash, dem Hash des vorherigen Blocks und einem Zeitstempel. Das Wesentliche an der Blockchain ist, dass wir spätere Transaktionen auf früheren Transaktionen aufbauen und deren Richtigkeit bestätigen können, indem wir die Kenntnis der früheren Transaktionen nachweisen. Auf diese Weise wird es unmöglich gemacht, die Existenz oder den Inhalt früherer und späterer Transaktionen zu manipulieren. Andere Teilnehmer der dezentralen Buchhaltung erkennen eine Manipulation der Blockchain an der Inkonsistenz der Blöcke. \cite{businessinsider}\\ 
 \\
 \\
@@ -159,7 +162,7 @@ Es handelt sich um eine Datenstruktur in Form eines Binärbaums, die in Bitcoin 
 
 
 \section{Blockchaining-Mechanismus}
-\textbf{Die Funktionsweise der Blockchain} ähnelt der einer verketteten Liste, da sie aus einer Reihe von Blöcken besteht, die jeweils durch einen Hash des aktuellen Blocks und einen Hash des vorherigen Blocks verbunden sind. Dieser Mechanismus ermöglicht es, über die Kette zu iterieren, ähnlich wie bei einer verketteten Liste, in der jeder Knoten einen Zeiger auf den vorherigen Knoten enthält. \cite{fool}
+\textbf{Eine Blockchain funktioniert} ähnlich wie eine verkettete Liste, da sie aus einer Reihe von Blöcken besteht, die jeweils durch einen Hash des aktuellen Blocks und einen Hash des vorherigen Blocks miteinander verbunden sind. Dieser Mechanismus ermöglicht es, über die Kette zu iterieren, ähnlich wie bei einer verketteten Liste, bei der jeder Knoten einen Zeiger auf den vorherigen Knoten enthält. [ \cite{fool} ]
 
 \begin{figure}[h!]
 	\centering
@@ -167,147 +170,94 @@ Es handelt sich um eine Datenstruktur in Form eines Binärbaums, die in Bitcoin 
 	\caption{Der erste Block der Kette wird als Genius-Block bezeichnet.}
 	\small URL : \url{https://muenchen.digital/wp-content/uploads/Blockchain-1.jpg}
 \end{figure} 
-In solchen Fällen sollte man immer bedenken, welche Handlungen von verdächtigen Personen ausgehen könnten, beispielsweise das Modifizieren oder Manipulieren der Daten im Block (i). Dies führt zu einer Änderung des tatsächlichen Blocks i und macht den vorherigen Hash im Block (i+1) ungültig. Dies bedeutet, dass das Ändern eines Blocks alle darauf folgenden Blöcke in der Blockchain ungültig macht, was die Integrität der Kette beweist.\\ \\
+In solchen Fällen sollte man immer im Hinterkopf behalten, dass Hacker versuchen werden, viele Angriffe auf das Blockchain-Netzwerk zu entwerfen, z. B. die Änderung oder Manipulation der Daten in Block (i). Dies führt zu einer Änderung des tatsächlichen Blocks i und macht das Feld "vorheriger Hash" in Block (i+1) ungültig. Das bedeutet, dass die Änderung eines Blocks alle nachfolgenden Blöcke in der Blockkette ungültig macht, was die Integrität der Kette beweist.\\ \\
 \color{red}
 \Large{\textbf{Achtung :}}
 \color{black}
 \textbf{Ist dieser Mechanismus gesichert?}\\
 \normalsize
- 	
-Der Einsatz von Hashes allein reicht nicht aus, um Manipulationen zu verhindern. Da Computer heutzutage sehr schnell sind und Tausende von Hashes berechnen können, besteht technisch gesehen die Möglichkeit, einen Block zu manipulieren und alle nachfolgenden Hashes der nachfolgenden Blöcke erneut zu berechnen, um das Blockchain-Netzwerk wieder gültig zu machen. Aus diesem Grund verwendet die Blockchain den sogenannten "Proof of Work (POW)", um dieses Problem zu vermeiden.	
+Die Verwendung von Hash reicht jedoch nicht aus, um verdächtige Manipulationen zu verhindern. Da Computer heute sehr schnell sind und Tausende von Hash-Operationen berechnen können, besteht technisch die Möglichkeit, einen Block zu manipulieren und alle Hashes der folgenden Blöcke neu zu berechnen, um das Netzwerk der Blockkette mit falschen Informationen wieder gültig zu machen. Aus diesem Grund verwendet die Bitcoin-Blockchain einen Konsensmechanismus, der als Proof-Of-Work (PoW) bezeichnet wird, um das Problem der Neuberechnung von Blöcken zu lösen.
+
+\section{wie wird bei eine Blockchain die Unveränderlichkeit und Zensurresistenz der Daten gewährleistet ?}
+ 
+Die Unveränderlichkeit und Zensurresistenz der Daten in einer Blockchain wird durch verschiedene Technologien und Mechanismen gewährleistet, darunter :
+
+ \begin{itemize}
+ 	\item Konsensmechanismus
+ 	\item Kryptografie
+ 	\item Dezentralisierung
+ 	\item Mehrere Kopien
+ \end{itemize} 
+\subsection{Was ist ein Konsensmechanismus ?}\label{blockchain:konsensmechanismus}
+Konsensmechanismus: ist ein Mechanismus, der es allen Teilnehmern einer Blockchain ermöglicht, Mining-Operationen durchzuführen, was bedeutet, komplexe mathematische Operationen zu lösen, um einen Block zu validieren und ihn der Hauptkette hinzuzufügen. In unserem Bericht haben wir ausschließlich über PoW berichtet. Es gibt verschiedene Beispiele dafür, z. B. "Proof-of-Work", "Proof-of-Stake" oder "Proof-of-Space".
+\subsection{Warum benutzt die Blockchain die Kryptographie, um die Daten zu sichern ?}
+Kryptografie: Die Blockchain-Technologie nutzt Kryptografie, um Daten zu verschlüsseln und mit Hash-Funktionen wie SHA256, die von PoW verwendet werden, zu signieren. Dadurch wird die Sicherheit der Daten in der Blockchain gewährleistet, da jede Änderung an einer Transaktion oder einem Block sofort erkannt wird.
+\subsection{Was bedeutet die Dezentralisierung ?}\label{blockchain:dezentralisierung}
+Dezentralisierung: Eine Blockchain ist ein dezentralisiertes Netzwerk, das viele verschiedene Teilnehmer enthält. Das bedeutet, dass keine zentrale Behörde die Kontrolle über das Netzwerk hat, was es einer einzelnen böswilligen Person erschwert, die Daten zu verändern.
+\subsection{Warum benutzt die Blockchain Mehrere Kopien, um die Daten zu sichern ?}\label{blockchain:kopien} 
+Mehrere Kopien: Die Blockchain speichert mehrere Kopien ihrer Daten bei vielen verschiedenen Teilnehmern, was bedeutet, dass es schwieriger ist, alle Kopien einer Blockkette zu zensieren.
+ 
+ \section{Was ist Mining-Pool}
+ Ein Mining-Pool ist eine Gruppe von Minern, die ihre Hardware kombinieren, um ihre Chancen auf Belohnungen durch den Prozess des Minings von Kryptowährungen zu erhöhen, die auf dem Proof-of-Work (PoW)-Konsensmechanismus basieren. Die kryptografischen Rätsel, die gelöst werden müssen, um Belohnungen zu erhalten, sind für einzelne Miner oft zu komplex zu lösen, und das Poolen von Ressourcen ermöglicht eine dynamischere Nutzung der Rechenleistung.  Der Mining-Pool ist dafür verantwortlich, die Verteilung der Belohnungen unter seinen Teilnehmern zu verwalten, was in der Regel automatisch geschieht, je nachdem, wie viel jeder Miner zur Lösung beigetragen hat, um den Hash zu finden.  Einige bekannte Mining-Pools im Jahr 2023 sind Antpool, BTCC Mining Pool und Slush Pool.
+ 
+ \begin{figure}[H]
+ 	\includegraphics[width=\linewidth,height=8cm]{miningpool.png}
+ 	\small{\url{https://www.researchgate.net/profile/Christian-Stoll-3/publication/331407183/figure/fig2/AS:772160457031680@1561108807083/Hash-rate-distribution-among-mining-pools-as-of-November-2018-Data-pulled-from-btccom.png}}
+ \end{figure}
+
 
 
 
 \chapter[Theoretische Seite der Proof-Of-Work-Methode]{Einführung in die „Proof-Of-Work“-Methode}	
 
-\section{Was ist Proof-Of-Work ?}
-Proof-Of-Work (POW) wurde entwickelt, um zu verhindern, dass Nutzer Blocks in der Blockchain leicht manipulieren. Es verlangt von Minern, eine signifikante Menge an Mühe aufzuwenden, um einen Block zu erstellen. Diese Methode basiert auf verschiedenen Grundprinzipien in der Kryptowährung \cite{proof_of_work_wikipedia}, wie folgt:
+\section{Einführung in die Proof-of-Work-Methode?}
+\subsection{Was bedeutet Proof-Of-Work ?}
+\textbf{Proof-Of-Work} ist eine dezentrale Konsensmethode (Es ist in \cref{blockchain:konsensmechanismus} behandelt), bei der die Netzwerkteilnehmer Rechenleistung geben müssen, um ein Hash zu finden. Dieser Prozess dient als Abschreckung gegen Manipulation oder Ausbeutung des Systems, weil die Teilnehmer (Nodes) Arbeit leisten müssen. Was es ein sicheres Mittel zur Überprüfung der Integrität von Transaktionen und zur Aufrechterhaltung des Konsenses zwischen allen Mitgliedern des Netzwerks bietet.
+\subsection{Warum ist es empfehlenswert, die Proof-of-Work zu benutzen?}
+\textbf{Proof-Of-Work (POW)} wurde entwickelt, um zu verhindern, dass Nutzer Blocks in der Blockchain leicht manipulieren. Es verlangt von Minern, eine signifikante Menge an Mühe aufzuwenden, um einen Block zu erstellen. Diese Methode basiert auf verschiedenen Grundprinzipien in der Kryptowährung [ \cite{proof_of_work_wikipedia} ], wie folgt:
 
 \begin{itemize}
-	\item{Der Proof-of-Work-Mechanismus sorgt dafür, dass das Hinzufügen von Blöcken zur Blockchain-Kette mit einer gewissen Schwierigkeit verbunden ist, indem es Miner dazu zwingt, einen gültigen Hash zu finden. Diese Methode wurde so konzipiert, dass etwa alle zehn Minuten ein neuer Block mit einer festgelegten Menge an BTC in die Kette aufgenommen wird. Dies gewährleistet das algorithmische Wachstum der Geldmenge. \cite{btc-echo-proof-of-work}}
-	\item{Die Verwendung von Proof-of-Work ermöglicht es den Nodes, die Integrität der Blockchain zu überprüfen, indem sie diejenige wählen, die den größten Aufwand in Form von Rechenleistung darstellt. Auf diese Weise ist es einfach zu erkennen, welche Blockchain die authentische ist.}
-	\item{Die Verwendung von Proof of Work dient dazu, das Blockchain-Netzwerk vor Angreifern zu schützen, da diese eine größere Energiemenge in das Netzwerk einspeisen müssten als alle anderen verfügbaren Miner insgesamt über einen längeren Zeitraum. Dies ist beim Bitcoin aufgrund der enormen Rechenleistung, die benötigt wird, um einen gültigen Block zu erstellen, praktisch unmöglich.}
-	\item{Proof of Work ist eine bewährte Methode zur Sicherung von Blockchains und zur Neuverteilung von digitalen Währungen. Im Gegensatz zu Fiatgeld, das von Zentralbanken gedruckt werden kann, erfordert die Erschaffung von Coins in einem Proof-of-Work-System einen tatsächlichen Einsatz von Ressourcen. Dadurch wird ein fairer Mechanismus für die Verteilung von Coins gewährleistet. \cite{btc-echo-proof-of-work}}
+	\item \textbf{Der Proof-Of-Work-Mechanismus sorgt dafür}, dass das Hinzufügen von Blöcken zur Blockchain-Kette mit einer gewissen Schwierigkeit verbunden ist, indem es Miner dazu zwingt, einen gültigen Hash zu finden. Diese Methode wurde so konzipiert, dass etwa alle zehn Minuten ein neuer Block mit einer festgelegten Menge an BTC in die Kette aufgenommen wird. Dies gewährleistet das algorithmische Wachstum der Geldmenge. [ \cite{btc-echo-proof-of-work} ]
+	\item \textbf{Die Verwendung von Proof-Of-Work} ermöglicht es den Nodes, die Integrität der Blockchain zu überprüfen, indem sie diejenige wählen, die den größten Aufwand in Form von Rechenleistung darstellt. Auf diese Weise ist es einfach zu erkennen, welche Blockchain die authentische ist.
+	\item \textbf{Die Verwendung von Proof-Of-Work} dient dazu, das Blockchain-Netzwerk vor Angreifern zu schützen, da diese eine größere Energiemenge in das Netzwerk einspeisen müssten als alle anderen verfügbaren Miner insgesamt über einen längeren Zeitraum. Dies ist beim Bitcoin aufgrund der enormen Rechenleistung, die benötigt wird, um einen gültigen Block zu erstellen, praktisch unmöglich.
+	\item \textbf{Proof-Of-Work ist eine bewährte Methode} zur Sicherung von Blockchains und zur Neuverteilung von digitalen Währungen. Im Gegensatz zu Fiatgeld, das von Zentralbanken gedruckt werden kann, erfordert die Erschaffung von Währungen in einem Proof-Of-Work-System einen tatsächlichen Einsatz von Ressourcen. Dadurch wird ein fairer Mechanismus für die Verteilung von Währungen gewährleistet. [ \cite{btc-echo-proof-of-work} ]
 \end{itemize}
 
-\section{Wie funktioniert Proof of Work bei einer Blockchain ?}
-Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Methoden versuchen, eine Nonce zu finden, die bestimmte Eigenschaften aufweist, wodurch Milliarden von Berechnungen durchgeführt werden. Sobald ein solches Ergebnis erzielt wurde, wird den Minern eine Belohnung in Form einer Blocksubvention gewährt. Dieser Prozess wird als Mining bezeichnet.\\ \\ \\ \\
-\textbf{Diese beschreiben den Prozess einer Transaktion im Blockchain-Netzwerk. \\ }
-\begin{itemize}
-	\item{Die Blockchain generiert einen Block, der alle Transaktionen enthält, die in einem bestimmten Zeitraum stattgefunden haben.}
-	\item{Der Verifizierer wird die Integrität der Transaktionen überprüfen, um sicherzustellen, dass sie legitim sind. \cite{btc-echo-proof-of-work}}
-	\item{Die Miner im Netzwerk überprüfen dann die Legitimität dieser Transaktionen und führen anschließend eine Suche durch, indem sie die Nonce erraten. Der erfolgreiche Miner, der als erstes die Lösung findet, wird mit einer Belohnung und den Transaktionsgebühren belohnt. Dieser Prozess wird als "Mining" bezeichnet. Das Blockchain-Netzwerk wird dann um den Block mit den bestätigten Transaktionen erweitert und wird als Teil der Kette von Blöcken gespeichert.\cite{btc-echo-proof-of-work}}
-	\item{Die Transaktionsbestätigung im Blockchain-Netzwerk wird wiederholt \\}
-	
-\end{itemize}
-\textbf{Dies ist ein sequentielles Diagramm, das erklärt, wie es funktioniert \\}
+\subsection{Ist die Dezentralisierung von Proof-Of-Work gesichert ?}
+Die Dezentralität (Es ist in \cref{blockchain:dezentralisierung} behandelt) in dieser Methode ist abhängig von verschiedenen Faktoren,   der Verteilung der Mining-Ressourcen und der Zentralisierung der Mining-Pools. Wenn eine hohe Konzentration unter den Mining-Pools besteht, kann das zu einer kleineren Dezentralisierung führen, denn ein einzelner Mining-Pool könnte in der Lage sein, die Mehrheit der Rechenleistung des Netzwerks zu kontrollieren.
+\subsection{Wie wird die Dezentralisierung von Proof-of-Work verbessert ?}
+Es gibt oft Maßnahmen wie die Förderung einer gleichmäßigen Verteilung der Mining-Ressourcen und die Einführung von Mechanismen, die eine Zentralisierung der Mining-Pools einschränken, ergriffen. Dies trägt zu einer fairen Verteilung der Rechenleistung bei und unterstützt außerdem den Aufbau eines robuster und sichereren Netzwerks.
+
+\section{Wie genau funktionieren die Proof-of-Work-Berechnungen?}
+
+\begin{description}
+	\item[Hash-Funktion] Zuerst muss man wissen, wie die Hash-Funktion funktioniert, indem sie eine eindeutige, nicht invertierbare mathematische Funktion, die aus einer beliebigen Eingabestring eine feste Länge erzeugt. Sie könnte eine beliebig lange Zeichenfolge in eine eindeutige Zeichenfolge festgelegter Länge umwandeln. Beispiel hierfür ist der Einsatz der SHA-256-Hash-Funktion im Bereich des Minings. [ \cite{btc-echo-proof-of-work} ]
+	\item[Mining] ist ein Prozess, bei dem Miner versuchen, die Nonce und die Reihenfolge von jeden Parameter zu erraten, die von einer Hash-Funktion als Eingabe akzeptiert werden, um ein Ergebnis zu liefern. Da es unmöglich ist, die Hash-Funktion umzukehren, um die ursprüngliche Eingabe zu erhalten, müssen Miner eine Vielzahl (Milliarden von Berechnungen) von Operationen durchführen, um den Wert der Eingabe für die Hash-Funktion zu ermitteln. Sobald ein solches Ergebnis erzielt wurde, wird den Minern eine Belohnung gewährt. [ \cite{btc-echo-proof-of-work} ]
+\end{description}
+
+\subsubsection{Diese beschreiben den Prozess einer Transaktion im Blockchain-Netzwerk.}
+\begin{enumerate}
+	\item Die Blockchain generiert einen Block, der alle Transaktionen enthält, die in einem bestimmten Zeitraum stattgefunden haben.
+	\item Der Verifizierer wird die Integrität der Transaktionen überprüfen, um sicherzustellen, dass sie legitim sind. [ \cite{btc-echo-proof-of-work} ]
+	\item Die Miner im Netzwerk überprüfen dann die Legitimität dieser Transaktionen und führen anschließend eine Suche durch, indem sie die Nonce und die Reihenfolge von jeden Parameter erraten. Der erfolgreiche Miner, der als erstes die Lösung findet, wird mit einer Belohnung(Anzahl von Bitcoins) bekommen.
+	\item Das Blockchain-Netzwerk wird dann um den Block mit den bestätigten Transaktionen erweitert und wird als Teil der Blockchain gespeichert.[ \cite{btc-echo-proof-of-work} ]
+	\item Eine Transaktion wird als durchgeführt angesehen.
+	\item Der Prozess wird wiederholt \\
+\end{enumerate}
+\subsubsection{Dies ist ein sequentielles Diagramm, das erklärt, wie es funktioniert}
 \includegraphics[width=\linewidth]{ProofOfWork1.png} \\ \\
 \includegraphics[width=\linewidth]{ProofOfWork2.png}
-\section{Wie genau funktionieren die Proof-of-Work-Berechnungen?}
-\begin{itemize}
-	\item {Die Miner im Blockchain-Netzwerk nutzen Hash-Funktionen, die in ihrer Funktionsweise unumkehrbar sind. Sie können eine beliebig lange Zeichenfolge in eine eindeutige Zeichenfolge festgelegter Länge umwandeln. Die Schwierigkeit besteht darin, ein Ergebnis zu erzielen, das bestimmte Eigenschaften aufweist, die sich aus der Verwendung der Hash-Funktion ergeben. Ein bekanntes Beispiel hierfür ist der Einsatz der SHA-256-Hash-Funktion im Bereich des Minings bei Bitcoin. \cite{btc-echo-proof-of-work}}
-	\item{Die Hash-Funktion ist eine eindeutige, nicht invertierbare mathematische Funktion, die aus einer beliebigen Eingabestring eine feste Länge erzeugt. Sie wird häufig in der Kryptographie und im Blockchain-Bereich verwendet. Im Fall von Kryptowährungen wie Bitcoin wird sie beim Mining verwendet, wobei Miner versuchen, einen Wert mit bestimmten Eigenschaften zu finden, indem sie der Hash-Funktion Zeichenfolgen übergeben. Da die Rückgängigmachung der Hash-Funktion nicht möglich ist, kann der Miner den erhaltenen Wert nicht einfach umkehren und die Eingabe der Hash-Funktion erhalten.} \cite{fool}, \cite{btc-echo-proof-of-work}
-	\item{Aus diesem Grund gibt es das Konzept \textbf{"Mining"}, Mining ist ein Prozess, bei dem Miner versuchen, die Nonce und die Reihenfolge der Parameter zu erraten, die von einer Hash-Funktion als Eingabe akzeptiert werden, um ein Ergebnis zu liefern. Da es unmöglich ist, die Hash-Funktion umzukehren, um die ursprüngliche Eingabe zu erhalten, müssen Miner eine Vielzahl von Operationen durchführen, um den Wert der Eingabe für die Hash-Funktion zu ermitteln. Dies geschieht durch das Konzept des Minings, bei dem Miner versuchen, die Nonce und die Reihenfolge jedes Parameters, die von der Hash-Funktion als Eingabe akzeptiert werden, zu erraten.}
-	\item{Wenn der Block abgebaut wird, überprüfen alle Teilnehmer des Blockchain-Netzwerks die präsentierte Lösung, um zu bestätigen, dass die Gültigkeit der Blockchain aufrechterhalten wird.} \cite{btc-echo-proof-of-work} 
-\end{itemize}
 
 
-\section{Was hat es mit der Schwierigkeit auf sich ?}
-\begin{itemize}
-\item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden. \cite{btc-echo-proof-of-work}}
-\item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. \cite{btc-echo-proof-of-work}}
-\end{itemize}
-\section{Sicherheit des Proof-Of-Work}
-
-\begin{itemize}
-	\item Der Proof-of-Work ist eine Technik, die in vielen Kryptowährungen eingesetzt wird, um Transaktionen zu verifizieren und neue Blöcke in die Blockchain einzufügen. Miner müssen dabei bestimmte Berechnungen durchführen, um einen neuen Block zu "abbauen" und somit eine Belohnung zu erhalten.
-	
-	\item Der Proof-of-Work bietet eine gewisse Sicherheit, da es für Angreifer schwierig ist, die Blockchain zu verändern, ohne die erforderliche Rechenleistung zu erbringen. Allerdings gibt es auch Nachteile, wie hohe Energiekosten und langsamere Transaktionsgeschwindigkeiten im Vergleich zu anderen Konsensmechanismen.
-\end{itemize}
-\section{Vor- und Nachteile von Proof-Of-Work}
-\textbf{Um die Vor- und Nachteile dieser Methode genau zu erklären, wurde diese Tabelle erstellt: \cite{fool} } \\ \\
-\begin{tabular}{|c|c|}
-	\hline
-	\textbf{Vorteile} & \textbf{Nachteile} \\ \hline
-	Sicherheit & Hohe Energiekosten \\ \hline
-	Gute Anreizstruktur & Langsame Transaktionsgeschwindigkeiten \\ \hline
-	Breite Akzeptanz & Mögliche Zentralisierung von Mining-Pools \\ \hline
-	Verteilte Konsensfindung & Hardware-Anforderungen \\ \hline
-\end{tabular}\\ \\
-\textbf{\underline{Eklärung :}}
-\begin{itemize}
-	\item \textbf{Sicherheit :}
-	\begin{itemize}
-		\item Um ein hohes Sicherheitsniveau in einem auf Proof-of-Work basierenden Blockchain-Netzwerk zu gewährleisten, müsste eine spekulative Person die Kontrolle über die Mehrheit der Mining-Kapazität erlangen. Dies würde bedeuten, dass sie mindestens 50\% des Netzwerks besitzen müsste, was aufgrund der verteilten Natur von Proof-of-Work-Systemen als unmöglich gilt. Eine solche Person benötigte auch eine beträchtliche Menge an Hardware und Energie, um in der Lage zu sein, die benötigte Rechenleistung zu erbringen.
-		
-		\item Ein "51\%-Angriff" stellt eine Sicherheitsmaßnahme dar, die verhindern soll, dass eine spekulative Person die Kontrolle über ein auf Proof-of-Work basierendes Blockchain-Netzwerk übernimmt. Um ein solcher Angriff zu verhindern, müsste die Person mindestens 50\% der Mining-Kapazität besitzen, was aufgrund der dezentralisierten Natur von Proof-of-Work-Systemen als unmöglich gilt.
-		
-		\item Es gibt jedoch auch andere Faktoren, die die Sicherheit von Proof-of-Work-Systemen beeinflussen. Dazu gehören die Größe und Zentralisierung von Mining-Pools, die Sicherheit von Hardware und die Implementierung des Konsensmechanismus. Um das Sicherheitsniveau eines Proof-of-Work-Systems vollständig zu verstehen, ist es wichtig, diese Faktoren zu berücksichtigen.
-	\end{itemize}
-	\item \textbf{Gute Anreizstruktur :}
-	\begin{itemize}
-		\item Eine gut ausgelegte Anreizstruktur ist ein wesentlicher Faktor für den Erfolg eines Proof-of-Work-Systems. Miner erhalten eine finanzielle Belohnung für das Lösen von Rechenaufgaben und die damit verbundenen Bemühungen, die als Anreiz dienen, ihre Rechenleistung bereitzustellen und somit die Integrität und Sicherheit der Blockchain zu gewährleisten.
-		
-		\item Eine gute Anreizstruktur kann auch dazu beitragen, das Gleichgewicht des Systems aufrechtzuerhalten und die Beteiligung von Miner zu fördern. Wenn die Belohnungen für das Mining zu gering sind, könnten Miner weniger motiviert sein, ihre Rechenleistung zur Verfügung zu stellen, was zu einer Beeinträchtigung der Sicherheit führen könnte. Auf der anderen Seite könnten zu hohe Belohnungen dazu führen, dass das System unausgeglichen wird und es zu einer Zentralisierung von Mining-Pools kommt.
-		
-		\item Es ist wichtig, dass die Anreizstruktur von Proof-of-Work-Systemen sorgfältig abgestimmt ist, um eine ausgeglichene Beteiligung von Miner und ein hohes Sicherheitsniveau zu gewährleisten.
-	\end{itemize}
-	
-	\item \textbf{Verteilte Konsensfindung :} Die dezentralisierte Konsensbildung ist ein wichtiger Aspekt von Blockchain-Systemen, die nicht von einer zentralen Stelle kontrolliert werden, wie dem Proof-of-Work. Bei diesem Verfahren werden Transaktionen von allen Teilnehmern des Netzwerks überprüft, anstatt von einer zentralen Institution wie einer Bank oder Regierung. \\
-	
-	\item \textbf{Belohnung} Viele Menschen schätzen Bitcoin aufgrund der Möglichkeit, an der Mining-Operation teilzunehmen. Dazu können sie spezielle Hardware, sogenannte "Rig Mining"-Geräte, einrichten und damit mit dem Abbau von Bitcoin beginnen. Für jeden erfolgreichen Abbauvorgang erhalten sie eine Belohnung in Form von Bitcoin. Die Möglichkeit, an der Mining-Operation teilzunehmen, macht Bitcoin für viele Menschen attraktiv und gibt ihnen die Möglichkeit, daran zu verdienen. Es ist jedoch wichtig zu beachten, dass das Mining von Bitcoin auch mit hohen Energiekosten und möglichen technischen Herausforderungen verbunden ist. \\ 
-\end{itemize}
-\textbf{Obwohl der Proof-of-Work ein wichtiger Konsensmechanismus in vielen Kryptowährungen ist, gibt es auch einige Nachteile, die berücksichtigt werden sollten.}
-\begin{itemize}
-	\item Transaktionen sind so langsam, weil sie eine Menge von Mining-Operationen benötigen, um einen Block zu überprüfen, der Bitcoin-Transaktionen enthält, auch Blockchain Durchschnitt der Suche nach einem Block nonce ist 1 Nonce pro 10 Minuten, die es so langsam für einen großen Market ist.
-	\item \textbf{Hohe Energiekosten :}
-	\begin{itemize}
-		\item Der Betrieb eines auf Proof-of-Work basierenden Blockchain-Netzwerks kann mit hohem Energiebedarf verbunden sein, da Miner Rechenleistung bereitstellen müssen, um neue Blöcke zu erstellen und Transaktionen zu validieren. Dies erfordert häufig die Verwendung von spezialisierten Mining-Geräten, die viel Strom verbrauchen und möglicherweise auch Kühlsysteme benötigen, um hohe Temperaturen zu vermeiden.
-		
-		\item Eine Möglichkeit, den Energiebedarf von Mining-Operationen zu reduzieren, besteht darin, erneuerbare Energien zu nutzen, um den benötigten Strom zu erzeugen. Dies kann zwar höhere Anfangsinvestitionen erfordern, aber es bietet auch langfristige Vorteile, da Mining-Unternehmen keinen externen Strom verbrauchen und somit keine Energiekosten haben. Erneuerbare Energien wie Solar- und Windenergie können eine umweltfreundliche Alternative zu fossilen Brennstoffen darstellen und können dazu beitragen, den CO2-Ausstoß von Mining-Operationen zu reduzieren.
-		
-		\item Es ist wichtig, den Energiebedarf von Mining-Operationen sorgfältig zu berücksichtigen, um sicherzustellen, dass sie nachhaltig und umweltfreundlich sind. Wenn zu viele Miner ohne Rücksicht auf den Energieverbrauch minen, könnten die Energiepreise steigen und die Umwelt belasten. Daher ist es wichtig, dass Miner ihren Energieverbrauch sorgfältig planen und, falls möglich, erneuerbare Energien nutzen.
-	\end{itemize}
-	
-	\item \textbf{Langsame Transaktionsgeschwindigkeiten :}
-	\begin{itemize}
-		\item Eines der Haupthindernisse für die Schnelligkeit von Bitcoin-Transaktionen ist die Tatsache, dass sie von Minern validiert werden müssen, um in die Blockchain aufgenommen zu werden. Dies erfordert, dass Miner bestimmte Rechenaufgaben lösen, um einen neuen Block zu erstellen, der die Transaktionen enthält. Da die Schwierigkeit, einen neuen Block zu finden, von Zeit zu Zeit angepasst wird, kann es durchaus eine Weile dauern, bis ein Block gefunden wird.
-		
-		\item Die durchschnittliche Zeit, die benötigt wird, um einen neuen Block zu finden, beträgt derzeit etwa 10 Minuten. Dies bedeutet, dass es in der Regel etwa 10 Minuten dauern wird, bis eine Transaktion bestätigt wird und in die Blockchain aufgenommen wird. Für einige Benutzer könnte dies als langsam empfunden werden, insbesondere im Vergleich zu traditionellen Zahlungsmethoden.
-		
-		\item Es gibt jedoch auch Maßnahmen, die getroffen werden können, um die Schnelligkeit von Bitcoin-Transaktionen zu verbessern, wie zum Beispiel die Verwendung von Segregated Witness (SegWit) oder Lightning-Netzwerken. Diese Technologien können die Größe von Transaktionen reduzieren und somit die Geschwindigkeit erhöhen. 
-				
-	\end{itemize}
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[width=7cm,height=7cm]{difficulty}
-		\caption{Die heutige Schwierigkeit ist}
-		\small URL : \url{https://www.blockchain.com/explorer/api/blockchain_api}
-	\end{figure} 
-	
-	\item \textbf{Hardware-Anforderungen :}
-	\begin{itemize}
-		\item Das Abbauen von Bitcoin kann hohe Investitionskosten erfordern, da es oft notwendig ist, spezielle Mining-Hardware wie leistungsstarke Grafikkarten und entsprechende Motherboards zu beschaffen, um erfolgreich neue Blöcke zu erstellen. Die hohen Preise für diese Ausrüstung können es schwierig machen, in das Bitcoin-Mining einzusteigen, insbesondere für Einzelpersonen oder kleine Unternehmen.
-		
-		\item Trotzdem kann das Bitcoin-Mining dennoch lukrativ sein, insbesondere für größere Mining-Unternehmen mit mehreren Mining-Geräten und Zugang zu günstigem Strom. In diesen Fällen können die Einnahmen aus dem Mining die Investitionskosten schnell übersteigen und eine rentable Einkommensquelle darstellen.
-		
-		\item Es ist wichtig zu beachten, dass das Bitcoin-Mining auch ein hochvolatiles Unterfangen sein kann, da der Wert von Bitcoin und damit auch die Belohnungen für das Mining stark schwanken können. Daher ist es wichtig, sorgfältig zu planen und das Risiko sorgfältig abzuwägen, bevor man in das Bitcoin-Mining investiert.
-	\end{itemize}
-	
-	
-\end{itemize}
-
-\chapter[Praktische Anwendung der Proof-Of-Work-Methode]{Algorithmus zur Bestimmung der Nonce in Kryptowährungen}
+\section[Praktische Anwendung der Proof-Of-Work-Methode]{Algorithmus zur Bestimmung der Nonce in Kryptowährungen}
 \begin{figure}[H]
-	\includegraphics[width=\linewidth,height=6cm]{realblock.png}
-	\caption{Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website.}
+	\includegraphics[width=\linewidth,height=8cm]{realblock.png}
+	\small{Es ist von Interesse, die technische Funktionsweise von Proof-of-Work zu untersuchen. Als Erstes betrachten wir eine tatsächliche Blockstruktur von der offiziellen Website.}
 \end{figure}
 \begin{figure}[H]
-	\includegraphics[width=\linewidth,height=6cm]{realtransaction.png}
+	\includegraphics[width=\linewidth,height=10cm]{realtransaction.png}
 	\caption{Die echten Blockchain-Block-Transaktionen.}
-	
 \end{figure}
-\newpage
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{classOfStructures.png}
@@ -337,149 +287,249 @@ Der Proof-of-Work-Mechanismus erfordert, dass Miner mithilfe von Bruteforce-Meth
 	\end{algorithmic}
 \end{algorithm}
 
-\chapter{Der Bitcoin-Markt und die Verwendung von Proof of Work}
-\section{Kryptowährungen, auf die Proof-Of-Work basieren}
-
-	Einige der bekanntesten Kryptowährungen, die den Konsensmechanismus Proof-Of-Work verwenden, sind Bitcoin, Bitcoin Cash, Bitcoin Sv, Litecoin und Dogecoin. \\
-		
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoincash.png}
-		\caption{Bitcoin Cash}
-		\small URL : \url{https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoinsv.png}
-		\caption{Bitcoin SV}
-		\small URL : \url{https://upload.wikimedia.org/wikipedia/commons/c/c1/Bsv-icon-small.png}
-	\end{figure}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{litecoin.jpg}
-		\caption{Litecoin}
-		\small URL : \url{https://www.creativefabrica.com/wp-content/uploads/2021/06/16/Cryptocurrency-Litecoin-Logo-Graphics-13458855-1.jpg}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{dogecoin.png}
-		\caption{Dogecoin}
-		\small URL : \url{https://block-builders.de/wp-content/uploads/2021/01/ony3qesa3ebx-1024x1024.png}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{bitcoingold.png}
-		\caption{Bitcoin Gold}
-		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/2083.png}
-	\end{figure} 
-
-	Es gibt auch viele andere Kryptowährungen, die nicht auf Bitcoin basieren, aber die Proof-of-Work-Methode verwenden :
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{ethereumclassic.png}
-		\caption{Ethereum Classic}
-		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/1321.png}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{monero}
-		\caption{Monero}
-		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/328.png}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{zcash}
-		\caption{Zcash}
-		\small URL : \url{https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png}
-	\end{figure} 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.5cm,height=1.5cm]{kadena}
-		\caption{Kadena}
-		\small URL : \url{https://s2.coinmarketcap.com/static/img/coins/200x200/5647.png}
-	\end{figure} 
-
-\section{Wie kann ich mit Kryptowährung Geld verdienen ?}
-\subsection{Kryptowährungen und ihre produktive Seite: Eine Untersuchung des Krypto-Minings}
-\subsubsection{Konzept}
-Der aktuelle Marktwert von Bitcoin im Jahr 2022 liegt bei 15.891 Euro pro Einheit. Dies stellt einen hohen Preis für diese Kryptowährung dar und könnte für manche Personen oder Unternehmen von Interesse sein, die in das Mining von Bitcoin einsteigen möchten. Es ist jedoch wichtig zu beachten, dass das Bitcoin-Mining eine volatilen und riskanten Aktivität sein kann und gründliche Recherche und Planung erfordert, um erfolgreich zu sein.  \\ 
-Ein Krypto-Mining-Rig ist ein spezielles Computersystem, das für das Mining von Kryptowährungen wie Bitcoin entwickelt wurde. Ein solches Rig besteht in der Regel aus einer Vielzahl von Computerkomponenten wie CPUs, GPUs, Motherboards, RAM und Speicher, die zusammengefügt werden, um eine möglichst hohe Rechenleistung zu erreichen. \\ 
-
-Um ein erfolgreiches Krypto-Mining-Rig aufzubauen, ist es wichtig, eine geeignete Hardware auszuwählen, die leistungsfähig genug ist, um die erforderlichen Rechenaufgaben zu lösen, aber auch effizient genug, um die Energiekosten zu minimieren. Dazu gehört auch die Auswahl von Kühlsystemen, um die Hitzeentwicklung zu minimieren und die Lebensdauer der Hardware zu verlängern. \\
- 
-Ein Krypto-Mining-Rig ist ein spezieller Computer, der für das Mining von Kryptowährungen entwickelt wurde. Die Hardware, die für ein solches Rig benötigt wird, umfasst in der Regel eine leistungsstarke Hauptplatine, die mehrere Grafikkarten unterstützt, sowie eine robuste Stromversorgung, um die benötigte Rechenleistung zu gewährleisten. Es ist wichtig, dass das Rig über ausreichende Kapazitäten verfügt, um die hohen Anforderungen des Krypto-Minings erfüllen zu können, insbesondere bei hoher Konkurrenz und entsprechender Schwierigkeit. \\ 
-Es ist von größter Bedeutung, dass man sich über die aktuellen Marktbedingungen und den Wert der Kryptowährungen informiert, in die investiert wird, um sicherzustellen, dass man das bestmögliche Preis-Leistungs-Verhältnis bei der Hardware-Auswahl erhält und das Rig weiterhin wirtschaftlich rentabel bleibt.
-\cite{zdnet}
-\newpage
-\subsubsection{Hardware}
-\begin{large}
-	\textbf{Motherboard :} Asus B250 Mining Expert \\
-	\includegraphics[width=15cm,height=15cm]{motherboard}  \\
-	Das Motherboard, das in der Lage ist, 19 angeschlossene Grafikkarten zu verarbeiten, stellt eine leistungsstarke Hardware dar, die für das Krypto-Mining von Nutzen sein kann. Das Unternehmen Asus hat empfohlene GPU-Layouts für dieses Motherboard veröffentlicht, die für 19, 13 und 11 Grafikkarten vorsehen. Es kann jedoch auch mit anderen Layouts umgehen, obwohl es empfehlenswert ist, sich an den von Asus vorgeschlagenen Layouts zu orientieren, um optimale Leistung zu erzielen. \cite{zdnet}
-	
-\end{large}
-\newpage
-\begin{large}
-	\textbf{CPU :} Intel Core i5-6500 \\ \\
-	\includegraphics[width=10cm,height=8cm]{cpu}  \\ 
-	Die Hauptprozessoreinheit, auch als CPU bezeichnet, wird auch für diese Einrichtung in Betracht gezogen, obwohl sie für das Mining an sich weniger von Bedeutung ist. Es ist jedoch wichtig, dass sie kompatibel mit dem Motherboard ist, um einen problemlosen Betrieb des Systems zu gewährleisten. \\ \\ \\
-	
-\end{large}
-\begin{large}
-	\textbf{RAM :} G.SKILL Aegis 16GB (2 x 8GB) \\ 
-	\includegraphics[width=\linewidth,height=5cm]{ram}  \\
-	Für unsere Mining-Operationen ist es nicht notwendig, in einen enormen Vorrat an Arbeitsspeicher (RAM) zu investieren. Stattdessen reichen 16 GB DDR4-RAM aus, um unsere Ziele zu erreichen und den Betrieb unseres Unternehmens reibungslos zu gestalten. Es ist wichtig, sorgfältig abzuwägen, wie viel RAM benötigt wird, um unnötige Kosten zu vermeiden, ohne dabei die Leistungsfähigkeit des Systems zu beeinträchtigen. \\
-	
-\end{large}
-
-\begin{large}
-	\textbf{Storage :} SanDisk SSD Plus 1TB \\ 
-	\includegraphics[width=\linewidth,height=5cm]{storage}  \\
-	Die Verwendung von SSDs kann dazu beitragen, die Leistung des Mining-Rigs zu verbessern und den Betrieb zu beschleunigen. Es ist wichtig, sicherzustellen, dass die gewählten SSDs mit dem Motherboard kompatibel sind und genügend Speicherplatz für die Betriebsbedürfnisse des Unternehmens bereitstellen.	\\
-\end{large}
-\\ \\
-\begin{large}
-	\textbf{PSU :} Segotep 850W Full-Modular PSU \\ 
-	\includegraphics[width=\linewidth,height=5cm]{psu}  \\
-	Es kann von Vorteil sein, mehrere "Segotep PSUs" zu verwenden, um sicherzustellen, dass ausreichend Leistung für das Krypto-Mining-Rig bereitgestellt wird, insbesondere wenn es mehrere Grafikkarten enthält. Allerdings ist es wichtig zu beachten, dass der Einsatz von mehreren PSUs auch mit höheren Kosten verbunden sein kann. Eine gründliche Überlegung der Leistungsanforderungen des Mining-Rigs und der dafür benötigten Stromversorgung kann helfen, die richtige Anzahl an PSUs und die damit verbundenen Kosten zu bestimmen. \\
-\end{large}
-\newpage
-\begin{large}
-	\textbf{PCI-e Riser :} FebSmart 16x to 1x Powered Riser 6-pack \\ 
-	\includegraphics[width=\linewidth,height=5cm]{pci}  \\
-	Das Verwenden von powered risers ist eine wichtige Überlegung bei der Einrichtung eines Krypto-Mining-Rigs, da sie es ermöglichen, die Grafikkarten indirekt an das Motherboard anzuschließen. Sie bieten auch eine stabile Stromversorgung für die Grafikkarten, um eine zuverlässige Leistung zu gewährleisten. Es ist wichtig zu beachten, dass der Bedarf an powered risers abhängig ist von der Anzahl der installierten Grafikkarten und dass es möglicherweise notwendig sein kann, mehrere von ihnen zu verwenden, um eine optimale Leistung zu erzielen. \\ \\ \\
-	
-	
-\end{large}
-
-\begin{large}
-	\textbf{Nvidia graphics card :} MSI Ventus 3X GeForce RTX 3090
-	 \\ 
-	\includegraphics[width=\linewidth,height=5cm]{graphic}  \\
-	Die Verwendung einer leistungsstarken Grafikkarte wie der beschriebenen ist für das Krypto-Mining von großer Bedeutung, da sie für die Verarbeitung von Rechenaufgaben und das Mining von Kryptowährungen verantwortlich ist. Diese spezifische Grafikkarte zeichnet sich durch ihre Fähigkeit zur Übertaktung, Stabilität und gute Kühlung aus. Sie ist auch bekannt für ihre Effizienz, was zu niedrigeren Stromkosten und reduzierten Bergbaukosten beitragen kann. Es ist wichtig, sich über die aktuellen Marktbedingungen und die Leistungsfähigkeit verschiedener Grafikkarten zu informieren, um die bestmögliche Wahl für das Krypto-Mining-Rig zu treffen. \\ 
-
-\end{large}
-\subsection{Wo sollte ich mein Geld in Kryptowährungen investieren?}
-Es gibt einige Faktoren, die bei der Auswahl der nächsten erfolgreichen Kryptowährung berücksichtigt werden sollten. Dazu gehören die Skalierbarkeit der Blockchain, die Sicherheit der Technologie und die zugrunde liegende Idee, die von der Kryptowährung angegangen wird. Es ist auch wichtig, das Team hinter der Währung und ihre Erfolgsbilanz in der Vergangenheit zu betrachten. Es ist von großer Bedeutung, gründliche Recherchen durchzuführen und die damit verbundenen Risiken sorgfältig abzuwägen, bevor man in eine Kryptowährung investiert.
-\cite{investopedia2} \cite{smartasset}
+\section{Vor- und Nachteile von Proof-Of-Work}
+\textbf{Um die Vor- und Nachteile dieser Methode genau zu erklären, wurde diese Tabelle erstellt: \cite{fool} } \\ \\
+\begin{tabular}{|c|c|}
+	\hline
+	\textbf{Vorteile} & \textbf{Nachteile} \\ \hline
+	Sicherheit & Hohe Energiekosten \\ \hline
+	Gute Anreizstruktur & Langsame Transaktionsgeschwindigkeiten \\ \hline
+	Breite Akzeptanz & Mögliche Zentralisierung von Mining-Pools \\ \hline
+	Verteilte Konsensfindung & Hardware-Anforderungen \\ \hline
+\end{tabular}\\ \\
+\textbf{\underline{Eklärung :}}
 \begin{itemize}
-	\item \textbf{Der Preis spielt eine wichtige Rolle bei der Entscheidung.}\\
-	\textbf{Erklärung :} Eine wichtige Überlegung bei der Suche nach einer Kryptowährung ist der Preis des Tokens. Investoren, die nicht über ein großes Budget verfügen, können in Betracht ziehen, Kryptowährungen mit einem niedrigeren Preis zu erwerben. Es ist jedoch wichtig, dass Investoren gründliche Recherchen durchführen und Risiken sorgfältig abwägen, bevor sie in eine Kryptowährung investieren.
+	\item \textbf{Sicherheit :} Um ein hohes Maß an Sicherheit in einem auf Proof-Of-Work basierenden Blockchain-Netzwerk zu gewährleisten, müsste eine spekulative Person nicht die Kontrolle über den größten Teil der Mining-Kapazität übernehmen. Dies würde bedeuten, mindestens 50\% des Netzwerks zu besitzen, was aufgrund der verteilten Natur von Proof-of-Work-Systemen als unmöglich angesehen wird. Eine solche Person würde auch eine große Menge an Hardware und Energie benötigen, um die notwendige Rechenleistung erbringen zu können.
 	
 	
-	\item \textbf{Es gibt gute Aussichten auf Annahme für die Kryptowährung, wenn sie von vielen Nutzern und Unternehmen akzeptiert wird.}\\
-	\textbf{Erklärung :} Eine Kryptowährung, die einen wettbewerbsfähigen Vorteil gegenüber anderen bietet und von vielen Nutzern und Unternehmen akzeptiert wird, bietet gute Aussichten für eine erfolgreiche Investition. Es ist wichtig, sorgfältig die Eigenschaften und die Akzeptanz der Kryptowährung zu überprüfen, bevor man das eigene Geld investiert.
+	\item \textbf{Gute Anreizstruktur :} Eine gute durchdachte Anreizstruktur ist ein wesentlicher Faktor für den Erfolg eines Proof-of-Work-Systems. Die Miner erhalten eine finanzielle Belohnung für das Lösen von Rechenproblemen und die damit verbundenen Anstrengungen, was sie dazu veranlasst, ihre Rechenleistung (z.B : mit Rig Mining"-Geräte ) zur Verfügung zu stellen, um auf diese Weise die Integrität und Sicherheit der Blockchain zu gewährleisten. Dies bedeutet, dass eine gute Anreizstruktur auch dazu beitragen kann, das System im Gleichgewicht zu halten und die Teilnahme der Miner zu fördern. Wenn die Belohnungen für das Mining zu niedrig sind, könnten die Miner weniger motiviert sein, ihre Rechenleistung zur Verfügung zu stellen, denn manchmal, wenn die Belohnung zu niedrig ist, wird dies nicht die Stromkosten für die Mining-Operationen bezahlen, folglich könnte die Sicherheit darunter leiden. Andererseits könnten zu hohe Belohnungen dazu führen, dass das System aus dem Gleichgewicht gerät und die Mining-Pools zentralisiert werden. Es ist wichtig, dass die Anreizstruktur von Proof-of-Work-Systemen sorgfältig angepasst wird, um eine ausgewogene Beteiligung der Miner und ein hohes Sicherheitsniveau zu gewährleisten.
 	
 	
-	\item \textbf{Die Versorgung ist ein Faktor, den man bei der Auswahl einer Kryptowährung berücksichtigen sollte.}\\
-	\textbf{Erklärung :} Die Menge an Einheiten einer Kryptowährung, die momentan im Umlauf sind, wird als Versorgung bezeichnet. Eine geringere Versorgung könnte den Preis der Kryptowährung erhöhen, während eine höhere Versorgung möglicherweise dazu führt, dass der Preis sinkt. Bevor man in eine Kryptowährung investiert, ist es wichtig, sich über die Versorgung des Tokens zu informieren.
+	\item \textbf{Breite Akzeptanz :} PoW wird in der Kryptowährungsgemeinschaft weitgehend akzeptiert, da diese Methode ein hohes Maß an Sicherheit sowie Integration und Dezentralisierung bietet.
 	
-	
-	
-	\item \textbf{Preis und Volumen sind wichtig} \\
-	\textbf{Erklärung :} In 2022 gibt es viele Plattformen, die das Investieren in Kryptowährungen vereinfachen, indem sie die wechselhafte Geschichte der Kryptowährungen und die Preise über den Blockchain-Markt verfolgen. Es ist daher ratsam, den Markt sorgfältig zu scannen und eine informierte Entscheidung über die Investition in Kryptowährungen zu treffen. Es gibt auch künstliche intelligente Modelle, die auf alten Kryptowährungsdaten basieren und es erleichtern, vorherzusagen, ob der Preis einer Kryptowährung in Zukunft steigen oder fallen wird. Allerdings sollte beachtet werden, dass der Preis von Kryptowährungen volatil ist und es immer das Risiko von Verlusten gibt. 
+	\item \textbf{Verteilte Konsensfindung :} Die dezentralisierte Konsensbildung, die hier in \cref{blockchain:dezentralisierung} erklärt ist ein wichtiger Aspekt von Blockchain-Systemen. \\
 \end{itemize}
+\textbf{Obwohl der Proof-of-Work ein wichtiger Konsensmechanismus in vielen Kryptowährungen ist, gibt es auch einige Nachteile, die berücksichtigt werden sollten.}
+\begin{itemize}
+	\item \textbf{Hohe Energiekosten :} Der Betrieb eines Proof-of-Work-Blockchain-Netzwerks kann energieintensiv sein, da die Miner Rechenleistung aufbringen müssen, um neue Blöcke zu erzeugen und Transaktionen zu validieren. Dies erfordert ständig den Einsatz von speziellen Mining-Geräten, die viel Energie verbrauchen und möglicherweise auch Kühlsysteme benötigen, um hohe Temperaturen zu vermeiden. Eine Möglichkeit, den Energiebedarf des Mining-Betriebs zu senken, besteht darin, erneuerbare Energien zur Erzeugung des wichtigen Stroms zu nutzen. Dies kann zwar eine größere Anfangsinvestition erfordern, bietet aber auch langfristige Vorteile, da die Mining-Unternehmen keinen externen Strom verbrauchen und somit keine Energiekosten anfallen. Erneuerbare Energien wie Solar- und Windenergie können eine umweltfreundliche Alternative zu fossilen Brennstoffen bieten und können helfen, die \ch{CO2}-Emissionen aus dem Bergbau zu reduzieren. Es ist wichtig, den Energiebedarf des Bergbaubetriebs sorgfältig zu prüfen, um sicherzustellen, dass er nachhaltig und umweltfreundlich ist. Wenn zu viele Bergleute ohne Rücksicht auf den Energieverbrauch abbauen, könnten die Energiepreise ansteigen und die Umwelt schädigen. Daher ist es notwendig, dass die Bergleute ihren Energieverbrauch ernsthaft planen und es ist besser, erneuerbare Energien zu nutzen.
+	
+	\item \textbf{Langsame Transaktionsgeschwindigkeiten :} Eines der Haupthindernisse für die Geschwindigkeit von Bitcoin-Transaktionen ist die Tatsache, dass sie von Minern validiert werden müssen, um in die Blockchain aufgenommen zu werden. Da die Schwierigkeit, einen neuen Block zu finden, von Zeit zu Zeit angepasst wird, kann es durchaus einige Zeit dauern, bis ein Block gefunden wird. Die durchschnittliche Zeit, die benötigt wird, um einen neuen Block zu finden, beträgt derzeit etwa 10 Minuten. Das bedeutet, dass es normalerweise etwa 10 Minuten dauert, bis eine Transaktion bestätigt und in die Blockchain eingetragen wird. Für einige Nutzer mag dies als langsam empfunden werden, insbesondere im Vergleich zu herkömmlichen Zahlungsmethoden. Es gibt jedoch Maßnahmen, die die Geschwindigkeit von Bitcoin-Transaktionen verbessern können, wie z. B. die Verwendung von SegWit (Segregated Witness) oder Lightning-Netzwerken. Diese Technologien können die Größe der Transaktionen verringern und somit ihre Geschwindigkeit erhöhen.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=7cm,height=7cm]{difficulty}
+		\caption{Die heutige Schwierigkeit ist}
+		\small URL : \url{https://www.blockchain.com/explorer/api/blockchain_api}
+	\end{figure} 
+
+	\item \textbf{Mögliche Zentralisierung von Mining-Pools :} Proof-of-Work-Mining-Pools können zentralisiert werden, wenn einige wenige große Mining-Pools einen Hauptteil der Blockgenerierungsrate kontrollieren und damit Kontrolle über das Netzwerk ausüben können.  Dies kann zu einer Verletzung der Dezentralisierung und der Netzwerksicherheit führen, wenn diese Pools die Macht haben, das Netzwerk zu beeinflussen oder anzugreifen.
+	
+	\item \textbf{Hardware-Anforderungen :} Das Bitcoin-Mining kann hohe Investitionskosten erfordern, da oftmals spezielle Mining-Hardware wie leistungsstarke Grafikkarten, entsprechende Motherboards oder sogar die Erstellung von Rig-Computern notwendig sind, um erfolgreich neue Blöcke zu erzeugen. Der hohe Preis dieser Hardware kann den Einstieg in das Bitcoin-Mining hingegen für Gruppen oder kleine Unternehmen schwierig machen. Dennoch kann das Bitcoin-Mining lukrativ sein, vor allem für große Mining-Unternehmen, die über mehrere Mining-Anlagen verfügen und Zugang zu billigem Strom haben. In diesen Fällen können die Einnahmen aus dem Mining die Investitionskosten schnell übersteigen und eine profitable Einnahmequelle darstellen.
+	
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%       Schwierigkeit und Schwierigkeit        %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Schwierigkeit und Sicherheit des Proof-Of-Work}
+
+\section{Was hat es mit der Schwierigkeit auf sich ?}
+\begin{itemize}
+	\item{Die Schwierigkeit besteht darin, die gewünschte Hash-Ausgabe zu finden. Zum Beispiel Bitcoin, es wird eine Frage gestellt: Wie viele Nullen soll die Ausgabe am Anfang des Strings haben. Je mehr Nullen gefordert sind, desto schwieriger wird es schließlich, den Output zu finden. \cite{btc-echo-proof-of-work}}
+	\item{Die Schwierigkeit ist bei Bitcoin immer so gewählt, dass im Schnitt alle zehn Minuten ein neuer Block gefunden werden soll. Dieser Benchmark wird alle zwei Wochen überprüft. Stellt sich heraus, dass in zwei Wochen der Richtwert von 2.016 Blöcken überschritten wurde, also mehr Blöcke als gewünscht gefunden wurden, ist die Schwierigkeit zu gering und wird nach oben korrigiert – und umgekehrt. \cite{btc-echo-proof-of-work}}
+\end{itemize}
+%
+
+\section{Wie wird die Schwierigkeit genau angepasst bei Proof of Work ?}
+\begin{itemize}
+	\item Die Schwierigkeit eines PoW kann angepasst werden, um sicherzustellen, dass die Blockerzeugungsrate stabil bleibt. In einem PoW-System werden Miner ausgewählt, um einen neuen Block mit PoW zu erstellen. Wenn viele Miner am Netzwerk beteiligt sind, werden die Blöcke schneller erstellt, was zu einer Erhöhung der Blockerzeugungsrate führt. Wenn hingegen nur wenige Miner am Netzwerk teilnehmen, werden die Blöcke sehr langsam erstellt, was zu einer Abnahme der Blockerzeugungsrate führt. Um die Stabilität der Blockerzeugungsrate zu behalten, wird eine Technologie zur Anpassung der Schwierigkeit verwendet, die in Englisch "Difficulty Adjustment Algorithm (DAA)" heißt. Diese Implementierung ist spezifisch für jede verwendete Kryptowährung, aber ihr Konzept besteht darin, die Schwierigkeit auf dynamische Weise anzupassen. 
+	
+	\item Das Konzept dieses Algorithmus besteht darin, die Schwierigkeit so anzupassen, dass die für die Erstellung eines neuen Blocks erforderliche Zeit konstant bleibt. Diese Änderung der Schwierigkeit wird für jeden Block dynamisch angepasst, abhängig von der Zeit, die für die Erstellung des vorherigen Blocks benötigt wurde. Wenn ein Block schneller als erwartet erstellt wurde, wird die Schwierigkeit erhöht, um die Blockerstellungsrate zu verlangsamen. Falls ein Block langsamer erstellt wurde, wird die Schwierigkeit verringert, um die Blockerstellungsrate zu beschleunigen. Beachten Sie, dass die aktuelle Schwierigkeit der Blockerstellung in der Blockchain 10 Minuten ist. Dabei hilft die Verwendung von DAA diese Schwierigkeit konstant zu behalten.
+\end{itemize}
+\section{was passiert wenn die PoW-Schwierigkeit zu niedreig eingestellt sein?}
+Wenn die PoW Difficulty zu niedrig eingestellt ist, kann dies zu Instabilitäts- und Integritätsproblemen, Sicherheitsproblemen und auch wirtschaftlichen Problemen führen:
+Sehr hohe Blockgenerierungsrate: Miner können schnell Blöcke erstellen, was zu einer höheren Blockgenerierungsrate führt, da die Schwierigkeit niedrig ist, was manchmal zu einer Überlastung des Netzwerks und einer langsameren Verarbeitung von Transaktionen führt.
+Sicherheitsprobleme: Ein niedriger Schwierigkeitsgrad macht das Netzwerk anfällig für 51\%-Angriffe, bei denen ein Angreifer die Mehrheit der Mining-Kapazität nutzen und das Netzwerk mit leistungsstarker Hardware manipulieren kann. 
+Wirtschaftliche Probleme: Wenn Blöcke schneller erzeugt werden, kann dies zu einem schnellen Drucken führen, da Kryptowährungen gedruckt werden. Dies kann den Wert der Kryptowährung verringern.
+\section{wie beeinflusst die Schwierigkeit des PoW und die Größe des netzwerkes die Sicherheit und Intigrität der Blockchain?}
+Der Schwierigkeitsgrad des Proof of Work (PoW) und die Größe des Netzwerks haben einen erheblichen Einfluss auf die Sicherheit und Integrität der Blockchain.
+\begin{description}
+	\item[PoW-Schwierigkeit : ] Die PoW-Schwierigkeit bestimmt das Verhältnis zwischen der Zeit und der Anzahl der Berechnungen, die zur Lösung eines neuen Blocks erforderlich sind. Je höher der Schwierigkeitsgrad, desto mehr Rechenleistung ist für die Lösung des Blocks erforderlich. Diese zusätzliche Rechenleistung macht das Netzwerk sicherer, da es für einen Angreifer schwieriger ist, genügend Mining-Power zu haben, um seinen 51\%-Angriff auszuführen.
+	\item[Größe des Netzwerks : ] Ein großes Netzwerk bedeutet mehr Mining-Kapazität und eine bessere Verteilung der Verarbeitungsleistung, wodurch das Netzwerk sicherer wird. Größere Netzwerke sind auch weniger anfällig für 51\%-Angriffe, da Angreifer mehr Mining-Kapazität benötigen, um ihre Angriffe zu starten.
+\end{description}
+Die Beziehung zwischen diesen beiden Begriffen besteht darin, dass sie beide zur Verbesserung der Sicherheit und Integrität von Blockchains beitragen. Eine angemessene PoW-Schwierigkeit hält das Netzwerk zu 51\% sicher vor Angriffen, während ein größeres Netzwerk eine bessere Verteilung der Mining-Kapazität gewährleistet und das Netzwerk insgesamt stabiler macht. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%       Sidechains                             %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Sidechains}
+Am 22. Oktober 2014 wurde die Idee einer Sidechain in einem bahnbrechenden wissenschaftlichen Dokument vorgestellt. Das Dokument wurde von Adam Back, dem Schöpfer von HashCash und CEO von Blockstream, und einer Gruppe führender Bitcoin-Ingenieure verfasst, darunter Matt Corallo, Luke Dashjr und Mark Friedenbach, Mitbegründer von Blockstream.\\ \\
+Diese Autoren spielten eine wichtige Rolle bei der Entwicklung von Satoshi Nakamotos Vision eines elektronischen Währungssystems, indem sie den Proof-of-Work-Konsensmechanismus von HashCash in die Bitcoin-Blockchain integrierten. Sie räumten jedoch ein, dass es noch Raum für Verbesserungen gab, wenn Bitcoin ein weltweites Publikum bedienen sollte. \\ \\
+Zu dieser Zeit stand die Bitcoin-Infrastruktur vor Herausforderungen wie Kompromissen zwischen Skalierbarkeit und Dezentralisierung sowie Bedenken hinsichtlich Datenschutz und Zensur. Um diesen Herausforderungen zu begegnen, schlugen die Autoren eine neue Technologie namens "pegged sidechains" vor, die es ermöglichen würde, Bitcoins und andere Ledger-Assets zwischen mehreren Blockchains zu transferieren. Dies würde den Nutzern den Zugang zu neuen und innovativen Kryptowährungssystemen ermöglichen, indem sie die Vermögenswerte nutzen, die sie bereits besitzen.\\ \\
+Das Weißbuch zu Seitenketten hat eine revolutionäre Lösung für die Beschränkungen der Bitcoin-Infrastruktur vorgestellt und die Grundlage für neue Entwicklungen in der Welt der Blockchain-Technologie geschaffen. [ \cite{coin_desk} ]
+\section{Was ist eine Sidechain?}
+\subsection{Definition von Sidechain}
+Die Sidechains der Blockchain werden als separate Blockchains behandelt, die mit der Hauptblockchain verbunden sind. Diese Beziehung zwischen ihnen ermöglicht den Austausch und die Überprüfung von Daten auf die gleiche Weise wie bei der Hauptblockkette. Sidechains bieten in der Regel nicht die gleiche Sicherheit und Skalierbarkeit wie ihre Hauptblockchain. Das liegt daran, dass es weniger Knoten gibt und somit weniger Ressourcen benötigt werden. Daher sollte die Verwendung von Sidechains gut abgewogen werden. 
+\subsection{Sidechain, auf die Proof-Of-Work basieren}
+Die Sidechains der Blockchain werden durch PoW verifiziert. Das bedeutet, dass die Sidechain-Knoten eine bestimmte Anzahl von Ressourcen benötigen, um die Integrität des Netzwerks zu gewährleisten und Transaktionen zu bestätigen. Allerdings kann die Schwierigkeit der PoW für Sidechains und Mainchains unterschiedlich oder gleich sein, je nach den spezifischen Anforderungen und Einschränkungen der Sidechains.
+\subsection{Eigenschaften}
+Eine Sidechain ist ein einzelnes Blockchain-Netzwerk, das über eine bidirektionale Verbindung mit einer anderen Blockchain, dem sogenannten Mainnet oder der übergeordneten Blockchain (hier wird alles in \cref{blockchain:definition} beschrieben), verbunden ist. Diese sekundäre Blockchain hat ihren eigenen Satz von Konsensprotokollen, was den Datenschutz und die Sicherheit verbessert und den Bedarf an Vertrauen verringert. \\\\
+Einer der Hauptvorteile von Sidechains ist die Möglichkeit des einfachen Austauschs von Vermögenswerten zwischen dem Mainnet und der sekundären Blockchain. Dadurch können digitale Vermögenswerte wie Token sicher von einer Blockchain auf eine andere übertragen werden, was Projekten neue Möglichkeiten eröffnet, ihr Ökosystem auf dezentrale Weise zu erweitern. \\ \\
+Nehmen wir an, Sie haben einige Bitcoin im Haupt-Bitcoin-Netzwerk. Um Ihre Bitcoin auf eine Sidechain zu verschieben, senden Sie sie an eine bestimmte Ausgabeadresse. Diese Adresse könnte eine Hardware-Wallet, eine Hot-Wallet oder eine Sidechain sein. Sobald die Transaktion bestätigt ist, wird sie über das Bitcoin-Netzwerk verbreitet. \\ \\
+Nach einer kurzen Sicherheitsprüfung wird der Bitcoin auf die Sidechain übertragen, so dass Sie Ihr Vermögen in das neue Netzwerk verschieben können. Dieser Prozess ermöglicht einen nahtlosen Übergang von Vermögenswerten zwischen verschiedenen Blockchain-Netzwerken und bietet den Nutzern mehr Optionen und Flexibilität. [ \cite{coin_desk} ] \\ \\
+
+\textbf{Obwohl das Konzept der Seitenketten einfach zu sein scheint, gibt es eine Reihe entscheidender Elemente, die notwendig sind, damit sie optimal funktionieren. Zu diesen wesentlichen Komponenten gehören:}
+
+\begin{itemize}
+	\item Two-way peg
+	\item Intelligente Verträge
+\end{itemize}
+
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm]{sidechain}
+	\caption{Mechanismus der Sidechain}
+	\small{\url{https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/V2EL75HGEVFITCE5U752QJ4HCY.jpg}}
+\end{figure}
+
+\section{Two-way peg}
+Sidechains wurden geschaffen, um eine nahtlose Übertragung von digitalen Vermögenswerten zwischen verschiedenen Blockchains zu ermöglichen, unabhängig davon, wer sie besitzt. Diese Übertragung sollte ohne die Möglichkeit der Beeinflussung durch eine dritte Partei erfolgen. Um dies zu erreichen, wird ein Zwei-Wege-Peg benötigt, den man sich wie einen Zwei-Wege-Tunnel vorstellen kann, der die beiden Blockchains miteinander verbindet. \\ \\
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm]{twowaypeg}
+	\caption{Two way peg}
+	\small{\url{https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/RIPFDA7FMJFEBBMCAQKGPV55HI.jpg}}
+\end{figure}
+
+Laut dem Sidechain-Whitepaper (“The mechanism by which coins are transferred between sidechains […] a pegged sidechain is a sidechain whose assets can be imported from and returned to other chains.”) bezieht sich ein Zwei-Wege-Peg auf die Methode, mit der digitale Vermögenswerte wie Bitcoin zwischen der Hauptblockchain und der neuen Sidechain hin und her übertragen werden können. Wichtig ist, dass die Übertragung von Vermögenswerten nicht tatsächlich stattfindet. Stattdessen werden die Vermögenswerte auf der Hauptblockchain gesperrt, während der entsprechende Wert auf der Sidechain freigegeben wird. [\cite{coin_desk}] \\ 
+Dies setzt das Vertrauen voraus, dass die Teilnehmer oder "Validierer", die an dem wechselseitigen Pflock beteiligt sind, ehrlich handeln. Andernfalls könnte es zu betrügerischen Überweisungen kommen oder legitime Überweisungen könnten blockiert werden.
+\section{Intelligente Verträge}
+Um digitale Vermögenswerte von einem Mainnet auf eine Sidechain oder umgekehrt zu übertragen, ist ein Prozess erforderlich, der außerhalb des Haupt-Blockchain-Netzwerks stattfindet und Informationen zwischen den beiden Blockchains überträgt. Dieser Prozess, der als Off-Chain bezeichnet wird, beinhaltet einen intelligenten Vertrag, der sicherstellt, dass die Übertragung von digitalen Vermögenswerten fair und sicher ist. [\cite{coin_desk}]
+Wenn eine Transaktion stattfindet, bestätigt der intelligente Vertrag diese und benachrichtigt das Hauptnetz. Anschließend sendet der Off-Chain-Prozess die Transaktionsdetails an einen intelligenten Vertrag auf der Sidechain, wo sie überprüft werden. Nach der Verifizierung werden die digitalen Vermögenswerte auf der Sidechain freigeschaltet, so dass sie frei zwischen den beiden Blockchains bewegt werden können.[\cite{coin_desk}]
+Intelligente Verträge spielen eine wichtige Rolle bei der Gewährleistung der Sicherheit dieser Transaktionen, da sie die Teilnehmer sowohl im Mainnet als auch auf der Sidechain zu ehrlichem Handeln verpflichten. Durch ein sicheres Verfahren können digitale Vermögenswerte zwischen den Blockchains übertragen werden, ohne dass das Risiko eines Fehlverhaltens besteht.[\cite{coin_desk}]
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth,height=6cm]{contracts}
+	\caption{Intelligente Verträge}
+	\small{\url{https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/5XF3FUGIXZBTFPTHPYD47KK5FA.png}}
+\end{figure}
+
+\section{Sidechain bei Bitcoin}
+Beispiele für praktische Sidechain-Anwendungen sind das Liquid Network und RootStock (RSK). Beide Sidechains sind mit dem Bitcoin-Mainnet verbunden und können nur für Aktivitäten im Zusammenhang mit Bitcoin genutzt werden. [\cite{coin_desk}] \\ \\
+Das Liquid Network, eine von Blockstream entwickelte Open-Source-Sidechain, baut auf dem Bitcoin-Mainnet auf. Die schnelle Blockentdeckungszeit von einer Minute im Vergleich zu 10 Minuten bei Bitcoin ermöglicht es, 10 Mal mehr Blöcke zu seiner Sidechain hinzuzufügen. Darüber hinaus bietet das Netzwerk einen verbesserten Datenschutz, indem es die Menge und die Art der übertragenen digitalen Vermögenswerte verbirgt. [\cite{coin_desk}] \\ \\
+RSK hingegen ist eine Sidechain, die speziell für die Unterstützung intelligenter Verträge entwickelt wurde. Bei der Verwendung von RSK wird Bitcoin vorübergehend im Mainnet gesperrt und als RSK-eigene Währung, Smart Bitcoin (SBTC), freigegeben.
+Aufgrund seiner Smart-Contract-Fähigkeiten müssen Nutzer ihre Bitcoin nicht in andere Vermögenswerte umwandeln, um Smart Contracts zu nutzen, was es mit anderen Blockchain-Netzwerken wie Ethereum interoperabel macht. \\ \\
+
+\subsubsection{Prozess der Sidechain bei Proof of work}
+
+\begin{enumerate}
+	\item Die Übertragung von digitalen Assets von der Hauptkette zur Sidechain wird gestartet.
+	\item Das digitale Asset wird an eine spezielle Ausgabeadresse auf der Hauptkette gesendet.
+	\item Die Übertragung wird bestätigt und auf beiden Blockchains dokumentiert.
+	\item Die Bestätigung wird über das Netzwerk der Hauptkette verbreitet.
+	\item Nach einer Sicherheitsprüfung wird das digitale Asset auf die Sidechain transferiert.
+	\item In der Sidechain wird das digitale Asset in einem Block gespeichert und über das Netzwerk verbreitet.
+	\item Das digitale Asset ist jetzt auf der Sidechain verfügbar und kann für Transaktionen verwendet werden.
+	\item Die Validierung jeder Transaktion in der Sidechain erfolgt durch den PoW-Konsensmechanismus. Minenarbeiter lösen ein komplexes mathematisches Problem, um einen neuen Block zu validieren und zu hinzufügen.
+	\item Sobald eine Transaktion bestätigt wurde, wird sie in einem Block gespeichert und über das Netzwerk verbreitet.
+\end{enumerate}
+
+\section{Woher weiß ein Client, dass er in der Mainchain ist und nicht in einer Sidechain ?}
+\begin{itemize}
+	\item Es ist wichtig, dass jeder Kunde weiß, zu welcher Kette er gehört, um sicherzustellen, dass er die richtigen Informationen erhält und seine Transaktionen korrekt verarbeitet werden. Dies bedeutet, dass die Kunden über die richtigen Mechanismen verfügen müssen, um zu wissen, in welcher Kette sie sich befinden. Es gibt also zwei Merkmale, die für jede Kette spezifisch sind.
+	
+	\item Eine Haupt-Blockchain kann manchmal ein anderes Konsensprotokoll verwenden als eine Neben-Blockchain, wodurch es für einen Kunden einfacher wird, zwischen den beiden Arten von Ketten zu unterscheiden. Auch kann die Haupt-Blockchain bestimmte Regeln haben, die für sie einzigartig sind und sich von denen der Neben-Blockchain stark unterscheiden.
+	
+	\item Ein weiteres Unterscheidungsmerkmal ist, dass ein Kunde auch die Länge der Kette überprüfen kann, um festzustellen, ob es sich um die Mainchain oder eine Sidechain handelt. Wenn ein Kunde also eine Kette sieht, die länger ist als er erwartet, kann er erkennen, dass er sich in einer Sidechain befindet. Da die Mainchain oft am längsten ist.
+\end{itemize}
+
+
+\section{Was gibt es für Angriffszenarien und wie funktionieren diese ?}
+In der Blockchain-Welt gibt es eine Reihe von Angriffszenarien, die die Integrität und Sicherheit einer Blockchain gefährden können. 
+\begin{itemize}
+	\item 51\% Angriff
+	\item Sybil-Angriff
+	\item Doppelspendeangriff
+	\item Routing-Angriff
+\end{itemize}
+
+
+\section{Sybil-Angriff}
+\subsection{Was ist ein Sybil-Angriff ?}
+\textbf{Ein Sybil-Angriff} ist ein Angriff, bei dem viele Knoten in einem Netzwerk im Besitz derselben Partei sind und versuchen, die Netzwerkaktivität zu stören, indem sie das Netzwerk mit fehlerhaften Transaktionen überfluten oder die Weiterleitung gültiger Transaktionen manipulieren. 
+Diese Angriffe sind theoretisch und größtenteils eine grundlegende Designentscheidung bei der Entwicklung eines Kryptowährungssystems. [ \cite{allatacks} ]
+\subsection{Die Funktionsweise dieses Angriffs}
+In einem Blockchain-System wie Bitcoin werden Entscheidungen von allen Mining-Punkten und -Zentren durch Abstimmung getroffen. In diesem Fall kann ein Vorschlag von den Minern entweder angenommen oder abgelehnt werden. Wenn mehrere Identitäten im Netzwerk erstellt werden, können Angreifer für so viele Identitäten stimmen, wie sie kontrollieren.
+Mit Sybil-Angriffen kann der Informationsfluss in einem Netz manipuliert werden. Dieser Angriff kann beispielsweise dazu verwendet werden, die IP-Adresse eines an das Netz angeschlossenen Punktes zu ermitteln. Dies gefährdet die Sicherheit, Privatsphäre und Anonymität der Online-Nutzer. Ein Angreifer braucht nur die Kontrolle über Punkte im Netz zu übernehmen, Informationen von diesen Punkten zu sammeln und gefälschte Punkte zu erstellen, die seine Identität angeben.
+Sobald das Netz unter der Kontrolle des Angreifers ist, kann er Zensur ausüben und andere Nutzer an der legalen Nutzung des Netzes hindern. [ \cite{sybil_attack} ]
+\subsubsection{Ablauf eines Sybil-Angriffs}
+\begin{enumerate}
+	\item Der Angreifer erstellt mehrere falsche Knoten oder Identitäten im Netzwerk. Dies kann durch das Ausführen mehrerer Instanzen der Bitcoin-Software oder durch andere Mittel geschehen, um legitime Knoten zu imitieren.
+	
+	\item Der Angreifer verbindet diese falschen Knoten dann mit dem Netzwerk, um den Informationsfluss zu kontrollieren.
+	
+	\item Wenn der Angreifer die Kontrolle über eine große Anzahl von Knoten übernimmt, kann er tatsächlich mehrfach über einen bestimmten Vorschlag oder eine Entscheidung im Netzwerk abstimmen, was ihm einen unfairen Vorteil gegenüber den legitimen Nutzern verschafft. Auch kann der Angreifer seine Kontrolle über die Knoten nutzen, um Informationen über andere Netzwerkbenutzer zu sammeln und so deren Privatsphäre und Anonymität zu gefährden.
+	
+	\item Sobald ein Angreifer genügend Kontrolle über das Blockchain-Netzwerk hat, wird er beginnen, Zensur auszuüben, indem er legitime Nutzer daran hindert, das Netzwerk zu nutzen.
+	
+\end{enumerate}
+
+\subsection{Wie kann man sich vor diesem Angriff schützen?}
+Diese Methode wurden aus diesem Artikel [\cite{sybil_attack}] entnommen und zusammengefasst.
+\subsubsection{Identitätsüberprüfung}
+Die Identitätsüberprüfung ist eine Technik, die dazu beitragen kann, Sybil-Angriffe zu verhindern, indem die Identität von Einheiten in einem Netz überprüft wird. Dies kann direkt geschehen, indem eine zentrale Behörde befragt wird, oder indirekt, indem man sich auf zuvor akzeptierte Identitäten stützt. Es können verschiedene Methoden wie die Überprüfung von Telefonnummern, Kreditkarten und IP-Adressen verwendet werden, die jedoch nicht perfekt sind und missbraucht werden können. Die identitätsbasierte Validierung bietet zwar die Möglichkeit, Rechenschaft abzulegen, aber sie opfert die Anonymität, die für die meisten Arten von Peer-to-Peer-Netzen wichtig ist.
+\subsubsection{Soziale Vertrauensdiagramme}
+Eine Möglichkeit, Sybil-Angriffe zu verhindern, besteht in der Analyse von Konnektivitätsdaten in sozialen Graphen, um den Schaden durch einen bestimmten Angreifer zu begrenzen und gleichzeitig die Anonymität zu wahren. Techniken wie SybilGuard, SybilLimit, Advogato Trust Metric und sparsity-based metric können zu diesem Zweck verwendet werden. Diese Techniken sind jedoch nicht perfekt und beruhen möglicherweise auf bestimmten Annahmen, die nicht für alle realen sozialen Netzwerke gelten. Daher können P2P-Netzwerke, die sich auf Social-Trust-Graph-Techniken stützen, immer noch anfällig für Sybil-Angriffe in kleinem Maßstab sein.
+\subsubsection{Wirtschaftliche Kosten}
+Wirtschaftliche Kosten, die Investitionen in Ressourcen wie Anteile oder Speicherplatz in bestehenden Kryptowährungen und die Implementierung von Proof of Work (PoW) erfordern, können einen Sybil-Angriff verteuern. Bei PoW muss jeder Nutzer nachweisen, dass er Rechenaufwand betrieben hat, um ein kryptografisches Rätsel zu lösen. Bei erlaubnisfreien Kryptowährungen wie Bitcoin konkurrieren die Miner darum, Blöcke an die Blockchain anzuhängen, und erhalten Belohnungen, die in etwa dem Rechenaufwand entsprechen, den sie in einer bestimmten Zeit investiert haben.
+\subsubsection{Validierung der Personalität}
+Eine Möglichkeit, Sybil-Angriffe zu verhindern, besteht darin, dass P2P-Netze eine Identitätsüberprüfung verlangen und die Regel "eine Einheit pro Person" einführen. Eine Validierungsinstanz kann einen Mechanismus verwenden, bei dem die tatsächliche Identität der Teilnehmer nicht bekannt sein muss, z. B. indem die Nutzer ihre Identität durch ihre Anwesenheit zu einer bestimmten Zeit und an einem bestimmten Ort nachweisen, auch bekannt als Pseudonym-Party. Diese Methode des Nachweises der Personenidentität ist ein vielversprechender Weg, um Identitäten in erlaubnisfreien Blockchain- und Kryptowährungsnetzwerken zu validieren und gleichzeitig die Anonymität zu wahren und sicherzustellen, dass jeder menschliche Teilnehmer nur eine Stimme hat.
+
+\section{Doublespending}
+\subsection{Was ist Doublespending ?}
+Double Spending ist das Risiko, dass eine Kryptowährung mehrfach ausgegeben werden kann. Unter bestimmten Bedingungen in der Blockchain erlauben es, Blöcke zu ändern. So kann die Person, die die Änderung vornimmt, die ausgegebenen Münzen zurückfordern. [ \cite{double_spending_attack} ]
+\subsection{Die Funktionsweise dieses Angriffs}
+Für Double Spending muss ein geheimer Block erstellt werden, bevor der tatsächliche Block geschürft wird. Anschließend muss die Person diese Kette in das Netzwerk einbringen, bevor das Netzwerk sie einholt. Wenn dies geschieht, wird diese Kette als der neueste Satz von Blöcken anerkannt und zur Kette hinzugefügt. Die Person, die den Double Spend durchgeführt hat, kann dann jede ausgegebene Kryptowährung zurückholen und erneut verwenden. [ \cite{double_spending_attack} ]
+\subsection{Ist die Blockchain, die auf PoW basiert, gegen diesen Angriff gesichert ?}
+Double Spending ist ein Risiko , wird aber durch die Blockchain und die Konsensmethode proof of work minimiert. Die Wahrscheinlichkeit, dass ein geheimer Block in die Blockchain eingefügt wird, ist sehr gering, weil das Netzwerk der Miner den Block tatsächlich überprüfen und akzeptieren müsste. Die einzige Chance für einen Miner mit illegalen Absichten, einen veränderten Block einzufügen, besteht darin, dass er dazu führt, dass er über die leistungsstarke Hardware verfügt, die 51\% des Netzwerks einer Blockchain überschreiten kann, um eine Transaktion mit seinem geheimen Block zu akzeptieren. [ \cite{double_spending_attack} ]
+
+\section{51\% Angriff}\label{blockchain:doublespending}
+\subsection{Was ist ein 51\%-Angriff ?}
+Ein 51\%-Angriff stellt eine Methode des Angriffs auf Netzwerke dar, die auf Proof-of-Work basieren. Die Angreifer versuchen, mindestens 51\% der Haschraten des Netzwerks zu erlangen. Durch die Mehrheit der Netzwerk-Haschraten wäre der Angreifer in der Lage, potenziell doppelte Ausgaben zu tätigen oder Transaktionen rückgängig zu machen. [ \cite{51attack} ]
+\subsection{Die Funktionsweise dieses Angriffs}
+Wie bereits erwähnt, ist es sehr unwahrscheinlich, dass ein solcher Angriff stattfindet. Dennoch kann es hilfreich sein, sich bewusst zu machen, wie man einem Angreifer die Aufgabe so schwer wie möglich machen kann, damit ein Angriff zu 51\% erfolgreich ist. [ \cite{51attack} ]
+
+Nachdem man eine Transaktion erhalten hat, kann man einfach einige Blöcke abwarten. Auf diese Weise erschwert man den Angriff. Ab etwa sechs Bestätigungen ist eine Transaktion mit Bitcoins sehr sicher. Bei Altcoins hängt die Anzahl der zu erwartenden Bestätigungen von der Hashrate des Netzwerks ab.   
+
+Ein weiterer Ansatz besteht darin, einen eigenen Full Node zu betreiben. Wer nur einen sogenannten Thin Client nutzt, also eine Software, die nicht selbst die komplette Blockchain speichert, ist besonders anfällig für den 51-Prozent-Angriff. Bei kleinen Guthaben lohnt sich der Aufwand, einen eigenen Full Node zu betreiben, nicht. Bei höheren Beträgen bietet ein Full Node jedoch zusätzliche Sicherheit. [ \cite{51attack} ]
+
+\subsection{Welche Folgen kann eine 51\%-Angriff haben? }
+\begin{itemize}
+	\item \textbf{Double Spending : } \cref{blockchain:doublespending}
+	\item \textbf{Blockchain-Zensur : } Hacker mit einer ausreichenden Hashrate könnten das Netzwerk auch zensieren, indem sie einen erheblichen Vorsprung bei der Hashrate haben und diesen über einen langen Zeitraum aufrechterhalten. So könnten die Angreifer entscheiden, welche Transaktionen in die Blockchain aufgenommen und welche ausgeschlossen werden. Außerdem könnten sie andere Miner daran hindern, sich am Block-Mining zu beteiligen. [ \cite{51attack} ]
+\end{itemize}
+
+\subsection{Wie macht sich eine 51\%-Angriff bemerkbar?}
+Ein Angriff um 51\% ist ein großes und störendes Ereignis, das nie unbemerkt bleibt. Im Falle eines solchen Angriffs würde die Blockchain neu organisiert werden. [ \cite{51attack} ]
+
+Von Zeit zu Zeit kann es in auf Proof-of-Work basierenden Systemen wie Bitcoin vorkommen, dass zwei Miner gleichzeitig einen neuen Block finden. Diese Blöcke werden als Block A und Block B bezeichnet. Das Netzwerk wird für eine kurze Zeit geteilt. Wenn die Hälfte mit Block B zuerst einen neuen Block findet (Block B+1), teilt sie dies dem gesamten Netzwerk mit. Die Hälfte mit Block A erkennt, dass es eine neue, gültige Version der Blockchain gibt, und organisiert sich neu. Dabei lehnt sie Block A ab und passt die neue Kette mit Block B und Block B+1 an. Dieses Ereignis wird auch als Reorganisation der Blockkette oder "chain-reorg" bezeichnet.
+
+Wenn jedoch ein Miner auch Block A+1 findet und ein anderer Miner gleichzeitig Block B+1 findet, werden die Blockketten durch zwei Blöcke getrennt. Wenn nun eine Neuordnung der Kette stattfindet, ist sie also zwei Blöcke lang. Die Wahrscheinlichkeit, dass dieses Ereignis eintritt, ist deutlich geringer.
+
+Je größer der "chain-reorg" ist, desto unwahrscheinlicher ist das Ereignis und desto sichtbarer ist es. Selbst bei einem Angriff von 51\% würde ein "chain-reorg" auftreten. Dieser würde von allen Betreibern vollständiger Knoten und ehrlichen Minern bemerkt werden. Auf diese Weise würde der 51\%-Angriff entdeckt und die Bitcoin-Gemeinschaft könnte beschließen, Maßnahmen zu ergreifen.
+
+\subsection{Die Grenzen des 51\%-Angriffs}
+Die 51\%-Angreifer sind zwar mächtig, was das Double-Spending und die Blockchain-Zensur betrifft, aber sie sind nicht allmächtig. Die Regeln des Netzwerks können nicht geändert werden und es gibt immer Risiken, die mit einem solchen Angriff verbunden sind. Selbst mit 51\% der Hash-Power kann der Angreifer weder neue Bitcoins aus dem Nichts erschaffen, noch die Blockbelohnungen oder Transaktionen anderer Teilnehmer ändern. Obwohl der Angreifer entscheiden kann, welche Transaktionen in die Blöcke aufgenommen werden, können die anderen Teilnehmer nicht gezwungen werden, seiner Kette zu folgen. Wenn sich die anderen Teilnehmer dem Angriff aktiv widersetzen, können sie ihn neutralisieren, indem sie den ersten Block der bösartigen Kette für falsch erklären und damit alle nachfolgenden Blöcke ungültig machen. Letztendlich ermöglicht ein 51\%-Angriff dem Angreifer doppelte Ausgaben und die Zensur von Transaktionen, aber nicht die willkürliche Manipulation des gesamten Regelwerks des Netzwerks. Angreifer könnten einmalig einen Double Spend versuchen, würden aber dank der Transparenz der Blockchain letztlich doch entdeckt werden. [ \cite{51attack} ]
+\subsection{Wie kann man sich vor einem 51\%-Angriff schützen?}
+Wie bereits erwähnt, ist ein erfolgreicher 51\%-Angriff ein seltenes Ereignis. Nichtsdestotrotz kann es hilfreich sein, zu wissen, wie man es einem Angreifer so schwer wie möglich macht, um die Wahrscheinlichkeit eines erfolgreichen Angriffs weiter zu reduzieren. [ \cite{51attack} ]
+
+Nach Erhalt einer Transaktion kann es hilfreich sein, einige Blöcke abzuwarten, um die Sicherheit zu erhöhen. In der Regel wird eine Transaktion mit etwa sechs Bestätigungen als sehr sicher angesehen, wenn es um Bitcoin geht. Die Anzahl der Bestätigungen, die für Altcoins benötigt werden, hängt von der Hashrate des Netzwerks ab. [ \cite{51attack} ]
+
+Ein weiterer Ansatz besteht darin, einen eigenen Full Node zu betreiben, anstatt nur einen Thin Client zu verwenden. Thin Clients, die nicht die gesamte Blockchain speichern, sind anfälliger für den 51\%-Angriff. Bei kleinen Beträgen ist der Betrieb eines eigenen Full Nodes jedoch möglicherweise nicht notwendig. Für höhere Beträge bietet der Einsatz eines eigenen Full Nodes jedoch zusätzliche Sicherheit.
+
+\section{Routing Angriff}
+Ein Routing-Angriff kann durch die Kompromittierung oder Kooperation eines Internet Service Providers (ISP) ermöglicht werden. Obwohl es technisch möglich ist, einen Bitcoin-Knoten (oder einen Knoten für andere Münzen) überall auf der Welt zu betreiben, ist es in der Realität so, dass die Knoten relativ zentralisiert sind, was die ISPs betrifft, die den Internetverkehr von und zu ihnen leiten. Laut einer Untersuchung der ETH Zürich werden 30 Prozent des Bitcoin-Netzwerks von 13 ISPs gehostet, während 60 Prozent des gesamten Transaktionsverkehrs des Netzwerks von drei ISPs geleitet werden. Wenn ein ISP kompromittiert ist, wird er zu einem wichtigen Ausfallpunkt. Ein Routing-Angriff wird ausgeführt, indem der Internetverkehr zwischen autonomen Systemen abgefangen wird, bei denen es sich um Knoten der obersten Ebene in der Architektur des Internets handelt, die relativ leicht abgefangen werden können. Dies ist im Internet weit verbreitet und kann gegen Bitcoin oder anderen Kryptowährungsverkehr eingesetzt werden. Diese Methode kann ein Kryptowährungsnetzwerk in zwei oder mehr getrennte Netzwerke aufteilen, wodurch beide Seiten der Partition Angriffen mit doppelten Ausgaben ausgesetzt sind, da sie nicht mit dem gesamten Netzwerk kommunizieren können, um Transaktionen zu validieren. Sobald Münzen auf einer Seite des Netzwerks ausgegeben und Waren oder Dienstleistungen empfangen werden, kann die Partition entfernt werden, und die Seite des Netzwerks mit der kürzeren Kette würde vom gesamten Netzwerk zurückgewiesen werden, und diese Transaktionen würden ausgelöscht. Soweit wir wissen, ist diese Art von Angriff noch nicht vorgekommen, und es gibt Maßnahmen, die Münzen gegen dieses Verhalten immun machen können.[ \cite{allatacks} ]
 
 
 \chapter{Schluss}
