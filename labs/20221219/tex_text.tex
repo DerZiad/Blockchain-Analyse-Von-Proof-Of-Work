@@ -1,0 +1,52 @@
+% Kommentar wird eingeleitet durch ein %-Zeichen; alles, was dem
+%-Zeichen bis zum Zeilenende folgt, ist Kommentar
+
+% Text besteht aus Zeichen/Buchstaben: jedes Zeichen ist ein primitives
+% TeX-Kommando. Die Bedeutung eines solchen Kommandos ist:
+% - setze das Zeichen
+% - im der aktuellen Größe
+% - an die aktuelle Stelle
+% - und verschiebe die aktuelle Stelle 
+% - um die Breite des gesetzten Zeichens
+% um für das nächste Zeichen bereit zu sein.
+
+% Damit wir eine ganz lange Eingabezeile erzeugt. Diese Eingabezeile
+% stellt einen Absatz dar. Ist das Absatz beendet (durch einen
+% expliziten Befehl oder durch den impliziten Befehl "Leerzeile"), macht
+% TeX aus dem Absatz eine Menge von Zeilen (im Original: breaking
+% paragraphs into lines, der Algorithmus dazu ist von einem Assistenten
+% von D.E. Knuth entwickelt worden).
+
+Das ist ein erster Satz, der mit TeX formatiert werden soll.
+
+Jetzt folgt mehr Text, der über eine Zeile hinausgeht, damit der
+automatische Zeilenumbruch gezeigt werden kann. Dieser Text kann nun
+beliebig lang sein, bei Bedarf auch über mehrere Seiten gehen. Dass
+ein solch langer Text nicht gut zu lesen ist, ist klar, es wird deshalb
+nun eine neuer Absatz begonnen.
+
+Der neue Absatz wird durch den impliziten Befehl "Leerzeile" eingeletet.
+Dem Leser wird der neue Absatz deutlich gemacht durch einen so genannten
+Einzug: die erste Zeile eines Absatzes wird um eine feste Breite nach
+rechts verschoben.
+
+Zwei Dinge sollten noch vermerkt werden: TeX wird innehalb eines Textes
+immer durch den Befehl \TeX{} dargestellt, Anf\"uhrungszeichen wie um 
+Leerzeile werden nicht durch G\"ansef\"u\ss chen erzeugt, sondern mit 
+speziellen Zeichenkombinationen: ``Leerzeile''.
+
+
+% jedes TeX-Programm muss mit dem zugehörigen Ende-Befehl versehen
+% werden
+
+\bye
+
+% Ein TeX-Befehl beginnt mit einem Gegenschrägstrich (backslash), er
+% besteht aus beliebig vielen Buchstaben, ein Nicht-Buchstabe beendet
+% den Befehl. Nicht-Buchstaben sind
+% - Leerzeichen
+% - geschweifte, eckige und runde Klammern, erstere dienen der
+%   Darstellung von erforderlichen Parametern, die zweiten werden für
+%   optionale Parameter benötigt
+% - Ziffern (0, 1, ...) und Sonderzeichen (., ;, ...)
+

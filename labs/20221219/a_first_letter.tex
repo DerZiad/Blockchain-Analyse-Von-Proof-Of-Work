@@ -1,0 +1,60 @@
+\documentclass[version=last, ngerman]{scrlttr2}
+
+% die Konfigurationsdateien...
+\input{../../shared/twp-cfg}     % ... allgemein
+\input{../../shared/lttr-cfg}    % ... spezifisch für einen Brief
+
+%\setkomavar{yourmail}{15.10.2022}
+\setkomavar{yourmail}{\printdate{2022-10-15}} % setzt Paket isodate
+                                 % voraus, Datumsangabe im ISO-Format
+                                 % ISO: International Standardization
+                                 % Organisation, ISO-Standards sind in
+                                 % der IT-Branche extrem wichtig, um
+                                 % einwandfreien Informationsaustausch
+                                 % zu gewährleisten: YYYY-MM-DD als
+                                 % Vorlage 
+
+
+%\setkomavar{title}{Dankeschön}  % zu aufdringlich
+% \setkomavar{subject}{Dankeschön}
+\setkomavar{subject}{Rechnung}
+\setkomavar{frombank}{Meine Bank\\IBAN: DE12 1234 1234 1234 1234 00}
+\setkomavar{firstfoot}{%
+  \parbox[b]{\linewidth}{%
+    \centering\def\\{, }\usekomavar{frombank}% hier wird lokal
+                                 % der Zeilenumbruch umdefiniert
+                                 % in ein Komma
+  }%
+}
+\begin{document}
+
+\begin{letter}
+  {%
+   An die \\                    % die Adresse der Empfängerin/
+   Fachhochschule Aachen \\     % des Empfängers, jede Zeile wird mit
+   Campus Jülich \\             % \\ getrennt
+   Prüfungsamt \\
+   Heinrich-Mußmann-Str. 1 \\[3mm] % [...] gibt zusätzlichen Leerraum
+   52428 Jülich                 % an
+  }
+
+  \opening{Sehr geehrte Frau Surma,}
+  
+%   vielen Dank für die schnelle Fertigstellung der Bescheinigung meiner
+%   bestandenen Prüfung.
+  vielen Dank für den Auftrag, den ich sehr zu schätzen weiß. In der Anlage finden Sie die zugehörige Rechnung, den Betrag von 1,00€ überweisen Sie bitte auf das unten angegebene Konto. Wenn es weiteren Bedarf an meinen Tätigkeiten
+  und Produkten gibt, lassen Sie es mich bitte wissen; ich werde Ihnen stets
+  ein auf Ihre Anforderungen zugeschnittenes Angebot zukommen lassen.
+  
+  Beachten Sie bitte, dass dieser Brief nicht im Blocksatz formatiert worden
+  ist. Ebenso hat dieser Abschnitt einen etwas größeren Abstand 
+  als eine Zeile vom vorigen Abschnitt. Dies habe ich so eingestellt,
+  damit Sie vom Lesen dieses Briefes nicht gelangweilt und ermüdet werden,
+  und damit neue Abschnitte sofort erkennbar sind und der Brief somit besser
+  lesbar ist. 
+  
+  \closing{Mit freundlichen Grüßen}
+  \encl{Rechnung}
+\end{letter}
+  
+\end{document}

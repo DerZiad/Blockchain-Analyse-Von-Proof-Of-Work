@@ -1,0 +1,117 @@
+Desktop
+
+Documents   ---+
+               |
+               +-----+ FH
+                     |
+                     +-------+ TWP
+                             |
+                             + --------- ws2022.zip hier entpacken!
+
+Downloads
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+Donald Ervin Knuth war wiss. Mitarbeiter an der Stanford University im
+Bereich Informatik
+
+Aufgabe: Erstelle ein Skript mit allen bekannten Algorithmen und einer
+Bewertung dieser
+
+I:
+II: Seminumerical Algorithms
+III:
+...
+
+Skript -> Buchreihe: Kapitel -> Bänden
+
+
+Die Bücher wurden ein großer Erfolg -> Neuauflage!
+
+
+Aber: die Setzer konnten das handgeschriebene(!!!) Manuskript nicht
+einwandfrei lesen, daraus ergaben sich viele Druckfehler.
+
+
+Beschwerde half nichts, die Setzer sagten: die Zeichen kennen wir nicht,
+wir nehmen das, was dann am Naheliegendsten ist.
+
+
+Damit war Knuth unzufrieden, er hat deshalb über eine Möglichkeit
+nachgedacht, wie er als Autor und Programmierer den Satz in eine, seine
+eigene Hand legen kann.
+
+
+Ergebnis: es musste ein Programm entwickelt werden, das den Satz übernahm
+und das den gesetzten Text für geeignete Ausgabegeräte aufbereiten konnte.
+
+Damit entstand das Konzept von TeX:
+
+Der Autor erstellt die Eingabedatei für einen Compiler, der eine
+maschinen-ausführbare Datei erzeugt
+
+Hochsprachen-Programm   wird vom Compiler    in ein ausführbares
+formuliert in             übersetzt              Programm
+----------------------------------------------------------------
+Fortran
+Cobol
+PL/1                       ------>                 .exe
+C/C++                     Compiler                Datei
+Python
+
+
+Assembler-Programm     wird vom Compiler     in ein darstellbares
+formuliert in            übersetzt                 Format
+-----------------------------------------------------------------
+TeX-Quellcode              ------>                 .dvi
+                        TeX-Compiler              Datei
+
+
+Tatsächlich ist TeX ein Makro-Assembler-Programm: der Autor kann Makros
+schreiben, die vom TeX-Compiler expandiert werden.
+
+Der TeX-Assembler kennt ca. 300 "Primitive" - sozusagen die
+Maschinenbefehle - und ist deshalb schwer zu lernen. Knuth hat Makros
+geliefert (plainTeX), die den Umgang mit TeX einfacher machten, Leslie
+Lamport hat eine Sammlung von Makros (LaTeX) erstellt, die das Schreiben
+eines Textes mit dem Schreiben eines Java- oder C-Programms vergleichbar
+machen:
+- Es gibt Funktionen, die man einfach benutzen kann.
+- Es gibt eine Umgebungsstruktur vergleichbar mit den Klammern in Java,
+  die die Gültigkeit von Befehlen auf einen Bereich beschränken
+
+Zusätzlich sorgen beide Pakete dafür, dass die Fähigkeiten eines Setzers in
+den TeX-Compiler eingebaut werden, sozusagen eine KI des Setzens von
+Texten. Knuth selbst hat eine KI für den Mathematiksatz in TeX eingebaut.
+
+
+dvi: DeVice Independent, heißt: mit einem geeigneten Treiber
+                                auf passenden Geräten
+                                - anzeigbar   (Graphik-Terminal)
+                                - druckbar    (Lichtsatzmaschine,
+                                               hochauflösender
+                                               Nadeldrucker,
+                                               neuerdings:
+                                               Tintenstrahl- und Laserdrucker)
+
+
+
+
+Tex-Compiler:   1. Original:                                      tex
+                   Pascal-Programm
+                2. Neuentwicklung zur Erzeugung von .pdf-Dateien: pdftex
+                   C-Programm, erzeugt .pdf-Datei
+                3. Neuentwicklung zur Erzeugung von .pdf-Dateien: luatex
+                   Lua-Programm, erzeugt .pdf-Datei
+
+pdf: Portable Document Format, von Adobe entwickeltes Dateiformat zur
+geräteunabhängigen Darstellung komplexer (bestehend aus Text, Graphik, ...)
+Dokumente, kann verschlüsselt werden, kann erweitert werden für das Lesen
+durch Menschen mit einer Behinderung (eingeschränktes Sehen)
+
+
+LuaTeX bietet neben den Satzmöglichkeiten von TeX die Möglichkeit, TeX
+durch Programmierung mit Zugriff auf den Computer (maschinennah) zu
+erweitern.

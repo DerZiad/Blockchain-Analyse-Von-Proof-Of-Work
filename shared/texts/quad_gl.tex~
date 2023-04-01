@@ -1,0 +1,132 @@
+%%% quad_gl.tex ---
+%
+%% Author: j.hoffmann@fh-aachen.de
+%% Version: $Id: quad_gl.tex 0 <2022/12/20 13:10:30> ax006ho $
+%%          update date and time by C-u M-x org-time-stap
+
+
+\usepackage{beamerarticle}            % um das Erstellen von Präsentationen
+                                      % zu ermöglichen
+
+% Einstellungen
+% =============
+
+% Da die Einstellungen sich von Dokument zu Dokument kaum verändern,
+% ist es sinnvoll, diese an einer zentralen Stelle abzulegen und von
+% dort zu laden. Dies geschieht völlig transparent mit dem Befehl
+% \input{<Pfad>}, dem als Argument eine Datei mit (relativem) Zugriffs-
+% pfad übergeben wird
+\input{../../../shared/thesis-cfg}
+% in dieser Datei werden alle Zusatzpakete mittels
+% \usepackage{<package>} geladen
+
+\input{../../../shared/switch-cfg}
+% in dieser Datei werden Kommandos zum Umschalten zwischen verschiedenen
+% Zielformaten (Buch, Report, Artikel, ...)
+
+\begin{document}
+\frontmatter                    % es wird mit kleinen, römischen Zahlen
+                                % gezählt
+
+% \maketitle                    % die automatisch erzeugte
+                                % Titelseite, dies erfordert
+                                % die Angabe des Autors und des
+                                % Titels in den Einstellungen,
+                                % kann für eine Bachelor-, ...
+                                % Arbeir nicht benutzt werden!
+
+\input{../../../shared/texts/titel_quad_gl} % die selbst entworfene Titelseite
+
+% Die Zusammenfassung erscheint auf einer eigenen Seite
+\ifthenelse{\not \boolean{isBook}}{%
+  \begin{abstract}              % die abstract-Umgebung gibt es
+                                % nicht in der scrbook-Klasse!
+      Quadratische Gleichungen spielen in vielen Bereichen von
+      Naturwissenschaften und Technik eine besondere Rolle. In diesem
+      Artikel wird gezeigt, wie eine quadratische Gleichung gelöst werden
+      kann.
+  \end{abstract}
+}{}
+
+\tableofcontents
+
+\mainmatter                     % Umschaltung auf arabische Ziffern
+
+\chapter{Quadratische Gleichungen }   % Einleitung, Hauptteil und Schluss
+                       % dürfen niemals in der fertigen Arbeit
+                       % stehen, da muss die Autorin bzw. der Autor
+                       % sich etwas Passendes einfallen lassen.
+
+In dieser Arbeit wird gezeigt, welche Bedeutung quadratische Gleichungen
+haben und welche Methoden zur Lösung quadratischer
+Gleichungen es gibt.
+
+Diese Arbeit ist ein Beispiel, an dem gezeigt wird, wie man mit \LaTeX{}
+arbeitet. \LaTeX{} ist ein Makropaket, das von Leslie Lamport auf der Basis
+von \TeX{} \cite{knuth_86:tex_book} entwickelt worden ist. Die aktuelle
+Entwicklung geschieht durch "`The \LaTeX{} project"', sie ist im Internet
+unter zu verfolgen.
+
+
+\chapter{Verfahren zur Lösung quadratischer Gleichungen}% durch dieses %-Zeichen wird
+\label{chap:verf-los}             % Leerraum vermeiden, der zu einer
+                                  % falschen Nummerierung führen kann
+                                  % \label: setzt eine Marke,
+                                  % auf die ich mich an andere Stelle
+                                  % beziehen kann.
+
+\begin{theorem}[Fundamentalsatz der Algebra, \cite{jakob22:_fundam_algeb}]
+    Es sei \(P(z) = \sum_{k=0}^n a_k \cdot z^k\) ein Polynom vom Grad
+    \(\displaystyle \deg P=:n\in \mathcal {N} \backslash \{0\}\) -- also ein
+    nicht konstantes Polynom -- mit komplexen Koeffizienten \(a_k \in \mathcal
+    C\). Dann hat das Polynom eine komplexe Nullstelle, d.\,h., es gibt eine
+    Zahl \(z \in \mathcal C\), so dass \(P(z) = 0\) gilt. Genauer gilt insbesondere,
+    dass die Anzahl der Nullstellen, wenn sie mit der richtigen
+    Vielfachheit gezählt werden, insgesamt gleich dem Grad des Polynoms
+    ist.
+\end{theorem}
+
+Im \cref{chap:beispielcode} wird eine Fortran-Musterimplementierung für die
+Lösung quadratischer Gleichungen gezeigt.
+
+\chapter{Zusammenfassung und Ausblick}
+
+In dieser Arbeit wurde in \cref{chap:verf-los} gezeigt, wie
+quadratische Gleichungen auf direktem Weg gelöst werden können. Es wurde
+hier nicht auf die iterative Lösung dieser Gelichungen eingegangen, die bei
+geringen Geanuigkeitsanforderungen ihre Vorteile haben kann.
+
+
+\appendix{}
+
+\chapter{Beispielcode zur Lösung quadratischer Gleichungen}%
+\label{chap:beispielcode}
+
+Zu beachten ist die spezielle
+Normierung der Koeffizienten:
+\lstset{language=fortran, caption=Fortran-Musterimplementierung
+  der Lösung einer quadratischen Gleichung, label={lst:quad-gl}}
+\ifthenelse{\boolean{isArticleTC}}{%
+  \lstinputlisting[float=*t]{%    bei zweispaltiger Formatierung soll
+                                % der Code einspaltig auf einer eigenen
+                                % Seite erscheinen, damit er lesbar
+                                % bleibt
+    ../../../shared/sources/quad_gl.f03}
+}{
+  \lstinputlisting{
+    ../../../shared/sources/quad_gl.f03}
+}
+
+\backmatter                     % keine Zählung der folgenden Kapitel
+
+\printbibliography
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: luatex
+%%% ispell-local-dictionary: "deutsch8"
+%%% End:

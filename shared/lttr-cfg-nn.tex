@@ -1,0 +1,41 @@
+%23456789012345678901234567890123456789012345678901234567890123456789012
+\wlog{This is lttr-cfg, the common configuration file for
+   letters (JHf)}
+
+% Wichtige Voreinstellungen
+\usepackage{url}                % Paket zum Formatieren von URLs
+\DeclareUrlCommand\email{\urlstyle{tt}}
+\usepackage{phonenumbers}
+
+
+% für das Aussehen des Briefbogens
+\KOMAoptions{%
+  foldmarks=true,               % Faltmarken werden gesetzt
+  foldmarks=HP,                 % H: alle horizontalen FM,
+                                % P: Marken für Locher (puncher)
+  fromlogo=true,                % ermöglicht das Setzen eines Logos
+  fromphone=false,              % eigene Telefonnummer und
+  fromemail=true,               % email-Adresse
+                                % false unterdrückt die entsprechende
+                                % Ausgabe
+  subject=titled
+}
+
+% für die Absenderangaben
+\setkomavar{fromname}{N.N.}
+\setkomavar{signature}{N.N.} % \, sorgt für einen
+                                % kleinen Zwischenraum, ~ ist der 
+                                % Standardzwischenraum, der nicht 
+                                % umgebrochen werden kann 
+\setkomavar{backaddress}{%
+	N.N.\\
+	N.N.\\
+	N.N.
+}
+\setkomavar{fromaddress}{%
+	N.N.\\
+	N.N.
+	}
+%\setkomavar{fromphone}{\phonenumber[foreign]{01234567}[89]} % nicht
+\setkomavar{fromemail}{\email{
+    n.n@n-n}}

@@ -1,0 +1,28 @@
+% Voreinstellungen für Elemente des Baumes sind von früher bekannt,
+% werden hier erneut gesetzt, um die Bäume unabhängig voneinander
+% formatieren können
+\tikzset{directory/.style={rectangle, rounded corners, draw,
+        font=\ttfamily, fill=blue!20}}
+\tikzset{file/.style={rectangle, draw, font=\ttfamily, fill=green!10}}
+
+\begin{tikzpicture}[level distance=45.0mm]%
+    \node[directory] {\ldots} [grow=right, %
+        edge from parent fork right]%
+    child[sibling distance=30mm, ] {node[directory] {homework}
+      child { node[directory] {thesis} %
+        child{node[file] {thesis.tex}}} %
+      child {node[directory] {thesis\_article} %
+        child{node[file] {thesis\_article.tex}}} %
+    } %
+    child[sibling distance=20mm] {node[directory] {labs}} %
+    child {node[directory] {shared} %
+      child{node[file] {quad\_gl-cfg.tex}}
+      child {node[directory] {figures} %
+        child{node[file] {r\_to\_r\_tex.tex}}} %
+      child {node[directory] {sources} %
+        child{node[file] {quad\_gl.f03}}} %
+      child {node[directory] {texts} %
+        child{node[file] {quad\_gl.tex}}} %
+    }
+    child[sibling distance=20mm] {node[file] {README.md}};
+\end{tikzpicture}

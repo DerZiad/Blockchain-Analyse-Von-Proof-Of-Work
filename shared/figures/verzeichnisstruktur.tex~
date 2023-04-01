@@ -1,0 +1,22 @@
+% Voreinstellungen für Elemente des Baumes sind von früher bekannt,
+% werden hier erneut gesetzt, um die Bäume unabhängig voneinander
+% formatieren können
+\tikzset{directory/.style={rectangle, rounded corners, draw,
+        font=\ttfamily, fill=blue!20}}
+\tikzset{file/.style={rectangle, draw, font=\ttfamily, fill=green!10}}
+
+\begin{tikzpicture}[level distance=7.5mm]%
+    \node[directory] {\ldots} %
+        [edge from parent fork down]%
+    child[sibling distance=30mm] {node[directory] {homework}} %
+    child[sibling distance=30mm] {node[directory] {labs}} %
+    child {node[directory] {shared} %
+      child {node[directory] {figures} %
+        child{node[file] {MyClass.java}}} %
+      child {node[directory] {sources} %
+        child{node[file] {MyClass.java}}} %
+      child {node[directory] {texts} %
+        child{node[file] {MyClass.java}}} %
+    }
+    child[sibling distance=30mm] {node[file] {README.md}};
+\end{tikzpicture}
