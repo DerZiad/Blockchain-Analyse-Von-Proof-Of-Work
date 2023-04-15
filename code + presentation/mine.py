@@ -1,9 +1,9 @@
 import hashlib,time,sys
 
 NONCE_LIMIT = 4000000000
-difficulty = 5
+difficulty = int(sys.argv[1])
 prev_hash = "65d56y6565s98zeABC"
-transactions = "Transaction In mercle Root"
+transactions = "Transaction block hash"
 
 
 def mine(block_number, transactions, previous_hash, difficulty):
