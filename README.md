@@ -7,6 +7,6 @@ This report is primarily written in German and offers an in-depth exploration of
 
 | Section          | Download Link                |
 |------------------|------------------------------|
-| Full Report      | [/datein/Seminar.pdf]              |
-| Code Repository  | [/datein/mine.py]                  |
-| Presentation     | [/datein/SeminarPräsentation.pptx] |
+| Full Report      | [Click Here](https://github.com/DerZiad/Blockchain-Analyse-Von-Proof-Of-Work/blob/main/datein/Seminar.pdf)              |
+| Code Repository  | [Click Here](https://github.com/DerZiad/Blockchain-Analyse-Von-Proof-Of-Work/blob/main/datein/mine.py)                |
+| Presentation     | [Click Here](https://github.com/DerZiad/Blockchain-Analyse-Von-Proof-Of-Work/blob/main/datein/SeminarPr%C3%A4sentation.pptx) |
