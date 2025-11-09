@@ -1,0 +1,268 @@
+% Leslie Lamport hat LaTeX entwickelt, um dem Anwender das Schreiben
+% spezieller Dokumente zu vereinfachen. Um den europäischen/deutschen
+% Vorstellungen eines Layouts zu entsprechen, hat Markus Kohm analoge
+% Dokumentklassen entwickelt (Koma-Klassen)
+
+% Diese Dokumente sind
+% im Original    extern              Koma       extern
+% 1. article                         scrartcl
+% 2. report                          scrreprt
+% 3. book                            scrbook
+% 4. letter                          scrlttr2
+% 5. slide                                      beamer
+% 6.             poster                         tikzposter
+% 7.                                            komacv bzw. europecv
+% Das Layout ist im Original amerikanischen Vorstellungen ensprechend!
+
+% Der Aufbau ist immer
+
+% Kopf des Dokumentes
+% ===================
+\documentclass[ngerman,               % in eckigen Klammern stehen
+                                      % optionale Angaben, hier: ngerman
+                                      % - es werden Trennmuster nach
+                                      %   _n_euer deutscher Recht-
+                                      %   schreibung geladen
+                                      % - wenn das Zusatzpaket babel
+                                      %   geladen ist, kann der Autor
+                                      %   länderspezifische
+                                      %   Befehle, beispielsweise für
+                                      %   Anführungszeiche direkt
+                                      %   eingeben
+                                      % typographische Regeln:
+                                      % in der scrreprt-Klasse beginnt
+                                      % jedes Kapitel auf einer
+                                      % neuen Seite, leere Seiten wie
+                                      % die Zusammenfassung
+                                      % erhalten keine Seitennummer,
+                                      % ebensowenig Titelseiten, es
+                                      % werden alle(!!!) Seiten intern
+                                      % nummeriert, die Titelseite
+                                      % hat die Nummer 1, die
+                                      % Seitennummerierung erfolgt
+                                      % unten mittig
+               a4paper,               % Ausgabe auf DIN A4 Seiten
+             % draft,                 % Satzspiegelfehler werden 
+                                      % angezeigt, Abbildungen werden
+                                      % nicht ausgegeben
+               fleqn,                 % math. Formeln werden mit festem
+                                      % Einzug von links dargestellt
+                     ]{scrreprt}
+
+% Einstellungen
+% =============
+
+% Da die Einstellungen sich von Dokument zu Dokument kaum verändern,
+% ist es sinnvoll, diese an einer zentralen Stelle abzulegen und von
+% dort zu laden. Dies geschieht völlig transparent mit dem Befehl
+% \input{<Pfad>}, dem als Argument eine Datei mit (relativem) Zugriffs-
+% pfad übergeben wird
+\input{../../shared/twp-cfg}
+% in dieser Datei werden alle Zusatzpakete mittels
+% \usepackage{<package>} geladen
+
+
+% merke: ein späterer Titel überschreibt einen früher gesetzten Titel,
+% in der scrreprt-Dokumentenklasse erscheint der Titel auf einer
+% eigenen Seite
+\title{Ein erstes \LaTeX-Dokument mit der Dokumentklasse \texttt{scrreprt}}       % \texttt{<Inhalt>} formatiert <Inhalt>
+                         % mit einer dicktengleichen Schriftart
+                         % im Vergleich zur ansonsten eingesetzten
+                         % Proportionalschrift
+
+% Rumpf des Dokumentes
+\begin{document}
+  \maketitle                          % die automatisch erzeugte
+                                      % Titelseite, dies erfordert
+                                      % die Angabe des Autors und des
+                                      % Titels in den Einstellungen
+
+  % Die Zusammenfassung erscheint auf einer eigenen Seite
+  \begin{abstract}                    % die abstract-Umgebung gibt es
+                                      % nur in der scrartcl-Klasse!
+    Hier steht eine kurze Zusammenfassung des Inhaltes, es geht hier um den Aufbau eines Artikels, insbesondere um die geeignete Gliederung.
+  \end{abstract}
+
+  \tableofcontents
+
+  % die Gliederung erfolgt in bis zu 7 Ebenen, abhängig von der Klasse
+  %   Ebene     Klasse                   Befehl (einfachen Form)
+  %   0.        scrbook/scrreprt         \chapter{<Titel>}
+  %   1.        alle                     \section{<Titel>}
+  %   2.        alle                     \subsection{<Titel>}
+  %   3.        alle                     \subsubsection{<Titel>}
+  %   4.        alle                     \paragraph{<Titel>}
+  %   5.        alle                     \subparagraph{<Titel>}
+  %   6.        alle, nicht im Original  \subsubparagraph{<Titel>}
+
+  \chapter{Einleitung}   % Einleitung, Hauptteil und Schluss
+                         % dürfen niemals in der fertigen Arbeit
+                         % stehen, da muss die Autorin bzw. der Autor
+                         % sich etwas Passendes einfallen lassen.
+
+  Hier steht der Inhalt des Dokumentes, weiteres siehe im n\"achsten
+  Beispiel. Der erste Absatz wird ohne Einzug formatiert, wenn er einer \"Uberschrift folgt.
+
+  Weitere Absätze bekommen einen Einzug, wie hier deutlich zu sehen ist.
+  Das soll an dieser Stelle reichen.
+
+  In dieser Arbeit wird gezeigt, wie man mit \LaTeX{} arbeitet. Dazu
+  wird in \cref{chap:TeX} auf die Struktur eines wissenschaftlichen
+  Dokumentes eingegangen, dabei wird ein spezieller Augenmerk auf die
+  Befehlsstruktur von \LaTeX{} gerichtet (\cref{sec:befehlsstruktur}).
+
+
+  \chapter{Arbeiten mit \TeX/\LaTeX}% durch dieses %-Zeichen wird
+  \label{chap:TeX}                  % Leerraum vermeiden, der zu einer
+                                    % falschen Nummerierung führen kann
+                                    % \label: setzt eine Marke,
+                                    % auf die ich mich an andere Stelle
+                                    % beziehen kann.
+
+  In dieser kleinen Einführung wird beschrieben, wie man mit \LaTeX{} arbeitet.
+
+  % eine Kurzform der Überschrift, die für das Inhaltsverzeichnis
+  % geeignet ist erzeugt man mit einem optionalen Argument
+  \section[Die Befehlsstruktur]{Die Befehlsstruktur von \TeX/\LaTeX}%
+  \label{sec:befehlsstruktur}
+
+  % die Nummerierung wird automatisch korekt erzeugt, wenn die
+  % Gliederung korrekt ist, eine fehlerhafte Gliederung wird durch 0.
+  % in der Überschrift angezeigt. Für die Hausaufgaben ist eine
+  % fehlerhafte Nummerierung ein Ausschlusskriterium
+  \subsection{\TeX: Einfache Befehle -- Primitive} % das doppelte
+             % Minuszeichen
+             % ist der sogenannte n-dash, es wird immer dann eingesetzt,
+             % wenn ein _deutscher_ Gedankenstrich gebraucht wird
+
+Jedes Zeichen ist ein einfacher Befehl: setze das Zeichen in der
+aktuellen Schriftart und der aktuellen Größe an die aktuelle
+Position, verändere die aktuelle Position um die Breite des Zeichens.
+Es gibt aber Zeichen, die eine besondere Bedeutung haben. Wenn man
+diese im Text benötigt, muss man eine Ersatzdarstellung benutzen. Im
+Regelfall ist es ein vorweggestellter Gegen-/Rückwärtsschrägstrich
+(backslash)
+\begin{itemize} % Listenumgebungen werden später behandelt
+  \item Das \%-Zeichen leitet Kommentar ein.
+  \item Das \$-Zeichen leitet in \TeX ein einfachen Mathematikmodus ein
+  und aus.
+  \item Das \(\backslash\)-Zeichen leitet Befehle ein, der Befehl endet
+   mit dem ersten Nichtbuchstaben. Wird nach einem Befehl ein Leerzeichen benötigt, muss man dieses entweder durch einen weiteres
+   \(\backslash\)-Zeichen gefolgt von einem Leerzeichen oder durch ein
+   Paar von Gruppenklammern erzeugen: Vergleiche \LaTeX und \LaTeX\
+   und \LaTeX{} und auch \LaTeX.
+  \item Geschweifte Klammern (\{ und \}) definieren Gruppen. Dinge, die
+   in einer Gruppe definiert sind, sind außerhalb der Gruppe unbekannt.
+  \item Das Doppelkreuz \# beschreibt Parameter.
+  \item Das kaufmännische Und (\&) wird für das Setzen von Tabellen
+  gebraucht.
+  \item Der Unterstrich (\_) leitet einen Index ein, gilt nur im
+   Mathematikmodus.
+  \item Das Dach (\^{}) leitet eine Potenz ein, gilt nur im
+  Mathematikmodus.
+  \item Die Tilde (\~{}) stellt einen Leerraum dar, der nicht umgebrochen werden kann.
+\end{itemize}
+
+  \subsection{\LaTeX: Einfache Befehle}
+
+  \LaTeX{} hat die Befehlsstruktur von \TeX{} übernommen, es gibt bei
+   vielen Befehlen wie bei den Gliederungsbefehlen optionale Parameter,
+   die sich auf die Ausführung/Darstellung auswirken. Ein einfacher
+    Befehl hat damit die Syntax
+\begin{lstlisting}[language=tex, style=colored]
+@\cs{\meta{Kommandoname}}\oarg{opt. Parameter}\marg{verpflichtende Parameter}@
+\end{lstlisting}
+
+   Zusätzlich hat \LaTeX{} den Begriff der Umgebung eingeführt: In einer
+   Umgebung gibt es zusätzliche Kommandos, die außerhalb der Umgebung
+   unbekannt sind. Auch eine Umgebung kann optionale Parameter benutzen,
+   diese werden an das einführende Kommando in eckigen Klammern
+   angehängt.
+\begin{lstlisting}
+\begin{@\meta{Umgebungsame}@}@\oarg{Optionen}@
+...
+\end{@\meta{Umgebungsame}@}
+\end{lstlisting}
+
+
+  \subsection{Gliederung/Strukturierung eines Dokumentes}
+
+  Ein wissenschaftliche Arbeit zeichnet sich durch ein paar Dinge aus:
+  \begin{enumerate}
+    \item Eine Gliederung entsprechend dem hier vorliegenden Vorbild.
+
+    Diese wird benutzt, um dem Leser den Überblick über den Inhalt und
+    das Verständnis des Inhaltes zu erleichtern. Mit einer Gliederung
+    kann man den Leser auf wichtige Dinge vorbereiten, man kann auch
+    Rückverweise geben.
+
+    Dies geschieht mit den Kommandos
+    \lstinline[mathescape]|\label{$\meta{Marke}$}| und
+    \lstinline[mathescape]|\cref{$\meta{Marke}$}|. Dabei muss Marke in
+    beiden Fällen identisch sein, ein Tippfehler führt zu
+    Fehlermeldungen, im Text erscheint \textbf{??}, um den Fehler
+    sichtbar zu machen.
+
+  \end{enumerate}
+
+
+
+  \subsection{Weitere Untergliederung Teil 4}
+  
+  Hier wird gezeigt, wie man auf das Inhaltsverzeichnis und die
+  Nummerierung der Unterabschnitte Einfluss nehmen kann. Standarmäßig
+  wird nummeriert bis zur \lstinline|\subsection|, wenn weitergehend
+  nummeriert werden soll, muss man entsprechende Grenzen setzen
+  \begin{lstlisting}
+    \setcounter{secnumdepth}@\marg{Tiefe}@
+\end{lstlisting}
+  \meta{Tiefe} gibt die Stufe an, bis zu der nummeriert werden soll.
+  
+  \subsubsection{Unterunterabschnitt 1}
+  
+  Kein wichtiger Inhalt
+
+  \subsubsection{Unterunterabschnitt 2}
+
+  Kein wichtiger Inhalt
+  
+  \paragraph{Unterunterunterabschnitt 1}
+  
+  Noch weniger wichtig
+
+  \paragraph{Unterunterunterabschnitt 2}
+
+Noch weniger wichtig
+
+  \subparagraph{Unterunterunterunterabschnitt 1}
+
+Noch viel weniger wichtig
+
+
+  \subparagraph{Unterunterunterunterabschnitt 2}
+
+Noch viel weniger wichtig, wie zuvor
+
+%  \subsubparagraph{Unterunterunterunterunterabschnitt 1}
+
+Noch viel, viel weniger wichtig
+
+
+
+
+
+
+  \section[Zweiter Unterabschnitt]{Zweiter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+
+  \section[Dritter Unterabschnitt]{Dritter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+
+  \chapter{Schluss}
+
+  In dieser Arbeit wurde in \cref{sec:befehlsstruktur} gezeigt, wie
+  \LaTeX-Befehle eingesetzt werden können, um Inhalte zu verdeutlichen.
+
+\end{document}

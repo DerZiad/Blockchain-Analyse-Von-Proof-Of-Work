@@ -1,0 +1,168 @@
+% Leslie Lamport hat LaTeX entwickelt, um dem Anwender das Schreiben
+% spezieller Dokumente zu vereinfachen. Um den europäischen/deutschen
+% Vorstellungen eines Layouts zu entsprechen, hat Markus Kohm analoge
+% Dokumentklassen entwickelt (Koma-Klassen)
+
+% Diese Dokumente sind
+% im Original    extern              Koma       extern
+% 1. article                         scrartcl
+% 2. report                          scrreprt
+% 3. book                            scrbook
+% 4. letter                          scrlttr2
+% 5. slide                                      beamer
+% 6.             poster                         tikzposter
+% 7.                                            komacv bzw. europecv
+% Das Layout ist im Original amerikanischen Vorstellungen ensprechend!
+
+% Der Aufbau ist immer
+
+% Kopf des Dokumentes
+% ===================
+\documentclass[ngerman]{scrbook}      % in eckigen Klammern stehen 
+                                      % optionale Angaben, hier: ngerman
+                                      % - es werden Trennmuster nach
+                                      %   _n_euer deutscher Recht-
+                                      %   schreibung geladen
+                                      % - wenn das Zusatzpaket babel
+                                      %   geladen ist, kann der Autor
+                                      %   länderspezifische
+                                      %   Befehle, beispielsweise für
+                                      %   Anführungszeiche direkt
+                                      %   eingeben
+
+                                      % typographische Regeln:
+                                      % in der scrbook-Klasse beginnt
+                                      % jedes Kapitel auf einer
+                                      % rechten, 
+                                      % ungeraden Seite, leere Seiten
+                                      % erhalten keine Seitennummer, 
+                                      % ebensowenig Titelseiten, es
+                                      % werden alle(!!!) Seiten intern
+                                      % nummeriert, die Titelseite 
+                                      % hat die Nummer 1, die
+                                      % Seitennummerierung erfolgt
+                                      % unten außen (rechte Seite
+                                      % rechts, linke Seite links)
+                                      
+                                      % in der scrbook-Klasse werden
+                                      % frontispiz, ...
+                                      % unterschieden
+                                      % \frontmatter - der Inhalt vor
+                                      % dem ersten Kapitel
+                                      % \mainmatter - der "Hauptinhalt"
+                                      %    Kapitel 1 - Kapitel <n>
+                                      % \backmatter - alles, was danach
+                                      % kommt: Glossar (optional),
+                                      % Literaturverzeichnis,
+                                      % Stichwortverzeichnis bzw. Index
+                                      % (optional),
+                                      % die Reihenfolge ergibt sich aus
+                                      % der Wichtigkeit für den Leser,
+                                      % etwas, was weiterhinten steht,
+                                      % kann direkt angeblättert werden
+                                      
+                                      
+% Einstellungen
+% =============
+
+% Da die Einstellungen sich von Dokument zu Dokument kaum verändern,
+% ist es sinnvoll, diese an einer zentralen Stelle abzulegen und von 
+% dort zu laden. Dies geschieht völlig transparent mit dem Befehl
+% \input{<Pfad>}, dem als Argument eine Datei mit (relativem) Zugriffs-
+% pfad übergeben wird
+\input{../../shared/twp-cfg}
+
+% merke: ein späterer Titel überschreibt einen früher gesetzten Titel,
+% in der scrreprt-Dokumentenklasse erscheint der Titel auf einer
+% eigenen Seite
+\title{Ein erstes \LaTeX-Dokument mit der Dokumentklasse \texttt{scrbook}}       % \texttt{<Inhalt>} formatiert <Inhalt>
+                         % mit einer dicktengleichen Schriftart
+                         % im Vergleich zur ansonsten eingesetzten
+                         % Proportionalschrift
+
+% Rumpf des Dokumentes
+\begin{document}
+  \frontmatter                        % damit beginnt das Buch, die 
+                                      % Seitennummerierung erfolgt mit
+                                      % römischen Ziffern i, ii, iii,
+                                      % ...
+  
+  \maketitle                          % die automatisch erzeugte
+                                      % Titelseite, dies erfordert
+                                      % die Angabe des Autors und des
+                                      % Titels in den Einstellungen
+           
+  % Die Zusammenfassung erscheint auf einer eigenen Seite. Da es in
+  % scrbook keine abstract-Umgebung gibt, muss sie ersetzt werden
+  % durch
+  \chapter*{Vorwort}                  % die abstract-Umgebung gibt es
+                                      % nur in der scrartcl-Klasse!
+                                      % Der Stern unterdrückt die
+                                      % Nummerierung der zugehörigen
+                                      % Überschrift
+    Hier steht eine kurze Zusammenfassung des Inhaltes, es geht hier um den Aufbau eines Artikels, insbesondere um die geeignete Gliederung.
+
+  \tableofcontents               
+
+  % die Gliederung erfolgt in bis zu 7 Ebenen, abhängig von der Klasse
+  %   Ebene     Klasse                   Befehl (einfachen Form)
+  %   0.        scrbook/scrreprt         \chapter{<Titel>}
+  %   1.        alle                     \section{<Titel>}
+  %   2.        alle                     \subsection{<Titel>}
+  %   3.        alle                     \subsubsection{<Titel>}
+  %   4.        alle                     \paragraph{<Titel>}
+  %   5.        alle                     \subparagraph{<Titel>}
+  %   6.        alle, nicht im Original  \subsubparagraph{<Titel>}
+  
+  \mainmatter            % hier folgt der Inhalt, die Seitennummerierung
+                         % erfolgt mit arabischen Ziffern, in einer
+                         % Bibliographie wird angegeben vii+23 Seiten
+  
+  \chapter{Einleitung}   % Einleitung, Hauptteil und Schluss
+                         % dürfen niemals in der fertigen Arbeit
+                         % stehen, da muss die Autorin bzw. der Autor
+                         % sich etwas Passendes einfallen lassen.
+
+  Hier steht der Inhalt des Dokumentes, weiteres siehe im n\"achsten
+  Beispiel. Der erste Absatz wird ohne Einzug formatiert, wenn er einer \"Uberschrift folgt.
+  
+  Weitere Absätze bekommen einen Einzug, wie hier deutlich zu sehen ist.
+  Das soll an dieser Stelle reichen.
+  
+  \chapter{Hauptteil}
+  
+  Text des Hauptteils mit Unterabschnitten
+  
+  % eine Kurzform der Überschrift, die für das Inhaltsverzeichnis
+  % geeignet ist erzeugt man mit einem optionalen Argument
+  \section[Erster Unterabschnitt]{Erster Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+
+  % die Nummerierung wird automatisch korekt erzeugt, wenn die
+  % Gliederung korrekt ist, eine fehlerhafte Gliederung wird durch 0.
+  % in der Überschrift angezeigt. Für die Hausaufgaben ist eine
+  % fehlerhafte Nummerierung ein Ausschlusskriterium
+  \subsection{Weitere Untergliederung Teil 1}
+  \subsection{Weitere Untergliederung Teil 2}
+  \subsection{Weitere Untergliederung Teil 3}
+  \subsection{Weitere Untergliederung Teil 4}
+
+  \section[Zweiter Unterabschnitt]{Zweiter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+  
+  \section[Dritter Unterabschnitt]{Dritter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+  
+  \chapter{Schluss}
+  
+  \appendix                     % hiermit wird der Anhang eingeleitet,
+                                % die Kapitelzählung beginnt neu mit
+                                % Großbuchstaben A., B., ... 
+  
+  \chapter{Programmbeispiele}
+  
+  \backmatter                   % z. Zt. noch leer
+\end{document}

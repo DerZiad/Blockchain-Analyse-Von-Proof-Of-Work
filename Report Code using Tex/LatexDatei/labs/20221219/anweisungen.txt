@@ -1,0 +1,9 @@
+1. Kopiere Verzeichnis 20221017 nach 20221024
+2. Formatiere latex_scrartcl.tex
+3. Speichere latex_scrartcl.tex als latex_scrreprt.tex und als latex_scrbook.tex ab, ändere die Dokumentklassen entsprechend:
+- scrartcl -> scrreprt
+- scrreprt -> scrbook
+4. Ändere die bei Bedarf die Gliederung durch Heraufstufen:
+- \section -> \chapter
+- \subsection -> \section
+- \subsubsection -> \subsection 

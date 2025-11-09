@@ -1,0 +1,88 @@
+%23456789012345678901234567890123456789012345678901234567890123456789012
+\wlog{This is cv-cfg, the common configuration file for
+   curricula vitae (JHf)}
+
+%---- Seitenlayout -----------------------------------------------------
+\pagestyle{scrheadings}
+% \ihead{Hello world!}
+% \ohead{My life so far}
+\clearscrheadfoot               % keine Kopfzeile
+\ifoot{Lebenslauf~\firstname~\familyname} % Fußzeile links (inner)
+\ofoot{\pagemark/\totalpagemark}  % Fußzeile rechts (outer)
+
+%---- Längenangaben ----------------------------------------------------
+% \setlength\titlenamemaxwidth{.4\textwidth}
+% \setlength\hintscolwidth{2cm}
+% \setlength\sepcolwidth{1em}
+% \setlength\quotewidth{.3\textwidth}
+% \setlength\titlesepwidth{50pt}
+% \setlength\infocolwidth{6cm} % for oldstyle only!
+% \setlength\sepinfocolwidth{6em} % for oldstyle only!
+% \setlength\footerwidth{.5\textwidth} % for casual style only
+% \setlength\aftertitlevspace{5\baselineskip}
+% \setlength\afterquotevspace{8\baselineskip}
+% \setlength\afterelementsvspace{40pt}
+% \setlength\beforesecvspace{3\baselineskip}
+% \setlength\aftersecvspace{4\baselineskip}
+% \setlength\beforesubsecvspace{3\baselineskip}
+% \setlength\aftersubsecvspace{4\baselineskip}
+% \setlength\listitemsymbolwidth{1cm}
+
+%---- Farbauswahl ------------------------------------------------------
+% \xdefinecolor{mycolor}{cmyk}{0.92,0,0.87,0.09}
+% \colorlet{firstnamecolor}{blue}
+% \colorlet{familynamecolor}{red}
+% \colorlet{acadtitlecolor}{green}
+% \colorlet{addresscolor}{gray}
+% \colorlet{quotecolor}{pink}
+% \colorlet{framecolor}{yellow}
+% \colorlet{framebackcolor}{black}
+% \colorlet{secbarcolor}{firstnamecolor}
+% \colorlet{seccolor}{familynamecolor}
+% \colorlet{subseccolor}{pink!70!black}
+% \colorlet{hintcolor}{orange}
+
+%---- Fontanpassungen --------------------------------------------------
+% \setkomafont{firstnamefont}{\fontsize{24}{26}\itshape}
+\addtokomafont{firstnamefont}{\fontsize{35}{50}}
+% \addtokomafont{familynamefont}{\scshape}
+% \setkomafont{addressfont}{\scriptsize}
+% \setkomafont{acadtitlefont}{\usekomafont{familynamefont}}
+% \setkomafont{quotefont}{\ttfamily}
+% \addtokomafont{section}{\Huge\rmfamily\slshape}
+% \addtokomafont{subsection}{\bfseries}
+
+%---- Hypersetup -------------------------------------------------------
+\renewcommand*\urlbordercolor{red}   % Links sichtbar machen
+\hypersetup{pdfcreator=Someone else}
+
+%---- persönliche Angaben ----------------------------------------------
+\renewcommand*{\title}{Lebenslauf}% PDF metadata
+\renewcommand*{\firstname}{Jane}
+\renewcommand*{\familyname}{Eyre}
+\renewcommand*{\acadtitle}{B.\,Ed.}
+\renewcommand*{\addressstreet}{Ferndean House}
+\renewcommand*{\addresscity}{Ferndean Village}
+\renewcommand*{\address}[2]{\addressstreet{#1}\addresscity{#2}}
+\renewcommand*{\mobile}{009-87654321}
+\renewcommand*{\phonenr}{001-23456789}
+\renewcommand*{\faxnr}{001-23456788}
+\renewcommand*{\email}{jeyre@ferndean.me.uk}
+\renewcommand*{\homepage}{www.jeyre.me.uk}
+% \renewcommand*{\twitter}{twitter.com/janeeyre}
+% \renewcommand*{\github}{github.com/janeeyre}
+\renewcommand*{\facebook}{facebook.com/\\jane.eyre}
+% \renewcommand*{\facebook}{facebook.com/jane.eyre} % avoid linebreaks in casual style
+% \renewcommand*{\linkedin}{https://uk.linkedin.com/pub/jane-eyre}
+\renewcommand*{\extrainfo}{Some extra info}
+% \renewcommand*{\cvquote}{\enquote{Convinced I grew that neither earth
+%     should perish, \\nor one of the souls it treasured.}} %p.373
+% \renewcommand\phonesymbol{Tel.~}
+% \headline[l]{name} % [c|l|r]{none|name|title}; default: [c]{none}
+% \renewcommand\headlinecontent{Jane Elizabeth Eyre Rochester}
+
+%---- Fotos ------------------------------------------------------------
+% \setlength\fboxrule{7pt}
+% \setlength\mframepicshift{1cm}
+\photo[frame]{3cm}{jeyre}
+% \photo[mframe]{5cm}{jeyre}

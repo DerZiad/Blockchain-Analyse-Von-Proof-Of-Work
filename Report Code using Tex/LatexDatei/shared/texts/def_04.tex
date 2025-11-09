@@ -1,0 +1,15 @@
+  \NewDocumentCommand{\vektorN}  % Funktionen dürfen nicht doppelt
+                                 % auftreten
+                     {o m}       % es gibt einen optionalen, den
+                                 % Namen, und einen verpflichtenden
+                                 % Parameter, die Dimension
+                     {           % es sollen die Komponenten
+                       \IfNoValueTF{#1}{\def\dimI{3}}{\def\dimI{#1}}
+                       \ensuremath{(#2_{1},  % eines Vektor
+                       \ldots,   % beschrieben werden
+                                 % \ensuremath: unabhängig
+                                 % von Mathematik-Modus
+                       #2_{\dimI})
+                     }
+  }
+

@@ -1,0 +1,61 @@
+%23456789012345678901234567890123456789012345678901234567890123456789012
+\wlog{This is lttr-cfg, the common configuration file for
+   letters (JHf)}
+
+% Wichtige Voreinstellungen
+\usepackage{url}                % Paket zum Formatieren von URLs
+\DeclareUrlCommand\email{\urlstyle{tt}}
+\usepackage{phonenumbers}
+
+% Blocksatz sieht zunächst gut aus, ist aber auf die Dauer langweilig und
+% ermüdend, was gerade bei Anschreiben einer Bewerbung vermieden werden muss.
+% Daher
+% 1. merke die Originalkommandos der letter-Umgebung für späteren Zugriff
+\let\letterorig=\letter
+\let\endletterorig=\endletter
+% 2. definiere die letter-Umgebung neu. Da diese Definition in einer 
+%    Konfigurationsdatei steht, wirkt sie sich auf alle Briefe aus,
+%    die sich dieser Konfiguration bedienen. 
+%    Die Syntax ist zu beachten:
+%    \renewenvironment{envname}[args]{begdef}{enddef}
+%    Da die letter-Umgebung die Adresse als erstes Argument hat, muss dieses
+%    von der neuen an die alte Umgebung weitergegeben werden.
+\renewenvironment{letter}[1]{%
+    \begin{letterorig}{#1}
+        \parskip5pt %
+        \flushleft
+}{%
+    \end{letterorig}%
+}
+
+% für das Aussehen des Briefbogens
+\KOMAoptions{%
+  foldmarks=true,               % Faltmarken werden gesetzt
+  foldmarks=HP,                 % H: alle horizontalen FM,
+                                % P: Marken für Locher (puncher)
+  fromlogo=true,                % ermöglicht das Setzen eines Logos
+  fromphone=false,              % eigene Telefonnummer und
+  fromemail=true,               % email-Adresse
+                                % false unterdrückt die entsprechende
+                                % Ausgabe
+  subject=titled
+}
+
+% für die Absenderangaben
+\setkomavar{fromname}{Prof.\,Dr.~Jobst Hoffmann}
+\setkomavar{signature}{Prof.\,Dr.~Jobst~Hoffmann} % \, sorgt für einen
+                                % kleinen Zwischenraum, ~ ist der 
+                                % Standardzwischenraum, der nicht 
+                                % umgebrochen werden kann 
+\setkomavar{backaddress}{%
+	Prof. Dr. J. Hoffmann\\
+	Heinrich-Mußmann-Str. 1\\
+	52428 Jülich
+}
+\setkomavar{fromaddress}{%
+	Heinrich-Mußmann-Str. 1\\
+	52428 Jülich
+	}
+%\setkomavar{fromphone}{\phonenumber[foreign]{02416009}[53179]} % nicht
+                                 % mehr gültig
+\setkomavar{fromemail}{\email{j.hoffmann@fh-aachen}}

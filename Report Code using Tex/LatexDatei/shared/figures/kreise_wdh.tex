@@ -1,0 +1,9 @@
+\tikz {%
+  % Gitter zur besseren Einordnung der Kreise
+  \draw[step=.5cm, blue] (-0.6,-0.6) grid (9.6,0.6);
+  \draw[step=.5cm, help lines, red, xshift=0.25cm, ystep=0cm] (-0.6,-0.6) grid (9.3,0.6);
+  \draw[step=.5cm, help lines, green, yshift=0.25cm, xstep=0cm] (-0.6,-0.6) grid (9.6,0.3);
+
+  \foreach \x in {0,...,9}
+    \draw (\x,0) circle (0.4cm);       % Mittelpunkt und Radius eines Kreises
+}

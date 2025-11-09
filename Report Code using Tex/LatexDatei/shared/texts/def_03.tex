@@ -1,0 +1,12 @@
+  \NewDocumentCommand{\vektor}   % Funktionen dürfen nicht doppelt
+                                 % auftreten
+                     {m}         % es gibt einen verpflichtenden
+                                 % Parameter, die Dimension
+                     {           % es sollen die Komponenten
+                        \ensuremath{(x_{1},  % eines Vektor
+                          \ldots, % beschrieben werden
+                                 % \ensuremath: unabhängig
+                                 % von Mathematik-Modus
+                          x_{#1})}
+                     }
+

@@ -1,0 +1,108 @@
+% Leslie Lamport hat LaTeX entwickelt, um dem Anwender das Schreiben
+% spezieller Dokumente zu vereinfachen. Um den europäischen/deutschen
+% Vorstellungen eines Layouts zu entsprechen, hat Markus Kohm analoge
+% Dokumentklassen entwickelt (Koma-Klassen)
+
+% Diese Dokumente sind
+% im Original    extern              Koma       extern
+% 1. article                         scrartcl
+% 2. report                          scrreprt
+% 3. book                            scrbook
+% 4. letter                          scrlttr2
+% 5. slide                                      beamer
+% 6.             poster                         tikzposter
+% 7.                                            komacv bzw. europecv
+% Das Layout ist im Original amerikanischen Vorstellungen ensprechend!
+
+% Der Aufbau ist immer
+
+% Kopf des Dokumentes
+% ===================
+\documentclass[ngerman]{scrartcl}     % in eckigen Klammern stehen 
+                                      % optionale Angaben, hier: ngerman
+                                      % - es werden Trennmuster nach
+                                      %   _n_euer deutscher Recht-
+                                      %   schreibung geladen
+                                      % - wenn das Zusatzpaket babel
+                                      %   geladen ist, kann der Autor
+                                      %   länderspezifische
+                                      %   Befehle, beispielsweise für
+                                      %   Anführungszeiche direkt
+                                      %   eingeben
+
+% Einstellungen
+% =============
+
+% Da die Einstellungen sich von Dokument zu Dokument kaum verändern,
+% ist es sinnvoll, diese an einer zentralen Stelle abzulegen und von 
+% dort zu laden. Dies geschieht völlig transparent mit dem Befehl
+% \input{<Pfad>}, dem als Argument eine Datei mit (relativem) Zugriffs-
+% pfad übergeben wird
+\input{../../shared/twp-cfg}
+
+% Rumpf des Dokumentes
+\begin{document}
+  \maketitle                          % die automatisch erzeugte
+                                      % Titelseite, dies erfordert
+                                      % die Angabe des Autors und des
+                                      % Titels in den Einstellungen
+           
+           
+  \begin{abstract}                    % die abstract-Umgebung gibt es
+                                      % nur in der scrartcl-Klasse!
+    Hier steht eine kurze Zusammenfassung des Inhaltes, es geht hier um den Aufbau eines Artikels, insbesondere um die geeignete Gliederung.
+  \end{abstract}                     
+
+  \tableofcontents               
+
+  % die Gliederung erfolgt in bis zu 7 Ebenen, abhängig von der Klasse
+  %   Ebene     Klasse                   Befehl (einfachen Form)
+  %   0.        scrbook/scrreprt         \chapter{<Titel>}
+  %   1.        alle                     \section{<Titel>}
+  %   2.        alle                     \subsection{<Titel>}
+  %   3.        alle                     \subsubsection{<Titel>}
+  %   4.        alle                     \paragraph{<Titel>}
+  %   5.        alle                     \subparagraph{<Titel>}
+  %   6.        alle, nicht im Original  \subsubparagraph{<Titel>}
+  
+  \section{Einleitung}   % Einleitung, Haauptteil und Schluss
+                         % dürfen niemals in der fertigen Arbeit
+                         % stehen, da muss die Autorin bzw. der Autor
+                         % sich etwas Passendes einfallen lassen.
+
+  Hier steht der Inhalt des Dokumentes, weiteres siehe im n\"achsten
+  Beispiel. Der erste Absatz wird ohne Einzug formatiert, wenn er einer \"Uberschrift folgt.
+  
+  Weitere Absätze bekommen einen Einzug, wie hier deutlich zu sehen ist.
+  Das soll an dieser Stelle reichen.
+  
+  \section{Hauptteil}
+  
+  Text des Hauptteils mit Unterabschnitten
+  
+  % eine Kurzform der Überschrift, die für das Inhaltsverzeichnis
+  % geeignet ist erzeugt man mit einem optionalen Argument
+  \subsection[Erster Unterabschnitt]{Erster Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+
+  % die Nummerierung wird automatisch korekt erzeugt, wenn die
+  % Gliederung korrekt ist, eine fehlerhafte Gliederung wird durch 0.
+  % in der Überschrift angezeigt. Für die Hausaufgaben ist eine
+  % fehlerhafte Nummerierung ein Ausschlusskriterium
+  \subsubsection{Weitere Untergliederung Teil 1}
+  \subsubsection{Weitere Untergliederung Teil 2}
+  \subsubsection{Weitere Untergliederung Teil 3}
+  \subsubsection{Weitere Untergliederung Teil 4}
+
+  \subsection[Zweiter Unterabschnitt]{Zweiter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+  
+  \subsection[Dritter Unterabschnitt]{Dritter Unterabschnitt zu
+dem Hauptteil, der in der Zukunft einen wesentlich aussagekräfigeren
+Titel bekommen muss}
+  
+  \section{Schluss}
+  
+\end{document}

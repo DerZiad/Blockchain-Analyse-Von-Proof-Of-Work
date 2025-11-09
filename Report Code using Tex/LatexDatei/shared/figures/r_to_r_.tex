@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+  \begin{axis}            % das Koordinatensystem wird mit der
+                          % Umgebung axis erzeugt
+    \addplot+ [           % ein Plot wird hinzugefügt
+        id=parable,
+        domain=-5:5,      % der Definitionsbereich
+    ] gnuplot {4*x**2 - 5}% die Funktion, setzt das Programm
+                          % gnuplot voraus
+    node [pin=180:{$4x^2-5$}]{}; % Legende der GRafik
+  \end{axis}
+\end{tikzpicture}
